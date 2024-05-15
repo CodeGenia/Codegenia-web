@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CodeGenia ofrece soluciones innovadoras en inteligencia artificial, blockchain y realidad extendida.">
+    <meta name="keywords"
+        content="CodeGenia, inteligencia artificial, blockchain, realidad extendida, XR, proyectos de IA, soluciones blockchain, desarrollo de aplicaciones XR">
+    <meta name="author" content="CodeGenia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="CodeGenia | Soluciones en IA, Blockchain y XR para Media y Entretenimiento">
+    <meta property="og:description"
+        content="CodeGenia ofrece soluciones innovadoras en inteligencia artificial, blockchain y realidad extendida para media y entretenimiento.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="URL de tu sitio web">
+    <meta property="og:image" content="URL de la imagen de vista previa para redes sociales">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="CodeGenia">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CodeGenia | Soluciones en IA, Blockchain y XR para Media y Entretenimiento">
+    <meta name="twitter:description"
+        content="CodeGenia ofrece soluciones innovadoras en inteligencia artificial, blockchain y realidad extendida.">
+    <meta name="twitter:image" content="URL de la imagen de vista previa para Twitter">
+    <!--meta name="theme-color" content="#XXXXXX"-->
+    <title>CodeGenia | Soluciones Innovadoras en IA, Blockchain y XR para Media y Entretenimiento</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Estilos adicionales */
+        .bg-gray {
+            background-color: #F5F5F5;
+            /* Color de fondo neutro */
+        }
+
+        .primary-color {
+            color: #467FF7;
+            /* Color de texto principal */
+        }
+
+        .primary-bg {
+            background-color: #467FF7;
+            /* Color de fondo principal */
+        }
+
+        .secondary-color {
+            color: #F74E46;
+            /* Color complementario - Texto */
+        }
+
+        .secondary-bg {
+            background-color: #F74E46;
+            /* Color complementario - Fondo */
+        }
+
+        /* Estilos para los botones */
+        .btn-primary {
+            background-color: #467FF7;
+            border-color: #467FF7;
+        }
+
+        .btn-primary:hover {
+            background-color: #6CA8F7;
+            border-color: #6CA8F7;
+        }
+
+        .btn-secondary {
+            background-color: #F74E46;
+            border-color: #F74E46;
+        }
+
+        .btn-secondary:hover {
+            background-color: #F79446;
+            border-color: #F79446;
+        }
+
+        .logo-carousel {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .logo-item {
+            display: inline-block;
+            margin-right: 10px;
+            /* Espacio entre logos */
+        }
+
+
+        .imgBorderRadius{border-radius: 25px;}
+
+
+
+
+
+
+        .button {
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
+            margin-bottom: 0;
+            overflow: hidden;
+            position: relative;
+            transform: translatez(0);
+            text-decoration: none;
+            box-sizing: border-box;
+            box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .instagram {
+            text-align: center;
+            border-radius: 50px;
+            padding: 26px;
+            color: white;
+            background: #467FF7;
+            transition: all 0.2s ease-out 0s;
+        }
+
+        .gradient {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            bottom: auto;
+            margin: auto;
+            z-index: -1;
+            background: radial-gradient(90px circle at top center, rgba(238, 88, 63, .8) 30%, rgba(255, 255, 255, 0));
+            transition: all 0s ease-out 0s;
+            transform: translatex(-140px);
+            animation: 18s linear 0s infinite move;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translatex(-140px);
+            }
+
+            25% {
+                transform: translatex(140px);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: translatex(140px);
+                opacity: 1;
+                background: radial-gradient(90px circle at bottom center, rgba(238, 88, 63, .5) 30%, rgba(255, 255, 255, 0));
+            }
+
+            75% {
+                transform: translatex(-140px);
+                opacity: 0.3;
+            }
+
+            100% {
+                opacity: 1;
+                transform: translatex(-140px);
+                background: radial-gradient(90px circle at top center, rgba(238, 88, 63, .5) 30%, rgba(255, 255, 255, 0));
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand primary-color" href="/">CodeGenia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto lead">
+                    <li class="nav-item">
+                        <a class="nav-link primary-color" aria-current="page" href="#technologies">Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link primary-color" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link primary-color" href="#aboutus">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link primary-color" href="/blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link primary-color" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-5 fw-bold mb-4">¿Qué es la CodeGenia?</h1>
+                    <p class="fs-4 lead">
+                        CodeGenia es tener activado tu código genetico hacia la innovación y el cambio.<br><br>
+                        Somos una empresa líder en proyectos de inteligencia artificial, blockchain y
+                        realidad extendida, especializada en el mundo de los medios y el entretenimiento. Nuestra
+                        profunda
+                        experiencia y conocimiento nos permiten ofrecer soluciones innovadoras y personalizadas que
+                        transforman la manera en que se crea, distribuye y experimenta el contenido multimedia.<br><br>
+                        Haz clic en el video para descubrir más.
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="#" class="button instagram" data-bs-toggle="modal" data-bs-target="#exampleModalXl"><span class="gradient"></span>
+                        <img style="max-width: 30%;" src="play-button.svg">
+                    </a>
+                </div>
+            </div>
+  
+            <div class="modal fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel"
+                aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-4" id="exampleModalXlLabel">CodeGenia</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="technologies" class="bg-gray">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="mt-5 primary-color pb-2 border-bottom"><strong>Tecnologías</strong></h2>
+
+                    <div class="row align-items-center featurette py-4 mt-3">
+                        <div class="col-md-7 order-md-2">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Inteligencia Artificial</h3>
+                            <p class="lead">La Inteligencia Artificial (IA) ha emergido como una
+                                tecnología disruptiva que está transformando la forma en que interactuamos con el mundo
+                                digital y físico. En esencia, la IA busca simular la inteligencia humana mediante
+                                algoritmos y sistemas computacionales, permitiendo a las máquinas aprender, razonar y
+                                tomar decisiones de manera autónoma.
+                            </p>
+                            <p class="lead">Servicios de Inteligencia Artificial:</p>
+                            <ul class="lead secondary-color">
+                                <li>Desarrollo de Modelos de IA a Medida.</li>
+                                <li>Implementación de Sistemas de IA Empresarial.</li>
+                                <li>Análisis Predictivo y Big Data.</li>
+                                <li>Optimización de Motores de Búsqueda (SEO) con IA.</li>
+                                <li>Asistentes Virtuales y Chatbots.</li>
+                            </ul>
+                            <a href="#" target="_blank" class="btn btn-primary mt-3">Más información</a>
+                        </div>
+                        <div class="col-md-5 order-md-1 text-center">
+                            <img src="ia.png" alt="Imagen de ejemplo" class="img-fluid" style="max-width: 85%;">
+                        </div>
+                    </div>
+
+                    <div class="row featurette py-4 align-items-center">
+                        <div class="col-md-7">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Blockchain</h3>
+                            <p class="lead">La tecnología blockchain es un sistema descentralizado y
+                                distribuido que permite el intercambio seguro y transparente de datos y activos
+                                digitales entre múltiples partes sin necesidad de intermediarios. En esencia, es una
+                                base de datos digital pública o privada que registra todas las transacciones de
+                                manera segura y permanente, utilizando criptografía para garantizar la integridad y
+                                la
+                                inmutabilidad de los datos.
+                            </p>
+                            <p class="lead">Servicios de Blockchain:</p>
+                            <ul class="lead secondary-color">
+                                <li>Desarrollo de Aplicaciones Descentralizadas (dApps).</li>
+                                <li>Implementación de Contratos Inteligentes.</li>
+                                <li>Gestión de Cadena de Suministro y Logística.</li>
+                                <li>Tokenización de Activos.</li>
+                                <li>Seguridad y Autenticación.</li>
+                            </ul>
+                            <a href="#" target="_blank" class="btn btn-primary mt-3">Más información</a>
+                        </div>
+                        <div class="col-md-5 text-center">
+                            <img src="blockchain.png" alt="Logo de blockchain" class="img-fluid" style="max-width: 85%;">
+                        </div>
+                    </div>
+
+                    <div class="row featurette py-4 mb-5 align-items-center">
+                        <div class="col-md-5 text-center">
+                            <img src="vr.png" alt="Logo de realidad extendida" class="img-fluid" style="max-width: 85%;">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Extended Reality</h3>
+                            <p class="lead">
+                                Las tecnologías de Realidad Extendida (XR) engloban un conjunto de herramientas y experiencias que fusionan el mundo físico y digital, creando entornos inmersivos que van más allá de la realidad convencional. XR abarca tanto la Realidad Virtual (VR), que sumerge al usuario en un entorno completamente digital, como la Realidad Aumentada (AR), que superpone objetos digitales sobre el mundo real, y la Realidad Mixta (MR), que combina elementos virtuales y reales de manera interactiva.
+                            </p>
+                            <p class="lead">Servicios de Realidad Extendida:</p>
+                            <ul class="lead secondary-color">
+                                <li>Desarrollo de Aplicaciones Descentralizadas (dApps).</li>
+                                <li>Implementación de Contratos Inteligentes.</li>
+                                <li>Gestión de Cadena de Suministro y Logística.</li>
+                                <li>Tokenización de Activos.</li>
+                                <li>Seguridad y Autenticación.</li>
+                            </ul>
+                            <a href="#" target="_blank" class="btn btn-primary mt-3">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="container mt-5">
+        <h2 class="primary-color pb-2 border-bottom">Descubre algunos de nuestros proyectos</h2>
+
+
+        <div class="row featurette my-5 align-items-center">
+            <div class="col-md-5 text-center">
+                <img src="nica.png" alt="Imagen de ejemplo" class="img-fluid imgBorderRadius mb-3" style="max-width: 85%;">
+            </div>
+            <div class="col-md-7">
+                <h3 class="featurette-heading fw-normal lh-1 my-3">NICA</h3>
+                <p class="lead mt-3">Neural Interface Capture Algorithm (NICA), gracias a su
+                    exclusivo
+                    algoritmo de Inteligencia Artificial procesa y captura imágenes, creando resultados
+                    hiperrealistas dando un salto de calidad superior al 3D.
+                </p>
+                <a href="https://nicarevolution.com" target="_blank" class="btn btn-primary mt-3">Más información</a>
+            </div>
+        </div>
+
+        <div class="row featurette my-5 align-items-center">
+            <div class="col-md-5 order-md-2 text-center">
+                <img src="campeonex.jpg" alt="Imagen de ejemplo" class="img-fluid imgBorderRadius mb-3" style="max-width: 85%;">
+            </div>
+            <div class="col-md-7 order-md-1">
+                <h3 class="featurette-heading fw-normal lh-1 my-3">Colección Digital CampeoneX</h3>
+                <p class="lead mt-3">Basado en nuestra plataforma de tokenización propia, lanzamos la colección digital de la
+                    pelicula más vista en España en 2023, CampeoneX.
+                    Llevamos a cabo unos NFT's a partir de los personajes de la película que permitian obtener unos beneficios posteriores en base a merchandising y beneficios especiales para las compradores y fans de la saga.
+                    Esta plataforma permite tokenizar ficheros multimedia que permitan tener una trazabilidad e inmutabilidad de los datos.
+                    Con está plataforma conseguimos quedar finalistas en "The Scale Up" en el pasado DEX 2023 celebrado en Málaga. Además fuimos seleccionados como participantes en el programa Aptenisa Start.
+                </p>
+                <p class="lead">La colección digital en medios de comunicación:</p>
+                <ul class="lead">
+                    <li><a href="https://www.20minutos.es/noticia/5166345/0/campeonex-tendra-una-coleccion-nft-que-donara-mitad-sus-beneficios-asociaciones-sociales/" target="_blank">20 minutos</a></li>
+                    <li><a href="https://www.orange.es/metaverso/noticias/funcionamiento/lanzan-4-070-nft-en-una-coleccion-digital-para-una-pelicula" target="_blank">Orange</a></li>
+                    <li><a href="https://cineytele.com/play/noticias/campeonex-lanza-una-coleccion-digital-exclusiva-por-el-lanzamiento-de-la-pelicula/" target="_blank">Cine & Tele</a></li>
+                    <li><a href="https://produccionaudiovisual.com/startups/campeonex-nft-fines-sociales/" target="_blank">Producción audiovisual</a></li>
+                </ul>
+                <a href="https://campeonexlapelicula.com" target="_blank" class="btn btn-primary mt-5">Más información</a>
+            </div>            
+        </div>
+    </div>
+
+    <div id="aboutus" class="bg-gray mt-5 pt-5">
+        <div class="container" id="icon-grid">
+            <h2 class="primary-color pb-2 border-bottom">¿Por qué nosotros?</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start">
+
+                    <a class="icon-link" href="#">
+                        <svg class="bi" aria-hidden="true"><use xlink:href="#box-seam"></use></svg>
+                        Icon link
+                      </a>
+
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Experiencia</h3>
+                        <p>Nuestra experiencia en el sector audiovisual y tecnológico nos avalan.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#cpu-fill"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Siempre a la última</h3>
+                        <p>Nos encanta probar cosas nuevas y a veces, hasta las creamos.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Objetivo cliente</h3>
+                        <p>Para nosotros el primer objetivo es el éxito de nuestro cliente.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Espíritu innovador</h3>
+                        <p>La cultura innovadora es algo que aplicamos y fomentamos en todo el grupo Dare Planet.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#toggles2"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                        <use xlink:href="#tools"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                        <p>Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom primary-color">Últimos posts del blog</h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-1.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">La IA en el mañana será increible</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>Earth</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>3d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-2.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Blockchain cada vez con más usuarios</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>Pakistan</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>4d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('https://getbootstrap.com/docs/5.3/examples/features/unsplash-photo-3.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">El sector del entretenimiento y el VR</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill"></use>
+                                </svg>
+                                <small>California</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3"></use>
+                                </svg>
+                                <small>5d</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="text-align: right;">
+                <a href="/blog" target="_blank" class="btn btn-primary">Ver más artículos en el blog</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="bg-gray">
+        <div class="container">
+            <div class="row">
+                <h2 class="pb-2 border-bottom primary-color mt-5">¿Tienes un proyecto?</h2>
+                <div class="col-md-6">
+                    <div class="pt-2 pb-5">
+                        <p class="lead">
+                            Ponte en contacto con nosotros y te contestaremos lo antes posible:
+                        </p>
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-12">
+                                <label for="validationCustom01" class="form-label">Nombre y apellidos:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Introduce tu nombre y apellidos" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="validationCustom03" class="form-label">Email:</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Introduce tu corre electronico" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="exampleFormControlTextarea1">Mensaje:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aqui tu mensaje"></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        He leído y acepto la <a href="#" target="_blank">Política de Privacidad</a>
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="primary-bg text-white">
+        <div class="container">
+            <footer>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5">
+                    <div class="col-md-4 mb-3">
+                        <img style="max-width: 50%;"
+                            src="https://shuttle.dareplanet.com/wp-content/uploads/2023/02/innovative-SME-shuttle.png">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h4 class="mb-4">Nuestras sedes</h4>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-3"><strong>Madrid</strong><br>C/ Hortaleza 108</li>
+                            <li class="nav-item mb-3"><strong>Zaragoza</strong><br>C/ Costa 8</li>
+                            <li class="nav-item mb-3"><strong>Gran Canaria</strong><br>C/ Practicante Ignacio Rodríguez,<br>Campus
+                                Universitario de Tafira.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h4 class="mb-4">Navegación</h4>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#technologies" class="nav-link p-0 text-body-secondary">Tecnologías</a></li>
+                            <li class="nav-item mb-2">
+                                <a href="#projects" class="nav-link p-0 text-body-secondary">Proyectos</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="#aboutus" class="nav-link p-0 text-body-secondary">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="/blog" class="nav-link p-0 text-body-secondary">Blog</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="contact" class="nav-link p-0 text-body-secondary">Contacto</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="/" class="nav-link p-0 text-body-secondary">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+                    <p>© 2024 CodeGenia. Todos los derechos reservados.<br>CodeGenia es una compañia <a href="https://dareplanet.com" target="_blank">Dare Planet</a></p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#twitter"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
