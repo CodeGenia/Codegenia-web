@@ -629,26 +629,26 @@
                         <p class="lead">
                             Ponte en contacto con nosotros y te contestaremos lo antes posible:
                         </p>
-                        <form class="row g-3 needs-validation" novalidate>
+                        <form class="row g-3 needs-validation" netlify>
                             <div class="col-md-12">
-                                <label for="validationCustom01" class="form-label">Nombre y apellidos:</label>
-                                <input type="text" class="form-control" id="validationCustom01"
+                                <label for="name" class="form-label">Nombre y apellidos:</label>
+                                <input type="text" class="form-control" id="name" name="name"
                                     placeholder="Introduce tu nombre y apellidos" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label for="validationCustom03" class="form-label">Email:</label>
-                                <input type="text" class="form-control" id="validationCustom03"
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="text" class="form-control" id="email" name="email"
                                     placeholder="Introduce tu corre electronico" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid city.
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <label for="exampleFormControlTextarea1">Mensaje:</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                <label for="message">Mensaje:</label>
+                                <textarea class="form-control" id="message" rows="3" name="message"
                                     placeholder="Escribe aqui tu mensaje"></textarea>
                             </div>
                             <div class="col-md-12">
@@ -658,7 +658,7 @@
                                         He leído y acepto la <a href="#" target="_blank" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Política de Privacidad</a>
                                     </label>
                                     <div class="invalid-feedback">
-                                        You must agree before submitting.
+                                        Es obligatorio aceptar la política de privacidad.
                                     </div>
                                 </div>
                             </div>
