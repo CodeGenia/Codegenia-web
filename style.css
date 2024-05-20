@@ -1,3 +1,17 @@
+/*.color1 { color:#046ce4 };
+.color2 { color:#88c2f7 };
+.color3 { color:#0e469c };
+.color4 { color:#8aa4cc };
+.color5 { color:#9cb4d4 };*/
+
+
+.coloresCorporativos{
+    color: #0F479B;
+    color: #036DE3;
+    color: #1D9DF4;
+    color: #83C3EA;
+}
+
 /* Estilos adicionales */
 .bg-gray {
     background-color: #F5F5F5;
@@ -5,12 +19,12 @@
 }
 
 .primary-color {
-    color: #467FF7;
+    color: #0F479B;
     /* Color de texto principal */
 }
 
 .primary-bg {
-    background-color: #467FF7;
+    background-color: #0F479B;
     /* Color de fondo principal */
 }
 
@@ -26,8 +40,8 @@
 
 /* Estilos para los botones */
 .btn-primary {
-    background-color: #467FF7;
-    border-color: #467FF7;
+    background-color: #0F479B;
+    border-color: #0F479B;
 }
 
 .btn-primary:hover {
