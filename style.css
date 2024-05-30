@@ -149,7 +149,9 @@
 
 .navbar{background: white;}
 
-
+.img-technology{max-width: 85%;}
+.grayscale{filter: grayscale(1);}
+.img-carousel{height:50px; max-width:15%; margin:0 5%; float:left}
 
 #background-video {
     width: 100vw;
