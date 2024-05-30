@@ -24,8 +24,8 @@
         content="CodeGenia ofrece soluciones innovadoras en IA, blockchain y XR.">
     <meta name="twitter:image" content="URL de la imagen de vista previa para Twitter">
     <!--meta name="theme-color" content="#XXXXXX"-->
-    <title>CodeGenia | Inteligencia Artificial, Blockchain y Realidad Extendida</title>
-    <!-- Bootstrap CSS -->
+    <title>CodeGenia | Innovación en IA, Blockchain y XR para Media y Entretenimiento</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
@@ -37,6 +37,23 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <!--meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff"-->
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "CodeGenia",
+          "url": "https://www.codegenia.com",
+          "logo": "https://www.codegenia.com/logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+34-876-535-408",
+            "contactType": "Sales",
+            "areaServed": "ES",
+            "availableLanguage": ["Spanish", "English"]
+          }
+        }
+    </script>
 </head>
 
 <body>
@@ -45,25 +62,25 @@
         <div class="container">
             <a class="navbar-brand primary-color" href="/"><img alt="Logo de CodeGenia" src="img/logo-codegenia.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto lead">
                     <li class="nav-item">
-                        <a class="nav-link primary-color" aria-current="page" href="#technologies">Tecnologías</a>
+                        <a class="nav-link primary-color" aria-current="page" href="#technologies" aria-label="Tecnologías">Tecnologías</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link primary-color" href="#projects">Proyectos</a>
+                        <a class="nav-link primary-color" href="#projects" aria-label="Proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link primary-color" href="#aboutus">Sobre nosotros</a>
+                        <a class="nav-link primary-color" href="#aboutus" aria-label="Sobre nosotros">Sobre nosotros</a>
                     </li>
                     <!--li class="nav-item">
                             <a class="nav-link primary-color" href="/blog">Blog</a>
                         </!--li-->
                     <li class="nav-item">
-                        <a class="nav-link primary-color" href="#contact">Contacto</a>
+                        <a class="nav-link primary-color" href="#contact" aria-label="Contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -76,9 +93,10 @@
 
     <div class="container pt-5 pb-4 mt-5 text-white">
 
+        <h1 class="display-5 fw-bold mb-4">¿Qué es la CodeGenia?</h1>
+
         <div class="row align-items-center">
             <div class="col-md-8">
-                <h1 class="display-5 fw-bold mb-4">¿Qué es la CodeGenia?</h1>
                 <p class="fs-4 lead">
                     La CodeGenia distingue a organizaciones cuyo genoma reúne valores y principios únicos que guían la
                     estrategia hacia la genialidad y la innovación constante.<br><br>
@@ -89,6 +107,7 @@
                     profunda experiencia y conocimiento a que "su" CodeGenia sea cada día más única e
                     innovadora.<br><br>
                     <!--Haz clic en el video para descubrir más.-->
+                    <a href="#contact" class="btn btn-light mt-3" rel="noopener noreferrer">Contacta ahora</a>
                 </p>
             </div>
             <!--div class="col-md-4 text-center">
@@ -132,7 +151,7 @@
                                 algoritmos y sistemas computacionales, permitiendo a las máquinas aprender, razonar y
                                 tomar decisiones de manera autónoma.
                             </p>
-                            <p class="lead">Servicios de Inteligencia Artificial:</p>
+                            <h4 class="lead">Servicios de Inteligencia Artificial:</h4>
                             <ul class="lead">
                                 <li>Desarrollo de Modelos de IA a Medida.</li>
                                 <li>Implementación de Sistemas de IA Empresarial.</li>
@@ -143,7 +162,7 @@
                             <!--a href="#" target="_blank" class="btn btn-primary mt-3" rel="noopener noreferrer">Más información</!--a-->
                         </div>
                         <div class="col-md-5 order-md-1 text-center">
-                            <img src="img/ia.png" alt="Logotipo de la tecnologia de Inteligencia Artificial" class="img-fluid img-technology">
+                            <img src="img/ia.png" alt="Logotipo de Inteligencia Artificial de CodeGenia" class="img-fluid img-technology">
                         </div>
                     </div>
 
@@ -158,7 +177,7 @@
                                 la
                                 inmutabilidad de los datos.
                             </p>
-                            <p class="lead">Servicios de Blockchain:</p>
+                            <h4 class="lead">Servicios de Blockchain:</h4>
                             <ul class="lead">
                                 <li>Desarrollo de Aplicaciones Descentralizadas (dApps).</li>
                                 <li>Implementación de Contratos Inteligentes.</li>
@@ -169,13 +188,13 @@
                             <!--a href="#" target="_blank" class="btn btn-primary mt-3" rel="noopener noreferrer">Más información</!--a-->
                         </div>
                         <div class="col-md-5 text-center">
-                            <img src="img/blockchain.png" alt="Logo de la tecnologia blockchain" class="img-fluid img-technology">
+                            <img src="img/blockchain.png" alt="Logotipo de blockchain de CodeGenia" class="img-fluid img-technology">
                         </div>
                     </div>
 
                     <div class="row featurette py-4 mb-5 align-items-center">
                         <div class="col-md-5 text-center">
-                            <img src="img/vr.png" alt="Logo de la tecnologia de realidad extendida" class="img-fluid img-technology">
+                            <img src="img/vr.png" alt="Logotipo de Realidad Extendida de CodeGenia" class="img-fluid img-technology">
                         </div>
                         <div class="col-md-7">
                             <h3 class="featurette-heading fw-normal lh-1 my-3">Computación espacial</h3>
@@ -187,7 +206,7 @@
                                 que superpone objetos digitales sobre el mundo real, y la Realidad Mixta (MR), que
                                 combina elementos virtuales y reales de manera interactiva.
                             </p>
-                            <p class="lead">Servicios de Computación espacial:</p>
+                            <h4 class="lead">Servicios de Computación espacial:</h4>
                             <ul class="lead">
                                 <li>Creación de aplicaciones móviles o web de Realidad Aumentada.</li>
                                 <li>Proyectos de Realidad Virtual.</li>
@@ -604,7 +623,7 @@
                             <div class="col-md-12">
                                 <label for="name" class="form-label">Nombre y apellidos:</label>
                                 <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Introduce tu nombre y apellidos" required>
+                                    placeholder="Introduce tu nombre y apellidos" aria-label="Nombre y apellidos" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -612,7 +631,7 @@
                             <div class="col-md-12">
                                 <label for="email" class="form-label">Email:</label>
                                 <input type="text" class="form-control" id="email" name="email"
-                                    placeholder="Introduce tu correo electronico" required>
+                                    placeholder="Introduce tu correo electronico" aria-label="Correo electrónico" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid city.
                                 </div>
@@ -620,14 +639,14 @@
                             <div class="col-md-12">
                                 <label for="message">Mensaje:</label>
                                 <textarea class="form-control" id="message" rows="3" name="message"
-                                    placeholder="Escribe aqui tu mensaje" required></textarea>
+                                    placeholder="Escribe aqui tu mensaje" aria-label="Mensaje" required></textarea>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                     <label class="form-check-label" for="invalidCheck">
                                         He leído y acepto la <a href="/politica-privacidad" target="_blank" rel="noopener noreferrer" itemprop="url" 
-                                            class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Política
+                                            class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-label="Acepto la política de privacidad">Política
                                             de Privacidad</a>
                                     </label>
                                     <div class="invalid-feedback">
@@ -636,7 +655,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Enviar</button>
+                                <button class="btn btn-primary" type="submit" aria-label="Enviar">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -697,13 +716,13 @@
                             class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Dare
                             Planet</a></p>
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Twitter de CodeGenia"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#twitter"></use>
                                 </svg></a></li>
-                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram de CodeGenia"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#instagram"></use>
                                 </svg></a></li>
-                        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook de CodeGenia"><svg class="bi" width="24" height="24">
                                     <use xlink:href="#facebook"></use>
                                 </svg></a></li>
                     </ul>
