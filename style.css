@@ -146,3 +146,19 @@
         background: radial-gradient(90px circle at top center, rgba(238, 88, 63, .5) 30%, rgba(255, 255, 255, 0));
     }
 }
+
+.navbar{background: white;}
+
+
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+ }
