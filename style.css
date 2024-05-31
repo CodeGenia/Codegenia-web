@@ -151,7 +151,7 @@
 
 .img-technology{max-width: 85%;}
 .grayscale{filter: grayscale(1);}
-.img-carousel{height:50px; max-width:15%; margin:0 5%; float:left}
+.img-carousel{max-width: 80%; max-height: 50px}
 
 #background-video {
     width: 100vw;
