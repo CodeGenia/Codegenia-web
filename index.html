@@ -189,38 +189,34 @@
 
 <body>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light" aria-label="Light offcanvas navbar">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
         <div class="container">
-            <img alt="Logo de CodeGenia" class="img-fluid" src="img/logo-codegenia.jpg" style="max-width: 250px;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight">
+            <a class="navbar-brand" href="/">
+                <img alt="Logo de CodeGenia" class="img-fluid" src="img/logo-codegenia.jpg" style="max-width: 250px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"      aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">CodeGenia</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="#technologies"
-                                aria-label="Tecnologías">Tecnologías</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#projects" aria-label="Proyectos">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#aboutus" aria-label="Sobre nosotros">Sobre
-                                nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#contact" aria-label="Contacto">Contacto</a>
-                        </li>
-                        <!--li class="nav-item">
-                            <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/en" aria-label="Contacto">English</a>
-                        </!--li-->
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="#technologies"
+                            aria-label="Tecnologías">Tecnologías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#projects" aria-label="Proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#aboutus" aria-label="Sobre nosotros">Sobre
+                            nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#contact" aria-label="Contacto">Contacto</a>
+                    </li>
+                    <!--li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/en" aria-label="Contacto">English</a>
+                    </!--li-->
+                </ul>
             </div>
         </div>
     </nav>
@@ -1063,6 +1059,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer></script>
+
+    <!-- JavaScript para cerrar el menú al hacer clic en un enlace -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function () {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: false
+                    });
+                    bsCollapse.hide(); // Cierra el menú colapsado
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
