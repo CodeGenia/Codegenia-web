@@ -189,18 +189,19 @@
 
 <body>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" aria-label="Light offcanvas navbar">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img alt="Logo de CodeGenia" class="img-fluid" src="img/logo-codegenia.jpg" style="max-width: 250px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegación">
+            <img alt="Logo de CodeGenia" class="img-fluid" src="img/logo-codegenia.jpg" style="max-width: 250px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="nav-wrapper d-flex">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto lead">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">CodeGenia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="#technologies"
                                 aria-label="Tecnologías">Tecnologías</a>
@@ -215,11 +216,11 @@
                         <li class="nav-item">
                             <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#contact" aria-label="Contacto">Contacto</a>
                         </li>
-                        <li class="nav-item">
+                        <!--li class="nav-item">
                             <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/en" aria-label="Contacto">English</a>
-                        </li>
+                        </!--li-->
                     </ul>
-                </div>                
+                </div>
             </div>
         </div>
     </nav>
@@ -282,7 +283,11 @@
                     <h2 class="mt-5 primary-color pb-2 border-bottom"><strong>Nuestras tecnologías</strong></h2>
 
                     <div class="row align-items-center featurette py-4 mt-3">
-                        <div class="col-md-7 order-md-2">
+                        <div class="col-md-5 text-center">
+                            <img src="img/ia.jpg" alt="Logotipo de Inteligencia Artificial de CodeGenia"
+                                class="img-fluid img-technology">
+                        </div>
+                        <div class="col-md-7">
                             <h3 class="featurette-heading fw-normal lh-1 my-3">Inteligencia Artificial</h3>
                             <p class="lead">La Inteligencia Artificial (IA) ha emergido como una
                                 tecnología disruptiva que está transformando la forma en que interactuamos con el mundo
@@ -300,14 +305,15 @@
                             </ul>
                             <!--a href="#" target="_blank" class="btn btn-primary mt-3" rel="noopener noreferrer">Más información</!--a-->
                         </div>
-                        <div class="col-md-5 order-md-1 text-center">
-                            <img src="img/ia.jpg" alt="Logotipo de Inteligencia Artificial de CodeGenia"
-                                class="img-fluid img-technology">
-                        </div>
+                        
                     </div>
 
                     <div class="row featurette py-4 align-items-center">
-                        <div class="col-md-7">
+                        <div class="col-md-5 order-md-2 text-center">
+                            <img src="img/blockchain2.png" alt="Logotipo de blockchain de CodeGenia"
+                                class="img-fluid img-technology">
+                        </div>
+                        <div class="col-md-7 order-md-1">
                             <h3 class="featurette-heading fw-normal lh-1 my-3">Blockchain</h3>
                             <p class="lead">La tecnología blockchain es un sistema descentralizado y
                                 distribuido que permite el intercambio seguro y transparente de datos y activos
@@ -327,10 +333,7 @@
                             </ul>
                             <!--a href="#" target="_blank" class="btn btn-primary mt-3" rel="noopener noreferrer">Más información</!--a-->
                         </div>
-                        <div class="col-md-5 text-center">
-                            <img src="img/blockchain2.png" alt="Logotipo de blockchain de CodeGenia"
-                                class="img-fluid img-technology">
-                        </div>
+                        
                     </div>
 
                     <div class="row featurette py-4 align-items-center">
@@ -361,7 +364,11 @@
                     </div>
 
                     <div class="row featurette py-4 align-items-center">
-                        <div class="col-md-7">
+                        <div class="col-md-5 order-md-2 text-center">
+                            <img src="img/cloud.png" alt="Logotipo de blockchain de CodeGenia"
+                                class="img-fluid img-technology">
+                        </div>
+                        <div class="col-md-7 order-md-1">
                             <h3 class="featurette-heading fw-normal lh-1 my-3">Cloud & Development</h3>
                             <p class="lead">
                                 Nuestro área de desarrollo de software especializada en entornos web y cloud está diseñada para impulsar la transformación digital de tu empresa. Con un enfoque centrado en soluciones innovadoras y escalables, desarrollamos aplicaciones web de alto rendimiento que se integran perfectamente con plataformas en la nube.
@@ -376,13 +383,7 @@
                             </ul>
                             <!--a href="#" target="_blank" class="btn btn-primary mt-3" rel="noopener noreferrer">Más información</!--a-->
                         </div>
-                        <div class="col-md-5 text-center">
-                            <img src="img/cloud.png" alt="Logotipo de blockchain de CodeGenia"
-                                class="img-fluid img-technology">
-                        </div>
                     </div>
-
-
 
                 </div>
             </div>
@@ -1044,10 +1045,10 @@
                                 <a href="contact" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Contacto">Contacto</a>
                             </li>
-                            <li class="nav-item mb-2">
+                            <!--li class="nav-item mb-2">
                                 <a href="/en" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="English">English</a>
-                            </li>
+                            </!--li-->
                         </ul>
                     </div>
                 </div>
