@@ -40,30 +40,20 @@
     <meta name="theme-color" content="#ffffff"-->
 
     <script defer>
-        // Función para detectar el idioma del navegador
         function redirigirSegunIdioma() {
-          // Verificamos si el usuario ha forzado la página (no redirigir)
           if (localStorage.getItem('sinRedireccion') === 'true') {
-            return; // Si la variable está en localStorage, no redirigir
-          }
-    
-          // Obtenemos el idioma del navegador
-          var idiomaNavegador = navigator.language || navigator.userLanguage;
-    
-          // Comprobamos si el idioma es Español de España (es-ES)
+            return;
+          }    
+          var idiomaNavegador = navigator.language || navigator.userLanguage;    
           if (idiomaNavegador.toLowerCase() === "es-es") {
-            // Redirigir a la página en español
             window.location.href = "/es";
           }
         }
     
-        // Función para indicar que se forzó la página (no se debe redirigir en el futuro)
         function desactivarRedireccion() {
-          // Guardamos en localStorage una variable para no redirigir en el futuro
           localStorage.setItem('sinRedireccion', 'true');
         }
     
-        // Comprobamos si hay un parámetro en la URL que indique que no redirijamos (por ejemplo, ?noredir=true)
         function verificarParametroNoRedireccion() {
           var urlParams = new URLSearchParams(window.location.search);
           if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
@@ -71,10 +61,7 @@
           }
         }
     
-        // Ejecutar la verificación del parámetro
-        verificarParametroNoRedireccion();
-    
-        // Llamamos a la función para realizar la redirección si es necesario
+        verificarParametroNoRedireccion();    
         redirigirSegunIdioma();
     </script>
 
@@ -320,20 +307,15 @@
                                 class="img-fluid img-technology">
                         </div>
                         <div class="col-md-7">
-                            <h3 class="featurette-heading fw-normal lh-1 my-3">Inteligencia Artificial</h3>
-                            <p class="lead">La Inteligencia Artificial (IA) ha emergido como una
-                                tecnología disruptiva que está transformando la forma en que interactuamos con el mundo
-                                digital y físico. En esencia, la IA busca simular la inteligencia humana mediante
-                                algoritmos y sistemas computacionales, permitiendo a las máquinas aprender, razonar y
-                                tomar decisiones de manera autónoma.
-                            </p>
-                            <h4 class="lead">Servicios de Inteligencia Artificial:</h4>
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Artificial Intelligence</h3>
+                            <p class="lead">Artificial Intelligence (AI) has emerged as a disruptive technology that is transforming the way we interact with both the digital and physical worlds. In essence, AI seeks to simulate human intelligence through algorithms and computational systems, enabling machines to learn, reason, and make decisions autonomously.</p>
+                            <h4 class="lead">Artificial Intelligence Services:</h4>
                             <ul class="lead">
-                                <li>Desarrollo de Modelos de IA a Medida.</li>
-                                <li>Implementación de Sistemas de IA Empresarial.</li>
-                                <li>Análisis Predictivo y Big Data.</li>
-                                <li>Generación de contenido multimedia.</li>
-                                <li>Asistentes Virtuales y Chatbots.</li>
+                                <li>Custom AI Model Development.</li>
+                                <li>Implementation of Enterprise AI Systems.</li>
+                                <li>Predictive Analytics and Big Data.</li>
+                                <li>Multimedia Content Generation.</li>
+                                <li>Virtual Assistants and Chatbots.</li>
                             </ul>
                             <!--a href="#" target="_blank" class="btn btn-primary mt-3" rel="noopener noreferrer">Más información</!--a-->
                         </div>
@@ -347,21 +329,14 @@
                         </div>
                         <div class="col-md-7 order-md-1">
                             <h3 class="featurette-heading fw-normal lh-1 my-3">Blockchain</h3>
-                            <p class="lead">La tecnología blockchain es un sistema descentralizado y
-                                distribuido que permite el intercambio seguro y transparente de datos y activos
-                                digitales entre múltiples partes sin necesidad de intermediarios. En esencia, es una
-                                base de datos digital pública o privada que registra todas las transacciones de
-                                manera segura y permanente, utilizando criptografía para garantizar la integridad y
-                                la
-                                inmutabilidad de los datos.
-                            </p>
-                            <h4 class="lead">Servicios de Blockchain:</h4>
+                            <p class="lead">Blockchain technology is a decentralized and distributed system that enables the secure and transparent exchange of data and digital assets between multiple parties without the need for intermediaries. Essentially, it is a public or private digital database that records all transactions in a secure and permanent manner, using cryptography to ensure the integrity and immutability of the data.</p>
+                            <h4 class="lead">Blockchain Services:</h4>
                             <ul class="lead">
-                                <li>Desarrollo de Aplicaciones Descentralizadas (dApps).</li>
-                                <li>Implementación de Contratos Inteligentes.</li>
-                                <li>Trazabilidad de elementos.</li>
-                                <li>Tokenización de Activos.</li>
-                                <li>Seguridad y Autenticación.</li>
+                                <li>Development of Decentralized Applications (dApps).</li>
+                                <li>Implementation of Smart Contracts.</li>
+                                <li>Item Traceability.</li>
+                                <li>Asset Tokenization.</li>
+                                <li>Security and Authentication.</li>
                             </ul>
                             <!--a href="#" target="_blank" class="btn btn-primary mt-3" rel="noopener noreferrer">Más información</!--a-->
                         </div>
@@ -374,22 +349,17 @@
                                 class="img-fluid img-technology">
                         </div>
                         <div class="col-md-7">
-                            <h3 class="featurette-heading fw-normal lh-1 my-3">Computación espacial</h3>
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Spatial Computing</h3>
                             <p class="lead">
-                                Las tecnologías de Realidad Extendida (XR) engloban un conjunto de herramientas y
-                                experiencias que fusionan el mundo físico y digital, creando entornos inmersivos que van
-                                más allá de la realidad convencional. XR abarca tanto la Realidad Virtual (VR), que
-                                sumerge al usuario en un entorno completamente digital, como la Realidad Aumentada (AR),
-                                que superpone objetos digitales sobre el mundo real, y la Realidad Mixta (MR), que
-                                combina elementos virtuales y reales de manera interactiva.
+                                Extended Reality (XR) technologies encompass a set of tools and experiences that merge the physical and digital worlds, creating immersive environments that go beyond conventional reality. XR includes Virtual Reality (VR), which immerses the user in a completely digital environment, Augmented Reality (AR), which overlays digital objects onto the real world, and Mixed Reality (MR), which combines virtual and real elements interactively.
                             </p>
-                            <h4 class="lead">Servicios de Computación espacial:</h4>
+                            <h4 class="lead">Spatial Computing Services:</h4>
                             <ul class="lead">
-                                <li>Creación de aplicaciones móviles o web de Realidad Aumentada.</li>
-                                <li>Proyectos de Realidad Virtual.</li>
-                                <li>Desarrollo de soluciones de Realidad Mixta.</li>
-                                <li>Consultoria y estrategia XR.</li>
-                                <li>Crear contenido 3D y animaciones de alta calidad.</li>
+                                <li>Creation of mobile or web Augmented Reality applications.</li>
+                                <li>Virtual Reality projects.</li>
+                                <li>Development of Mixed Reality solutions.</li>
+                                <li>XR consulting and strategy.</li>
+                                <li>Creation of high-quality 3D content and animations.</li>
                             </ul>
                             <!--a href="#" target="_blank" class="btn btn-primary mt-3" rel="noopener noreferrer">Más información</!--a-->
                         </div>
@@ -403,16 +373,16 @@
                         <div class="col-md-7 order-md-1">
                             <h3 class="featurette-heading fw-normal lh-1 my-3">Cloud & Development</h3>
                             <p class="lead">
-                                Nuestro área de desarrollo de software especializada en entornos web y cloud está diseñada para impulsar la transformación digital de tu empresa. Con un enfoque centrado en soluciones innovadoras y escalables, desarrollamos aplicaciones web de alto rendimiento que se integran perfectamente con plataformas en la nube.
-                                Confía en nosotros para llevar tu negocio al siguiente nivel con software robusto, eficiente y diseñado para potenciar el rendimiento en entornos web y cloud.
+                                Our software development area, specialized in web and cloud environments, is designed to drive the digital transformation of your company. With a focus on innovative and scalable solutions, we develop high-performance web applications that seamlessly integrate with cloud platforms.
+                                Trust us to take your business to the next level with robust, efficient software designed to enhance performance in web and cloud environments.
                             </p>
-                            <h4 class="lead">Servicios de Cloud & Development:</h4>
+                            <h4 class="lead">Cloud & Development Services:</h4>
                             <ul class="lead">
-                                <li>Arquitectura entornos Cloud.</li>
-                                <li>Desarrollo Web.</li>
-                                <li>Desarrollo de Apps moviles y de escritorio.</li>
-                                <li>DevOps: Integración, escalabilidad y monitorización.</li>
-                            </ul>
+                                <li>Cloud Architecture.</li>
+                                <li>Web Development.</li>
+                                <li>Mobile and Desktop App Development.</li>
+                                <li>DevOps: Integration, scalability, and monitoring.</li>
+                            </ul>                            
                             <!--a href="#" target="_blank" class="btn btn-primary mt-3" rel="noopener noreferrer">Más información</!--a-->
                         </div>
                     </div>
@@ -560,12 +530,12 @@
                     <img src="img/questiona.jpg" alt="" class="img-fluid imgBorderRadius mb-3 img-technology">
                 </div>
                 <div class="col-md-6 offset-md-1">
-                    <h3 class="featurette-heading fw-normal lh-1 my-3">Questiona - IA aplicada a tu empresa</h3>
-                    <p class="lead mt-3">                        
-                        Nuestra plataforma de inteligencia artificial Questiona, está diseñado para transformar la forma en que accedes y gestionas la información. Mediante la integración de fuentes variadas como documentos, bases de datos y otras fuentes de datos, nuestra IA es capaz de extraer, analizar y "memorizar" grandes cantidades de datos de manera eficiente. Esta tecnología avanzada te permite consolidar información dispersa en un solo lugar, facilitando la búsqueda de respuestas precisas sin la necesidad de navegar entre múltiples archivos.
+                    <h3 class="featurette-heading fw-normal lh-1 my-3">Questiona - AI Applied to Your Business</h3>
+                    <p class="lead mt-3">
+                        Our artificial intelligence platform, Questiona, is designed to transform the way you access and manage information. By integrating various sources such as documents, databases, and other data sources, our AI can efficiently extract, analyze, and "memorize" large amounts of data. This advanced technology allows you to consolidate dispersed information into one place, making it easier to find precise answers without needing to navigate through multiple files.
                     </p>
                     <p class="lead mt-3">
-                        A través de un chatbot intuitivo, puedes hacer preguntas directamente sobre los datos que la IA ha "memorizado", y recibir respuestas claras y rápidas en tiempo real. Ya no es necesario perder tiempo buscando manualmente en documentos extensos: simplemente consulta al chatbot y accede a la información relevante de manera instantánea. Este software es ideal para profesionales que necesitan acceder a grandes volúmenes de información de forma ágil y precisa, optimizando el tiempo y mejorando la toma de decisiones.
+                        Through an intuitive chatbot, you can directly ask questions about the data the AI has "memorized" and receive clear and quick answers in real time. No more wasting time manually searching through extensive documents—simply ask the chatbot and instantly access relevant information. This software is ideal for professionals who need to access large volumes of information quickly and accurately, optimizing time and improving decision-making.
                     </p>
                     <a class="btn button-animation mt-3 px-4 py-3" href="#contact">
                         Contact now
@@ -582,15 +552,15 @@
                     <img src="img/virtual-reality.jpg" alt="Logotipo del proyecto Infinita" class="img-fluid imgBorderRadius mb-3 img-technology">
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <h3 class="featurette-heading fw-normal lh-1 my-3">Plataforma VR/AR/360</h3>
+                    <h3 class="featurette-heading fw-normal lh-1 my-3">VR/AR/360 Platform</h3>
                     <p class="lead mt-3">
-                        Descubre la próxima generación de interacción digital con nuestra plataforma de Realidad Virtual y Realidad Aumentada. Diseñada para transformar la forma en que experimentas el mundo 3D, nuestra solución te permite visualizar objetos tridimensionales con un nivel de detalle sin precedentes, explorar entornos inmersivos y navegar por imágenes 360° con una fluidez asombrosa. Ya sea que desees presentar productos, simular entornos o crear experiencias interactivas, nuestra plataforma combina lo mejor de la RV y la RA para ofrecerte un espacio donde lo físico y lo digital convergen.
+                        Discover the next generation of digital interaction with our Virtual Reality and Augmented Reality platform. Designed to transform how you experience the 3D world, our solution allows you to visualize three-dimensional objects with unprecedented detail, explore immersive environments, and navigate through 360° images with remarkable fluidity. Whether you want to showcase products, simulate environments, or create interactive experiences, our platform combines the best of VR and AR to offer you a space where the physical and digital converge.
                     </p>
                     <p class="lead">
-                        Ideal para sectores como arquitectura, educación, entretenimiento y comercio, nuestra plataforma permite a los usuarios interactuar de forma intuitiva, proporcionando experiencias inmersivas que incrementan el compromiso y la retención. Además, su integración multiplataforma garantiza un acceso sencillo desde cualquier dispositivo. Dale vida a tus ideas y permite a tu audiencia explorar, descubrir y conectarse con tu contenido de una manera completamente nueva y emocionante.
+                        Ideal for sectors such as architecture, education, entertainment, and commerce, our platform allows users to interact intuitively, providing immersive experiences that enhance engagement and retention. Moreover, its cross-platform integration ensures easy access from any device. Bring your ideas to life and allow your audience to explore, discover, and connect with your content in an entirely new and exciting way.
                     </p>
                     <p class="lead">
-                        ¡Bienvenido al futuro de la interacción digital!
+                        Welcome to the future of digital interaction!
                     </p>
                     <a class="btn button-animation mt-3 px-4 py-3" href="#contact">
                         Contact now
@@ -607,12 +577,12 @@
                     <img src="img/logo-infinita.jpg" alt="" class="img-fluid imgBorderRadius mb-3 img-technology">
                 </div>
                 <div class="col-md-6 offset-md-1">
-                    <h3 class="featurette-heading fw-normal lh-1 my-3">Infinita - Plataforma de tokenización</h3>
+                    <h3 class="featurette-heading fw-normal lh-1 my-3">Infinita - Tokenization Platform</h3>
                     <p class="lead mt-3">                        
-                        Entra al futuro de la digitalización con nuestra plataforma blockchain que te permite crear tokens y NFTs de manera rápida, segura y sin complicaciones. Diseñada para empresas, creadores y desarrolladores, nuestra plataforma pone al alcance de tu mano la capacidad de generar activos digitales únicos con solo unos clics. Ya sea que estés buscando lanzar tu propio token, tokenizar activos o crear coleccionables digitales, nuestra solución blockchain te ofrece la infraestructura robusta y escalable que necesitas.
+                        Step into the future of digitalization with our blockchain platform that allows you to create tokens and NFTs quickly, securely, and effortlessly. Designed for businesses, creators, and developers, our platform puts the ability to generate unique digital assets at your fingertips with just a few clicks. Whether you're looking to launch your own token, tokenize assets, or create digital collectibles, our blockchain solution offers the robust and scalable infrastructure you need.
                     </p>
                     <p class="lead mt-3">
-                        Con tecnología de última generación, garantizamos transacciones rápidas, seguras y transparentes. Además, nuestra plataforma está diseñada pensando en la usabilidad, lo que permite a cualquier persona, sin importar su nivel de experiencia, pueda usarla con facilidad. Ideal para el comercio, el arte digital, los videojuegos y más, abre las puertas a nuevas oportunidades de negocio y monetización. Únete a la revolución blockchain y lleva tu proyecto al siguiente nivel con la creación de activos digitales únicos y certificados.
+                        With cutting-edge technology, we ensure fast, secure, and transparent transactions. Additionally, our platform is designed with usability in mind, making it easy for anyone, regardless of their level of experience, to use. Ideal for commerce, digital art, video games, and more, it opens doors to new business opportunities and monetization. Join the blockchain revolution and take your project to the next level with the creation of unique and certified digital assets.
                     </p>
                     <a class="btn button-animation mt-3 px-4 py-3" href="#contact">
                         Contact now
