@@ -40,41 +40,13 @@
     <meta name="theme-color" content="#ffffff"-->
 
     <script defer>
-        // Función para detectar el idioma del navegador
         function redirigirSegunIdioma() {
-          // Verificamos si el usuario ha forzado la página (no redirigir)
-          if (localStorage.getItem('sinRedireccion') === 'true') {
-            return; // Si la variable está en localStorage, no redirigir
-          }
-    
-          // Obtenemos el idioma del navegador
           var idiomaNavegador = navigator.language || navigator.userLanguage;
     
-          // Comprobamos si el idioma es Español de España (es-ES)
           if (idiomaNavegador.toLowerCase() === "es-es") {
-            // Redirigir a la página en español
             window.location.href = "/es";
           }
         }
-    
-        // Función para indicar que se forzó la página (no se debe redirigir en el futuro)
-        function desactivarRedireccion() {
-          // Guardamos en localStorage una variable para no redirigir en el futuro
-          localStorage.setItem('sinRedireccion', 'true');
-        }
-    
-        // Comprobamos si hay un parámetro en la URL que indique que no redirijamos (por ejemplo, ?noredir=true)
-        function verificarParametroNoRedireccion() {
-          var urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
-            desactivarRedireccion();
-          }
-        }
-    
-        // Ejecutar la verificación del parámetro
-        verificarParametroNoRedireccion();
-    
-        // Llamamos a la función para realizar la redirección si es necesario
         redirigirSegunIdioma();
     </script>
 
@@ -253,7 +225,7 @@
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#contact" aria-label="Contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/es?noredir=true" aria-label="Español">Español</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="/?noredir=true" aria-label="English">English</a>
                     </li>
                 </ul>
             </div>
@@ -268,7 +240,7 @@
 
     <div class="container pt-5 pb-4 mt-5 text-white">
 
-        <h1 class="display-5 fw-bold mb-4">¿Qué es la CodeGenia?</h1>
+        <h1 class="display-5 fw-bold mb-4">ES ¿Qué es la CodeGenia?</h1>
 
         <div class="row align-items-center">
             <div class="col-md-8">
@@ -1096,10 +1068,9 @@
                                     aria-label="Contacto">Aviso legal</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="/es?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="/?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Español">Español</a>
                             </li>
-                        </ul>
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
