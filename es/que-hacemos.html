@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
+    <meta name="keywords"
+        content="Artificial intelligence, artificial intelligence projects, blockchain solutions, blockchain, extended reality, augmented reality, XR, VR, AR, MR">
+    <meta name="author" content="CodeGenia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="CodeGenia - AI, Blockchain and XR Software solutions">
+    <meta property="og:description"
+        content="CodeGenia offers innovative software solutions in artificial intelligence, blockchain, and extended reality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codegenia.com">
+    <meta property="og:image" content="./../img/logo-codegenia.jpg">
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:site_name" content="CodeGenia">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CodeGenia - AI, Blockchain and XR Software solutions">
+    <meta name="twitter:description" content="CodeGenia - AI, Blockchain and XR Software solutions">
+    <meta name="twitter:image" content="./img/logo-codegenia.jpg">
+    <meta http-equiv="Content-Language" content="en" />
+    <!--meta name="theme-color" content="#XXXXXX"-->
+    <title>CodeGenia - Artificial Intelligence, Blockchain, and XR solutions.</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <!--meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"-->
+
+    <link rel="alternate" hreflang="en" href="https://codegenia.com" />
+    <link rel="alternate" hreflang="es" href="https://codegenia.com/es" />
+
+    <script defer>
+        function redirigirSegunIdioma() {
+          if (localStorage.getItem('sinRedireccion') === 'true') {
+            return;
+          }    
+          var idiomaNavegador = navigator.language || navigator.userLanguage;    
+          if (idiomaNavegador.toLowerCase() === "es-es") {
+            window.location.href = "/es";
+          }
+        }
+    
+        function desactivarRedireccion() {
+          localStorage.setItem('sinRedireccion', 'true');
+        }
+    
+        function verificarParametroNoRedireccion() {
+          var urlParams = new URLSearchParams(window.location.search);
+          if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+            desactivarRedireccion();
+          }
+        }
+    
+        //verificarParametroNoRedireccion();
+        //redirigirSegunIdioma();
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "CodeGenia",
+          "url": "https://www.codegenia.com",
+          "logo": "https://www.codegenia.com/img/logo-codegenia.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+34-619-058-298",
+            "contactType": "Sales",
+            "areaServed": "EN",
+            "availableLanguage": ["Spanish", "English"]
+          }
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./">
+                <img alt="Logo de CodeGenia" class="img-fluid" src="./../img/logo-codegenia.jpg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./que-hacemos"
+                            aria-label="Qué hacemos">Qué hacemos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./casos-de-exito"
+                            aria-label="Casos de éxito">Casos de éxito</a>
+                    </li>
+                    <!--li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Proyectos">Industries</a>
+                    </!--li-->
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./sobre-nosotros" aria-label="Sobre nosotros">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./contacto" aria-label="Contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./../?noredir=true" aria-label="English">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="background: url('./../img/future-office.jpg') no-repeat center center fixed; 
+        width: 100vw; height: 100vh; object-fit: cover; background-size: cover; position: fixed; left: 0;
+        right: 0; top: 0; bottom: 0; z-index: -1;"></div>
+
+    <div class="pt-5" style="background:rgba(0,0,0,0.5)">
+        <div class="container pt-5 pb-4 text-white">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="display-5 fw-bold mb-4">Transforma retos en oportunidades con nuestros servicios</h1>
+                    <p class="fs-4 lead mb-5">
+                        Descubre CodeGenia: tu aliado especialista en <strong>Artificial Intelligence</strong>, <strong>Blockchain</strong>, and <strong>Extended Reality (XR) technologies.</strong><br><br>
+                        Transformamos tu negocio con soluciones que realmenta marcan la diferencia.<br><br>
+                    </p>
+                </div>
+                <!--div class="col-md-4 text-center">
+                    <button type="button" class="btn button-animation mt-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#exampleModalXl" aria-label="Discover CodeGenia in video">
+                        Play video
+                    </button>
+                </!--div-->
+            </div>
+            <div class="modal fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="modal-title fs-4" id="exampleModalXlLabel">CodeGenia</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 pt-2 pb-4 bg-white">
+        <div class="container">
+            <h2 class="pb-2 border-bottom primary-color my-5 d-none">Innovative services at CodeGenia</h2>
+            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Tecnologia y soluciones, justo como las necesitas</h3> 
+            <p class="lead pb-3">
+                En Codegenia no hacemos soluciones genéricas ni fórmulas mágicas. Nuestro equipo se mete de lleno en tu negocio para entender qué necesitas realmente y diseñar estrategias que encajen como anillo al dedo.
+            </p>
+            <div class="row">
+                <div class="col-md-6 pb-1">
+                    <p class="lead"><strong>¿Cómo lo hacemos?</strong></p>
+                    <p class="lead">
+                        Primero, nos sentamos contigo para evaluar tus procesos actuales. Detectamos esos pequeños (o grandes) cuellos de botella, ineficiencias y oportunidades que podrían estar frenando tu crecimiento.
+                    </p>
+                </div>
+                <div class="col-md-6 pb-1">
+                    <p class="lead"><strong>¿El resultado?</strong></p>
+                    <p class="lead">
+                        Un plan personalizado que no solo optimiza tu empresa, sino que crea la base perfecta para automatizar y escalar tu negocio sin complicaciones. Porque sabemos que no todas las empresas son iguales, y tus soluciones tampoco deberían serlo. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 py-5" style="height:200px;">
+    </div>
+
+    <div class="w-100 pt-2 pb-4 bg-white">
+        <div class="container">
+            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Diseño de infraestructura tecnológica a tu ritmo</h3>
+            <p class="lead pb-3">
+                Sabemos que la tecnología puede ser un rompecabezas, pero nosotros nos encargamos de armarlo por ti. Diseñamos un plan que no solo se adapta a lo que haces hoy, sino que crece contigo para lo que venga.
+            </p>
+            <div class="row">
+                <div class="col-md-6 pb-1">
+                    <p class="lead"><strong>¿Qué hacemos exactamente?</strong></p>
+                    <ul class="lead">
+                        <li>Mapeamos tus procesos actuales (¡nos metemos hasta el último detalle!) y rediseñamos flujos de trabajo, integrando IA donde realmente marca la diferencia.</li>
+                        <li>Definimos metas claras y alcanzables, porque aquí no se trata de “implementar por implementar”, sino de hacerlo con propósito.</li>
+                        <li>Buscamos y seleccionamos las herramientas perfectas para tu negocio: analizamos características, costes y compatibilidad con tus sistemas actuales (porque a nadie le gusta reinventar la rueda).</li>
+                        <li>Diseñamos una arquitectura tecnológica que funcione como un reloj suizo. </li>
+                        <li>Probamos, probamos y volvemos a probar: hacemos pruebas de concepto para asegurarnos de que todo funcione como se espera.</li>
+                        <li>Te ayudamos con la transición: creamos un plan de gestión del cambio para que todo fluya sin dramas.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 pb-1">
+                    <p class="lead"><strong>¿El resultado?</strong></p>
+                    <p class="lead">
+                        Una infraestructura que optimiza tus recursos, reduce tus costes y te deja libre para centrarte en lo realmente estratégico.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 py-5" style="height:200px;">
+    </div>
+
+    <div class="w-100 pt-2 pb-4 bg-white">
+        <div class="container">
+            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Automatización sin complicaciones, solo resultados</h3>
+            <p class="lead pb-3">
+                Nosotros hacemos que eso pase. Implementamos soluciones de automatización que no solo funcionan, sino que hacen que tu negocio se mueva más rápido y con menos esfuerzo.
+            </p>
+            <div class="row">
+                <div class="col-md-6 pb-1">
+                    <p class="lead"><strong>¿Qué hacemos?</strong></p>
+                    <ul class="lead">
+                        <li>Elegimos las herramientas que mejor encajan contigo: desde software de gestión (BPM) hasta RPA y sistemas de IA que te harán pensar "¿Por qué no hicimos esto antes?".</li>
+                        <li>Configuramos y personalizamos todo para que no tengas que adaptarte a la tecnología, sino que la tecnología se adapte a ti.</li>
+                        <li>Migramos los datos que necesitas y los ponemos a trabajar para ti. </li>
+                        <li>Probamos la solución en un departamento o proceso específico, ajustando cada detalle hasta que quede perfecto.</li>
+                        <li>Monitoreamos de cerca cómo va todo: rendimiento, adopción, resultados. Si algo no está al 100%, lo afinamos.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 pb-1">
+                    <p class="lead"><strong>¿El resultado?</strong></p>
+                    <p class="lead">
+                        Procesos más ágiles, menos errores, y más tiempo para dedicar a lo que realmente importa en tu negocio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 py-5" style="height:200px;">
+    </div>
+
+    <div class="w-100 pt-2 pb-4 bg-white">
+        <div class="container">
+            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Tecnología que se lleva bien con la que ya tienes</h3>
+            <p class="lead pb-3">
+                Para que tu sistema actual y las nuevas herramientas no se lleven como el agua y el aceite. Nosotros nos encargamos de que sean mejores amigos.
+            </p>
+            <div class="row">
+                <div class="col-md-4 pb-1">
+                    <p class="lead"><strong>¿Qué hacemos?</strong></p>
+                    <ul class="lead">
+                        <li>Integramos nuestras soluciones con los sistemas que ya tienes, asegurando que todo funcione sin dramas ni pausas innecesarias (sí, tus operaciones siguen corriendo mientras trabajamos).</li>
+                        <li>Mejoramos la comunicación entre departamentos y sistemas para que dejen de “hablarse mal” y empiecen a fluir.</li>
+                        <li>¿Procesos lentos? ¿Errores que te quitan el sueño? Con nuestra integración, todo va más rápido, es más preciso.</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pb-1">
+                    <p class="lead"><strong>¿Y qué pasa después?</strong></p>
+                    <p class="lead">
+                        Probamos la integración como si estuviéramos resolviendo un escape room: todo tiene que encajar a la perfección. Nos aseguramos de que todo esté funcionando a tope antes de soltar el botón de “todo listo”.
+                    </p>
+                </div>
+
+                <div class="col-md-4 pb-1">
+                    <p class="lead"><strong>¿El resultado?</strong></p>
+                    <p class="lead">
+                        Una transición tan suave que ni te darás cuenta de que algo cambió… hasta que veas cómo todo va más rápido, mejor y sin complicaciones.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 py-5" style="height:200px;">
+    </div>
+
+    <div class="w-100 pt-2 pb-4 bg-white">
+        <div class="container">
+            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Optimización y soporte sontinuo: porque no somos de los que desaparecen</h3>
+            <p class="lead pb-3">
+                ¿Creíste que íbamos a instalar todo y dejarte a tu suerte? Ni en sueños. Nosotros somos más del tipo “no te preocupes, aquí seguimos”. 
+            </p>
+            <div class="row">
+                <div class="col-md-4 pb-1">
+                    <p class="lead"><strong>¿Qué hacemos después de implementar?</strong></p>
+                    <ul class="lead">
+                        <li>Nos aseguramos de que tus soluciones no solo funcionen, sino que crezcan contigo, como ese compañero que siempre está a tu lado cuando más lo necesitas.</li>
+                        <li>Ajustamos y optimizamos constantemente. Si algo no va como esperabas, le damos un toque mágico (spoiler: análisis y pruebas).</li>
+                        <li>Escuchamos el feedback de los usuarios. Sí, esa opinión que a veces nadie quiere escuchar pero que vale oro.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pb-1">
+                    <p class="lead"><strong>¿Por qué tanto esfuerzo?</strong></p>
+                    <p class="lead">
+                        Porque sabemos que los negocios no se quedan quietos. Lo que sirve hoy puede no ser suficiente mañana, y aquí estamos para que siempre estés un paso adelante.
+                    </p>
+                </div>
+                <div class="col-md-4 pb-1">
+                    <p class="lead"><strong>¿El resultado?</strong></p>
+                    <p class="lead">
+                        Soluciones que evolucionan contigo, un equipo que nunca te deja colgado, y la tranquilidad de saber que tu tecnología siempre estará a la altura. ¿Listo para este viaje sin fin de mejoras?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 py-5" style="height:200px;">
+    </div>
+
+    <div class="bg-white pt-5 pb-5">
+        <div class="container" id="icon-grid">
+            <h2 class="primary-color pb-2 border-bottom">¿Cómo lo hacemos?</h2>
+
+            <div class="row g-4 pt-5 row-cols-1 row-cols-lg-3 text-center">
+                <div class="feature col-md-4">
+                    <h3 class="fs-2 text-body-emphasis">A tu medida</h3>
+                    <p>Si nos dejas, entramos "hasta la cocina" para ver cómo mejorar, eficientar y optimizar todos tus procesos.</p>
+                </div>
+                <div class="feature col-md-4">
+                    <h3 class="fs-2 text-body-emphasis">Siempre con base tecnológica</h3>
+                    <p>Estamos siempre a la última, por eso, tu pones la meta y nosotros trazamos el recorrido con la infraesctura tecnológica más adecuada para ti y tus necesidades.</p>
+                </div>                
+                <div class="feature col-md-4">
+                    <h3 class="fs-2 text-body-emphasis">Eficiencia sin rodeos</h3>
+                    <p>No reinventamos la rueda, llevamos la eficiencia por bandera y creemos en la optimización constante de procesos.</p>
+                </div>
+                <div class="feature col-md-4">
+                    <h3 class="fs-2 text-body-emphasis">Hacemos que los sistemas se hablen</h3>
+                    <p>Nos volvemos traductores para ti, hacemos que los sistemas se entiendan entre ellos.</p>
+                </div>                
+                <div class="feature col-md-4 order-md-5">
+                    <h3 class="fs-2 text-body-emphasis">Optimización y soporte continuo</h3>
+                    <p>Llegamos y optimizamos, pero no nos vamos, estamos en esto contigo. Tendrás nuestro apoyo y soporte para todo lo que necesites.</p>
+                </div>
+                <div class="feature col-md-4 order-md-4">
+                    <img class="img-fluid" src="./../img/servicios.jpg" />
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="w-100 py-5" style="height:200px;">
+    </div>
+
+    <div class="bg-white d-none" style="clear:both">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row featurette py-4 align-items-center">
+                        <div class="col-md-4 order-md-2 text-center">
+                            <img src="./../img/Herramientas.jpg" alt="Blockchain solutions for secure data transactions by CodeGenia" class="img-fluid img-technology">
+                        </div>
+                        <div class="col-md-8 order-md-1">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Integración de nuevas soluciones tecnólogicas con sistemas existentes</h3>
+                            <ul class="lead">
+                                <li>Desarrollamos la integración de nuestras soluciones tecnológicas con los sistemas existentes, asegurando una transición fluida y minimizando la interrupción de las operaciones.</li>
+                                <li>Mejora la comunicación entre departamentos y sistemas, optimizando el flujo de información.</li>
+                                <li>Aumenta la velocidad y precisión de los procesos, liberando recursos para tareas de mayor valor.</li>
+                                <li>Pruebas de integración y funcionalidad.</li>
+                            </ul>
+                            <!--a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./blockchain">
+                                More information
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </!--a-->
+                        </div>                        
+                    </div>
+
+                    <div class="row featurette py-4 align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="./../img/optimizacion-y-soporte.jpg" alt="Logotipo de Realidad Extendida de CodeGenia"
+                                class="img-fluid img-technology">
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Optimización y soporte continuo</h3>
+                            <ul class="lead">
+                                <li>Aseguramos que las soluciones evolucionen con tu negocio, nuestra relación no termina con la implementación.</li>
+                                <li>Te acompañamos en un proceso continuo de mejora y actualización para garantizar que tus soluciones evolucionen junto a tus objetivos.</li>
+                                <li>Ajustes y optimizaciones basados en los resultados de las pruebas.</li> 
+                                <li>Recopilación feedback usuarios.</li>
+                            </ul>
+                            <!--a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./virtual-reality">
+                                More information
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </!--a-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="container">
+            <div class="row">
+                <h2 class="pb-2 border-bottom primary-color my-5">Algunas de nuestras tecnologías</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white grayscale py-5">
+        <div class="pb-5">
+
+            <div class="logo-scroll-wrapper">
+                <div class="logo-scroll">
+                    <img src="./../logos/tensorflow_logo.svg" loading="eager" alt="Tensorflow logo" class="logo" />
+                    <img src="./../logos/pytorch_logo.svg" loading="eager" alt="Pytorch logo" class="logo" />
+                    <img src="./../logos/openai_logo.svg" loading="eager" alt="OpenAI logo" class="logo" />
+                    <img src="./../logos/meta_logo.svg" loading="eager" alt="Meta logo" class="logo" />
+                    <img src="./../logos/unity_logo.svg" loading="eager" alt="Unity logo" class="logo" />
+                    <img src="./../logos/unreal_logo.svg" loading="eager" alt="Unreal logo" class="logo" />
+                    <img src="./../logos/arcore_logo.svg" loading="eager" alt="ARCore logo" class="logo" />
+                    <img src="./../logos/blender_logo.svg" loading="eager" alt="Blender logo" class="logo" />
+                    
+                    <img src="./../logos/tensorflow_logo.svg" loading="eager" alt="Tensorflow logo" class="logo" />
+                    <img src="./../logos/pytorch_logo.svg" loading="eager" alt="Pytorch logo" class="logo" />
+                    <img src="./../logos/openai_logo.svg" loading="eager" alt="OpenAI logo" class="logo" />
+                    <img src="./../logos/meta_logo.svg" loading="eager" alt="Meta logo" class="logo" />
+                    <img src="./../logos/unity_logo.svg" loading="eager" alt="Unity logo" class="logo" />
+                    <img src="./../logos/unreal_logo.svg" loading="eager" alt="Unreal logo" class="logo" />
+                    <img src="./../logos/arcore_logo.svg" loading="eager" alt="ARCore logo" class="logo" />
+                    <img src="./../logos/blender_logo.svg" loading="eager" alt="Blender logo" class="logo" />
+                </div>
+            </div>
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" style="display: none;" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="row">
+                            <div class="col-md-3 justify-content-center align-middle d-flex">
+                                <img src="./../logos/tensorflow_logo.svg" class="img-fluid img-carousel" alt="Tensorflow Logo">
+                            </div>
+                            <div class="col-md-3 justify-content-center align-middle d-flex">
+                                <img src="./../logos/pytorch_logo.svg" class="img-fluid img-carousel" alt="Pytorch Logo">
+                            </div>
+                            <div class="col-md-3 justify-content-center align-middle d-flex">
+                                <img src="./../logos/openai_logo.svg" class="img-fluid img-carousel" alt="OpenAI Logo">
+                            </div>
+                            <div class="col-md-3 justify-content-center align-middle d-flex">
+                                <img src="./../logos/meta_logo.svg" class="img-fluid img-carousel" alt="Meta Logo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <div class="row">
+                            <div class="col-md-3 justify-content-center align-middle d-flex">
+                                <img src="./../logos/unity_logo.svg" class="img-fluid img-carousel" alt="Unity Logo">
+                            </div>
+                            <div class="col-md-3 justify-content-center align-middle d-flex">
+                                <img src="./../logos/unreal_logo.svg" class="img-fluid img-carousel" alt="Unreal Logo">
+                            </div>
+                            <div class="col-md-3 justify-content-center align-middle d-flex">
+                                <img src="./../logos/arcore_logo.svg" class="img-fluid img-carousel" alt="ARCore Logo">
+                            </div>
+                            <div class="col-md-3 justify-content-center align-middle d-flex">
+                                <img src="./../logos/blender_logo.svg" class="img-fluid img-carousel" alt="Blender Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </!--button>
+                <button-- class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button-->
+            </div>
+        </div>
+    </div>
+
+    <div class="primary-bg text-white">
+        <div class="container">
+            <footer>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5">
+                    <!--div class="col-md-4 mb-3">
+                        <img class="bg-white p-3" alt="Somos Pyme Innovadora por el ministerio de ciencia e innovación"
+                            style="max-width: 50%;" src="img/innovadora.jpg">
+                    </div-->
+                    <div class="col-md-8">
+                        <h4 class="mb-4">Dónde estamos</h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=C/+Hortaleza+106+28004+Madrid&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embed-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                                Hortaleza 106, 6 Derecha<br>
+                                28004 Madrid
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                                Joaquín Costa 8, 2 Derecha<br>
+                                50001 Zaragoza<br>
+                            </div>                            
+                        </div>
+
+                        <h4 class="mt-5 mb-2">Síguenos</h4>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                    <i class="text-white bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                    <i class="text-white bi bi-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3 text-end">
+                        <h4 class="mb-4">Navegación</h4>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="./que-hacemos" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Qué hacemos">Qué hacemos</a> 
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./casos-de-exito" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Casos de éxito">Casos de éxito</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./sobre-nosotros" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="About us">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./contacto" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Contacto">Contacto</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./politica-de-privacidad" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Privacy-policy">Politica de privacidad</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./aviso-legal" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Legal notice">Aviso legal</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./../?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="English">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
+                    <p>
+                        © 2025 CodeGenia. Todos los derechos reservados.<br>
+                        CodeGenia es una compañía <a class="text-white" rel="noopener noreferrer" target="_blank" href="https://dareplanet.com">DarePlanet</a>.
+                    </p>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+
+    <script>
+        /*document.addEventListener("DOMContentLoaded", function() {
+            var navbarCollapse = document.querySelector(".navbar-collapse");
+            var navLinks = document.querySelectorAll(".nav-link");
+    
+            navLinks.forEach(function(link) {
+                link.addEventListener("click", function() {
+                    var isExpanded = navbarCollapse.classList.contains("show");
+                    if (isExpanded) {
+                        var bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        });*/
+    </script>
+
+</body>
+</html>

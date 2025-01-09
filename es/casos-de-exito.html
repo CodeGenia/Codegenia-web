@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
+    <meta name="keywords"
+        content="Artificial intelligence, artificial intelligence projects, blockchain solutions, blockchain, extended reality, augmented reality, XR, VR, AR, MR">
+    <meta name="author" content="CodeGenia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="CodeGenia - AI, Blockchain and XR Software solutions">
+    <meta property="og:description"
+        content="CodeGenia offers innovative software solutions in artificial intelligence, blockchain, and extended reality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codegenia.com">
+    <meta property="og:image" content="./../img/logo-codegenia.jpg">
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:site_name" content="CodeGenia">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CodeGenia - AI, Blockchain and XR Software solutions">
+    <meta name="twitter:description" content="CodeGenia - AI, Blockchain and XR Software solutions">
+    <meta name="twitter:image" content="./img/logo-codegenia.jpg">
+    <meta http-equiv="Content-Language" content="en" />
+    <!--meta name="theme-color" content="#XXXXXX"-->
+    <title>CodeGenia - Artificial Intelligence, Blockchain, and XR solutions.</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./../style.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <!--meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"-->
+
+    <link rel="alternate" hreflang="en" href="https://codegenia.com" />
+    <link rel="alternate" hreflang="es" href="https://codegenia.com/es" />
+
+    <script defer>
+        function redirigirSegunIdioma() {
+          if (localStorage.getItem('sinRedireccion') === 'true') {
+            return;
+          }    
+          var idiomaNavegador = navigator.language || navigator.userLanguage;    
+          if (idiomaNavegador.toLowerCase() === "es-es") {
+            window.location.href = "/es";
+          }
+        }
+    
+        function desactivarRedireccion() {
+          localStorage.setItem('sinRedireccion', 'true');
+        }
+    
+        function verificarParametroNoRedireccion() {
+          var urlParams = new URLSearchParams(window.location.search);
+          if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+            desactivarRedireccion();
+          }
+        }
+    
+        //verificarParametroNoRedireccion();
+        //redirigirSegunIdioma();
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "CodeGenia",
+          "url": "https://www.codegenia.com",
+          "logo": "https://www.codegenia.com/img/logo-codegenia.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+34-619-058-298",
+            "contactType": "Sales",
+            "areaServed": "EN",
+            "availableLanguage": ["Spanish", "English"]
+          }
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./">
+                <img alt="Logo de CodeGenia" class="img-fluid" src="./../img/logo-codegenia.jpg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./que-hacemos"
+                            aria-label="Qué hacemos">Qué hacemos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./casos-de-exito"
+                            aria-label="Casos de éxito">Casos de éxito</a>
+                    </li>
+                    <!--li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Proyectos">Industries</a>
+                    </!--li-->
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./sobre-nosotros" aria-label="Sobre nosotros">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./contacto" aria-label="Contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./../?noredir=true" aria-label="English">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-white">
+        <div class="container">
+            <div class="row">
+                <h2 class="pb-2 border-bottom primary-color mt-5">Casos de éxito</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--div class="row align-items-center featurette py-4 mt-3">
+                        <div class="col-md-5 text-center">
+                            <img src="img/header-naval.png" alt="Logotipo de Inteligencia Artificial de CodeGenia"
+                                class="img-fluid img-technology">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Automatización inteligente del proceso de pedidos</h3>
+                            <p class="lead">En uno de nuestros clientes del sector naval, hemos transformado el proceso de gestión de pedidos de productos, logrando una automatización integral que optimiza el tiempo, la precisión y la eficiencia de todo el ciclo de pedidos.</p>
+                            <p class="lead">El cliente buscaba una forma de mejorar la gestión de sus pedidos que recibía vía email, una tarea que requería tiempo y esfuerzo manual para coordinarse con proveedores, actualizar precios y verificar la disponibilidad de stock. Además, necesitaban agilizar la creación de propuestas personalizadas para cada cliente, incluyendo la documentación técnica correspondiente.</p>
+                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./automatizacion-inteligente-pedidos">
+                                More information
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </p>                        
+                    </div-->
+
+                    <h3>Lo que hacemos habla más fuerte que lo que decimos</h3>
+                    <br>
+                    <p class="lead">Nuestros clientes han constatado:</p>
+                    <ul class="lead mb-5">
+                        <li>Un aumento promedio del 30% en eficiencia operativa.</li>
+                        <li>Un 90% de reducción de errores humanos en sus procesos.</li>
+                        <li>Reducción del 70% en el tiempo dedicado a tareas administrativas: Gracias a la automatización, el tiempo, dedicado a la gestión manual se ha reducido significativamente.</li>
+                    </ul>                    
+
+                    <div class="row align-items-center featurette py-4 my-3">
+                        <div class="col-md-5 text-center">
+                            <img src="./../img/header-naval.png" alt="Logotipo de Inteligencia Artificial de CodeGenia" class="img-fluid img-technology">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">
+                                Automatización inteligente del proceso de pedidos
+                            </h3>
+                                <p class="lead">
+                                    Para uno de nuestros clientes del sector naval, transformamos su proceso de gestión de pedidos de productos logrando una automatización completa, optimizando el tiempo, la precisión y la eficiencia en todo el ciclo de pedidos.
+                                </p>
+                                <p class="lead">
+                                    El cliente buscaba una forma de mejorar la gestión de los pedidos recibidos por correo electrónico, una tarea que requería tiempo y esfuerzo manual para coordinar con proveedores, actualizar precios y verificar la disponibilidad de stock. Además, necesitaban agilizar la creación de propuestas personalizadas para cada cliente, incluyendo la documentación técnica relevante.
+                                </p>
+                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./automatizacion-inteligente-pedidos">
+                                Más información
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray text-center py-5 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="">En CodeGenia hacemos lo que otros dicen que hacen.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="row featurette py-4 align-items-center mb-3">
+                        <div class="col-md-5 order-md-2 text-center">
+                            <img src="./../img/header-files.jpg" alt="Blockchain solutions for secure data transactions by CodeGenia" class="img-fluid">
+                        </div>
+                        <div class="col-md-7 order-md-1">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">
+                                Transformación de archivos con Inteligencia Artificial
+                            </h3>
+                            <p class="lead">Nuestro cliente, una empresa de servicios de ingeniería, recibía archivos de sus clientes en diversos formatos y con datos heterogéneos, lo que hacía que el proceso de creación de cotizaciones fuera lento y requiriera un esfuerzo manual considerable para consolidar la información. Este proceso no solo generaba retrasos, sino que también aumentaba los costos operativos y el riesgo de errores en las cotizaciones. </p>
+                            <p class="lead">Implementamos una solución avanzada que combina Inteligencia Artificial y Automatización Robótica de Procesos (RPA), lo que ahora permite a nuestro cliente gestionar pedidos de forma autónoma, requiriendo solo una mínima validación humana y reduciendo el tiempo y esfuerzo necesarios para el proceso de creación de cotizaciones.
+                            </p>
+                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./transformacion-ficheros-inteligencia-artificial">
+                                Más información
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <!--div class="row featurette py-4 align-items-center mb-3">
+                        <div class="col-md-5 text-center">
+                            <img src="img/questiona.jpg" alt="AI software solution by CodeGenia for business data analysis" class="img-fluid">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Questiona platform</h3>
+                            <p class="lead">
+                                Our artificial intelligence platform, Questiona, is designed to transform the way you access and manage information. By integrating various sources such as documents, databases, and other data sources, our AI can efficiently extract, analyze, and "memorize" large amounts of data. This advanced technology allows you to consolidate dispersed information into one place, making it easier to find precise answers without needing to navigate through multiple files.
+                            </p>
+                            <p class="lead">
+                                Through an intuitive chatbot, you can directly ask questions about the data the AI has "memorized" and receive clear and quick answers in real time. No more wasting time manually searching through extensive documents—simply ask the chatbot and instantly access relevant information. This software is ideal for professionals who need to access large volumes of information quickly and accurately, optimizing time and improving decision-making.
+                            </p>
+                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./virtual-reality">
+                                More information
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </!--div-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img class="img-fluid" alt="Imagen de fondo para cambio de sección con formas de triangulo" src="./../img/fondo-derecha-abajo-triangulo.jpg" />
+
+    <div id="projects" class="bg-gray anchorSpace"></div>
+
+    <div class="bg-gray pb-3 hide">
+        <div class="container">
+            <h2 class="primary-color pb-2 border-bottom">Descubra alguno de nuestros proyectos</h2>
+
+            <div class="row featurette my-5 align-items-center">
+                <div class="col-md-5 text-center">
+                    <img src="./../img/nica.jpg" alt="AI software solution by CodeGenia for business data analysis" class="img-fluid imgBorderRadius mb-3 img-technology">
+                </div>
+                <div class="col-md-6 offset-md-1">
+                    <h3 class="featurette-heading fw-normal lh-1 my-3">NICA - El siguiente paso en 3D</h3>
+                    <p class="lead mt-3">
+                        El siguiente paso en 3D: obtén mejores resultados en calidad de imagen y detalles según el nivel de tu proyecto a través de la Inteligencia Artificial. Nica eleva tu sistema de captura, logrando detalles hiperrealistas en reflejos, iluminación y texturas en objetos, personajes y paisajes.
+                    </p>
+                    <p class="lead mt-3">
+                        Utilizando las características de una cámara virtual, Nica captura y predice una imagen en movimiento. Obtiene los elementos de un escáner de fotogrametría y los procesa a través de su exclusivo algoritmo de Inteligencia Artificial, creando una imagen real con resultados nunca antes vistos.
+                    </p>
+                    <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="https://nicarevolution.com" target="_blank" rel="noopener noreferrer">
+                        Más información
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row featurette my-5 align-items-center">
+                <div class="col-md-5 offset-md-1 order-md-2 text-center">
+                    <img src="./../img/virtual-reality.jpg" alt="Virtual reality platform by CodeGenia" class="img-fluid imgBorderRadius mb-3 img-technology">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3 class="featurette-heading fw-normal lh-1 my-3">Plataforma VR/AR/360</h3>
+                    <p class="lead mt-3">
+                        Descubre la próxima generación de interacción digital con nuestra plataforma de Realidad Virtual y Realidad Aumentada. Diseñada para transformar la forma en que experimentas el mundo 3D, nuestra solución te permite visualizar objetos tridimensionales con un nivel de detalle sin precedentes, explorar entornos inmersivos y navegar por imágenes 360° con una fluidez asombrosa. Ya sea que desees presentar productos, simular entornos o crear experiencias interactivas, nuestra plataforma combina lo mejor de la RV y la RA para ofrecerte un espacio donde lo físico y lo digital convergen.
+                    </p>
+                    <p class="lead">
+                        Ideal para sectores como arquitectura, educación, entretenimiento y comercio, nuestra plataforma permite a los usuarios interactuar de forma intuitiva, proporcionando experiencias inmersivas que incrementan el compromiso y la retención. Además, su integración multiplataforma garantiza un acceso sencillo desde cualquier dispositivo. Dale vida a tus ideas y permite a tu audiencia explorar, descubrir y conectarse con tu contenido de una manera completamente nueva y emocionante.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row featurette my-5 align-items-center">
+                <div class="col-md-5 text-center">
+                    <img src="./../img/logo-infinita.jpg" alt="Infinita tokenization platform logo" class="img-fluid imgBorderRadius mb-3 img-technology">
+                </div>
+                <div class="col-md-6 offset-md-1">
+                    <h3 class="featurette-heading fw-normal lh-1 my-3">Infinita - Plataforma de tokenización</h3>
+                    <p class="lead mt-3">                        
+                        Entra al futuro de la digitalización con nuestra plataforma blockchain que te permite crear tokens y NFTs de manera rápida, segura y sin complicaciones. Diseñada para empresas, creadores y desarrolladores, nuestra plataforma pone al alcance de tu mano la capacidad de generar activos digitales únicos con solo unos clics. Ya sea que estés buscando lanzar tu propio token, tokenizar activos o crear coleccionables digitales, nuestra solución blockchain te ofrece la infraestructura robusta y escalable que necesitas.
+                    </p>
+                    <p class="lead mt-3">
+                        Con tecnología de última generación, garantizamos transacciones rápidas, seguras y transparentes. Además, nuestra plataforma está diseñada pensando en la usabilidad, lo que permite a cualquier persona, sin importar su nivel de experiencia, pueda usarla con facilidad. Ideal para el comercio, el arte digital, los videojuegos y más, abre las puertas a nuevas oportunidades de negocio y monetización. Únete a la revolución blockchain y lleva tu proyecto al siguiente nivel con la creación de activos digitales únicos y certificados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="primary-bg text-white">
+        <div class="container">
+            <footer>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5">
+                    <!--div class="col-md-4 mb-3">
+                        <img class="bg-white p-3" alt="Somos Pyme Innovadora por el ministerio de ciencia e innovación"
+                            style="max-width: 50%;" src="img/innovadora.jpg">
+                    </div-->
+                    <div class="col-md-8">
+                        <h4 class="mb-4">Dónde estamos</h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=C/+Hortaleza+106+28004+Madrid&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embed-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                                Hortaleza 106, 6 Derecha<br>
+                                28004 Madrid
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                                Joaquín Costa 8, 2 Derecha<br>
+                                50001 Zaragoza<br>
+                            </div>                            
+                        </div>
+
+                        <h4 class="mt-5 mb-2">Síguenos</h4>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                    <i class="text-white bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                    <i class="text-white bi bi-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3 text-end">
+                        <h4 class="mb-4">Navegación</h4>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="./que-hacemos" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Qué hacemos">Qué hacemos</a> 
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./casos-de-exito" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Casos de éxito">Casos de éxito</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./sobre-nosotros" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="About us">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./contacto" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Contacto">Contacto</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./politica-de-privacidad" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Privacy-policy">Politica de privacidad</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./aviso-legal" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Legal notice">Aviso legal</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./../?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="English">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
+                    <p>
+                        © 2025 CodeGenia. Todos los derechos reservados.<br>
+                        CodeGenia es una compañía <a class="text-white" rel="noopener noreferrer" target="_blank" href="https://dareplanet.com">DarePlanet</a>.
+                    </p>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+
+    <script>
+        /*document.addEventListener("DOMContentLoaded", function() {
+            var navbarCollapse = document.querySelector(".navbar-collapse");
+            var navLinks = document.querySelectorAll(".nav-link");
+    
+            navLinks.forEach(function(link) {
+                link.addEventListener("click", function() {
+                    var isExpanded = navbarCollapse.classList.contains("show");
+                    if (isExpanded) {
+                        var bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        });*/
+    </script>
+
+</body>
+</html>
