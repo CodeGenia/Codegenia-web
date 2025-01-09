@@ -1,72 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
       <url>
             <loc>https://codegenia.com/</loc>
-            <lastmod>2024-10-15T15:18:57+00:00</lastmod>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
             <priority>1.00</priority>
       </url>
-
-      <!-- URLs en Inglés -->
       <url>
-            <loc>https://codegenia.com#technologies</loc>
-            <lastmod>2024-10-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
+            <loc>https://codegenia.com/what-we-do</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.80</priority>
       </url>
       <url>
-            <loc>https://codegenia.com#projects</loc>
-            <lastmod>2024-10-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
+            <loc>https://codegenia.com/success-cases</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.80</priority>
       </url>
       <url>
-            <loc>https://codegenia.com#aboutus</loc>
-            <lastmod>2024-10-15</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.8</priority>
+            <loc>https://codegenia.com/about-us</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.80</priority>
       </url>
       <url>
-            <loc>https://codegenia.com#contact</loc>
-            <lastmod>2024-10-15</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.8</priority>
-      </url>
-
-      <!-- URLs en Español -->
-      <url>
-            <loc>https://codegenia.com/es#technologies</loc>
-            <lastmod>2024-10-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
+            <loc>https://codegenia.com/contact</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.80</priority>
       </url>
       <url>
-            <loc>https://codegenia.com/es#projects</loc>
-            <lastmod>2024-10-15</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
+            <loc>https://codegenia.com/privacy-policy</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.80</priority>
       </url>
       <url>
-            <loc>https://codegenia.com/es#aboutus</loc>
-            <lastmod>2024-10-15</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.8</priority>
+            <loc>https://codegenia.com/legal-notice</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.80</priority>
       </url>
-      <url>
-            <loc>https://codegenia.com/es#contact</loc>
-            <lastmod>2024-10-15</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.8</priority>
-      </url>
-
       <url>
             <loc>https://codegenia.com/politica-de-privacidad</loc>
-            <lastmod>2024-10-15T15:18:57+00:00</lastmod>
-            <priority>0.8</priority>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.64</priority>
       </url>
       <url>
             <loc>https://codegenia.com/aviso-legal</loc>
-            <lastmod>2024-10-15T15:18:57+00:00</lastmod>
-            <priority>0.8</priority>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.64</priority>
       </url>
-
+      <url>
+            <loc>https://codegenia.com/intelligent-automation-orders</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.80</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/artificial-intelligence-files-transformation</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.80</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/es/</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.64</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/es/que-hacemos</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.64</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/es/casos-de-exito</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.64</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/es/sobre-nosotros</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.64</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/es/contacto</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.64</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/es/politica-de-privacidad</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.64</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/es/aviso-legal</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.64</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/es/automatizacion-inteligente-pedidos</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.51</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/es/transformacion-ficheros-inteligencia-artificial</loc>
+            <lastmod>2025-01-09T18:01:12+00:00</lastmod>
+            <priority>0.51</priority>
+      </url>
 </urlset>
