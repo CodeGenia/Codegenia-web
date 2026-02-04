@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CodeGenia está a la vanguardia de la innovación, ofreciendo soluciones avanzadas en inteligencia artificial, blockchain y realidad extendida para empoderar empresas y transformar industrias.">
+    <meta name="description"
+        content="CodeGenia está a la vanguardia de la innovación, ofreciendo soluciones avanzadas en inteligencia artificial, blockchain y realidad extendida para empoderar empresas y transformar industrias.">
     <meta name="keywords"
         content="Inteligencia artificial, proyectos de Inteligencia Artificial, soluciones blockchain, blockchain, realidad extendida, realidad aumentada, XR, VR, AR, MR">
     <meta name="author" content="CodeGenia">
@@ -44,26 +45,26 @@
 
     <script defer>
         function redirigirSegunIdioma() {
-          if (localStorage.getItem('sinRedireccion') === 'true') {
-            return;
-          }    
-          var idiomaNavegador = navigator.language || navigator.userLanguage;    
-          if (idiomaNavegador.toLowerCase() === "es-es") {
-            window.location.href = "/es";
-          }
+            if (localStorage.getItem('sinRedireccion') === 'true') {
+                return;
+            }
+            var idiomaNavegador = navigator.language || navigator.userLanguage;
+            if (idiomaNavegador.toLowerCase() === "es-es") {
+                window.location.href = "/es";
+            }
         }
-    
+
         function desactivarRedireccion() {
-          localStorage.setItem('sinRedireccion', 'true');
+            localStorage.setItem('sinRedireccion', 'true');
         }
-    
+
         function verificarParametroNoRedireccion() {
-          var urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
-            desactivarRedireccion();
-          }
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+                desactivarRedireccion();
+            }
         }
-    
+
         //verificarParametroNoRedireccion();
         //redirigirSegunIdioma();
     </script>
@@ -86,48 +87,49 @@
     </script>
 
     <style>
-		@supports(animation-timeline: view()) {
-			@keyframes move {
-				to {
-					/* Move horizontally so that right edge is aligned against the viewport */
-					transform: translateX(calc(-100% + 100vw));
-				}
-			}
+        @supports(animation-timeline: view()) {
+            @keyframes move {
+                to {
+                    /* Move horizontally so that right edge is aligned against the viewport */
+                    transform: translateX(calc(-100% + 100vw));
+                }
+            }
 
-			#sectionPin {
-				/* Stretch it out, so that we create room for the horizontal scroll animation */
-				height: 300vh;
-				overflow: visible; /* To make position sticky work … */
+            #sectionPin {
+                /* Stretch it out, so that we create room for the horizontal scroll animation */
+                height: 300vh;
+                overflow: visible;
+                /* To make position sticky work … */
 
-				view-timeline-name: --section-pin-tl;
-				view-timeline-axis: block;
-			}
+                view-timeline-name: --section-pin-tl;
+                view-timeline-axis: block;
+            }
 
-			.pin-wrap-sticky {
-				/* Stick to Top */
-				/*height: 100vh;*/
-				width: 100vw;
-				position: sticky;
-				top: 0;
+            .pin-wrap-sticky {
+                /* Stick to Top */
+                /*height: 100vh;*/
+                width: 100vw;
+                position: sticky;
+                top: 0;
 
-				width: 100vw;
-				overflow-x: hidden;
-			}
+                width: 100vw;
+                overflow-x: hidden;
+            }
 
-			.pin-wrap {
-				/*height: 100vh;*/
-				width: 250vmax;
+            .pin-wrap {
+                /*height: 100vh;*/
+                width: 250vmax;
 
-				/* Hook animation */
-				will-change: transform;
-				animation: linear move forwards;
+                /* Hook animation */
+                will-change: transform;
+                animation: linear move forwards;
 
-				/* Link animation to view-timeline */
-				animation-timeline: --section-pin-tl;
-				animation-range: contain 0% contain 100%;
-			}
-		}
-	</style>
+                /* Link animation to view-timeline */
+                animation-timeline: --section-pin-tl;
+                animation-range: contain 0% contain 100%;
+            }
+        }
+    </style>
 
 </head>
 
@@ -138,30 +140,35 @@
             <a class="navbar-brand" href="./">
                 <img alt="Logo de CodeGenia" class="img-fluid" src="./../img/logo-codegenia.jpg">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./que-hacemos"
-                            aria-label="Qué hacemos">Qué hacemos</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./que-hacemos" aria-label="Qué hacemos">Qué hacemos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./casos-de-exito"
-                            aria-label="Casos de éxito">Casos de éxito</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./casos-de-exito" aria-label="Casos de éxito">Casos de éxito</a>
                     </li>
                     <!--li class="nav-item">
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Proyectos">Industries</a>
                     </!--li-->
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./sobre-nosotros" aria-label="Sobre nosotros">Sobre nosotros</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./sobre-nosotros" aria-label="Sobre nosotros">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./contacto" aria-label="Contacto">Contacto</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./contacto" aria-label="Contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./../?noredir=true" aria-label="English">English</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./../?noredir=true" aria-label="English">English</a>
                     </li>
                 </ul>
             </div>
@@ -183,10 +190,14 @@
         <div class="row align-items-center">
             <div class="col-md-8">
                 <!--h1 class="display-5 fw-bold mb-4">¿Te gustaría descubrir cómo llevar tu negocio al siguiente nivel?</!--h1-->
-                <h1 class="display-5 fw-bold mb-4">¿Te gustaría descubrir cómo llevar tu negocio al siguiente nivel?</h1>                
+                <h1 class="display-5 fw-bold mb-4">¿Te gustaría descubrir cómo llevar tu negocio al siguiente nivel?
+                </h1>
                 <p class="fs-4 lead">
-                    Descubre CodeGenia: Innovando con <strong>Inteligencia Artificial, Blockchain y Realidad Extendida.</strong><br><br>
-                    Sin humo, sin discursos vacíos. Mejoramos, eficientamos y automatizamos tus procesos para que esto se traduzca en ahorro en costes, reducción de tareas repetitivas o rutinarias y tu te puedas centrar en lo que realmente importa.
+                    Descubre CodeGenia: Innovando con <strong>Inteligencia Artificial, Blockchain y Realidad
+                        Extendida.</strong><br><br>
+                    Sin humo, sin discursos vacíos. Mejoramos, eficientamos y automatizamos tus procesos para que esto
+                    se traduzca en ahorro en costes, reducción de tareas repetitivas o rutinarias y tu te puedas centrar
+                    en lo que realmente importa.
                 </p>
             </div>
             <!--div class="col-md-4 text-center">
@@ -195,7 +206,8 @@
                 </button>
             </!--div-->
         </div>
-        <div class="modal fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -210,7 +222,8 @@
         </div>
     </div>
 
-    <img class="img-fluid mt-3" alt="Imagen de fondo de cambio de sección en formar de triangulo" src="./../img/fondo-derecha-arriba-triangulo-w.png" />
+    <img class="img-fluid mt-3" alt="Imagen de fondo de cambio de sección en formar de triangulo"
+        src="./../img/fondo-derecha-arriba-triangulo-w.png" />
 
     <div class="bg-white py-5">
         <div class="container">
@@ -228,7 +241,8 @@
         <div class="container">
             <div class="row mb-3">
                 <div class="col-md-4">
-                    <img class="card-img-top" src="./../img/logistica.jpg" data-holder-rendered="true" style="width: 100%; display: block;">
+                    <img class="card-img-top" src="./../img/logistica.jpg" data-holder-rendered="true"
+                        style="width: 100%; display: block;">
                     <h3 class="text-center my-3">
                         Logística
                     </h3>
@@ -236,69 +250,94 @@
                         <li>¿Tienes problemas para coordinar proveedores y almacén?</li>
                         <li>¿Tu sistema de inventario es un dolor de hojas Excel y o registros a mano?</li>
                         <li>¿Se pierden horas en búsqueda de productos que simplemente no están donde deberían?</li>
-                        <li>¿Tus empleados pasan más tiempo corrigiendo errores o revisando pedidos que dándoles salida?</li>
-                        <li>¿Los costes de transporte se incrementan porque no se tienen en cuenta la optimización de rutas y reducción tiempos?</li>
+                        <li>¿Tus empleados pasan más tiempo corrigiendo errores o revisando pedidos que dándoles salida?
+                        </li>
+                        <li>¿Los costes de transporte se incrementan porque no se tienen en cuenta la optimización de
+                            rutas y reducción tiempos?</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <img class="card-img-top" src="./../img/operations.jpg" data-holder-rendered="true" style="width: 100%; display: block;">
+                    <img class="card-img-top" src="./../img/operations.jpg" data-holder-rendered="true"
+                        style="width: 100%; display: block;">
                     <h3 class="text-center my-3">
                         Operaciones
                     </h3>
                     <ul>
                         <li>¿La producción se detuvo otra vez porque 'nadie sabía que faltaban piezas'?</li>
                         <li>¿La planificación manual de recursos siempre se queda corta o es excesiva.</li>
-                        <li>¿Tus procesos manuales de recopilación y análisis de datos ralentizan la toma de decisiones.</li>
-                        <li>¿Las inspecciones de producto manuales, lentas y propensas a errores dan lugar a demasiados productos defectuosos en cada lote?</li>
-                        <li>¿Los equipos siempre están sobrecargados de trabajo en picos de demanda por falta de previsión y asignación eficiente de tareas?</li>
-                        <li>¿La falta de visibilidad y coordinación hace que nadie sepa en qué está trabajando cada equipo.</li>
+                        <li>¿Tus procesos manuales de recopilación y análisis de datos ralentizan la toma de decisiones.
+                        </li>
+                        <li>¿Las inspecciones de producto manuales, lentas y propensas a errores dan lugar a demasiados
+                            productos defectuosos en cada lote?</li>
+                        <li>¿Los equipos siempre están sobrecargados de trabajo en picos de demanda por falta de
+                            previsión y asignación eficiente de tareas?</li>
+                        <li>¿La falta de visibilidad y coordinación hace que nadie sepa en qué está trabajando cada
+                            equipo.</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <img class="card-img-top" src="./../img/marketing.jpg" data-holder-rendered="true" style="width: 100%; display: block;">
+                    <img class="card-img-top" src="./../img/marketing.jpg" data-holder-rendered="true"
+                        style="width: 100%; display: block;">
                     <h3 class="text-center my-3">
                         Marketing y Ventas
                     </h3>
                     <ul>
-                        <li>¿Tu equipo de ventas pasa más tiempo con tareas administrativas y procesos de registro manuales que vendiendo?</li>
-                        <li>¿Tus ciclos de venta son eternos por falta de seguimiento eficiente que retrasa el cierre de ventas?</li>
-                        <li>¿No hay coordinación entre el equipo de ventas y otras áreas por no existir plataformas integradas que compartan información en tiempo real entre departamentos?</li>
-                        <li>¿Las respuestas a consultas y solicitudes son lentas y los clientes tienen que esperar demasiado para recibir respuestas."</li>
-                        <li>¿No sabes qué clientes tienen más potencial para crecer con vosotros por falta de segmentación estratégica?</li>
+                        <li>¿Tu equipo de ventas pasa más tiempo con tareas administrativas y procesos de registro
+                            manuales que vendiendo?</li>
+                        <li>¿Tus ciclos de venta son eternos por falta de seguimiento eficiente que retrasa el cierre de
+                            ventas?</li>
+                        <li>¿No hay coordinación entre el equipo de ventas y otras áreas por no existir plataformas
+                            integradas que compartan información en tiempo real entre departamentos?</li>
+                        <li>¿Las respuestas a consultas y solicitudes son lentas y los clientes tienen que esperar
+                            demasiado para recibir respuestas."</li>
+                        <li>¿No sabes qué clientes tienen más potencial para crecer con vosotros por falta de
+                            segmentación estratégica?</li>
                     </ul>
                 </div>
             </div>
             <div class="row mb-5">
                 <div class="col-md-4 offset-md-2">
-                    <img class="card-img-top" src="./../img/customer-service.jpg" alt="Customer Service" data-holder-rendered="true" style="width: 100%; display: block;">
+                    <img class="card-img-top" src="./../img/customer-service.jpg" alt="Customer Service"
+                        data-holder-rendered="true" style="width: 100%; display: block;">
                     <h3 class="text-center my-3">
                         Atención al cliente
                     </h3>
                     <ul>
-                        <li>¿Tu equipo de atención al cliente ha de dar respuesta a las mismas consultas repetitivas?</li>
-                        <li>¿El equipo pierde mucho tiempo buscando información para responder por falta de acceso rápido a respuestas o datos relevantes?</li>
-                        <li>¿Los clientes se quejan de que no reciben seguimiento a sus problemas por falta de sistemas que gestionen eficientemente los casos abiertos?</li>
-                        <li>¿Desconoces qué agentes son más efectivos por falta de métricas claras para medir el desempeño del equipo?</li>
-                        <li>¿Nadie sabe si los clientes están satisfechos con el servicio por falta de retroalimentación y análisis de satisfacción del cliente?</li>
+                        <li>¿Tu equipo de atención al cliente ha de dar respuesta a las mismas consultas repetitivas?
+                        </li>
+                        <li>¿El equipo pierde mucho tiempo buscando información para responder por falta de acceso
+                            rápido a respuestas o datos relevantes?</li>
+                        <li>¿Los clientes se quejan de que no reciben seguimiento a sus problemas por falta de sistemas
+                            que gestionen eficientemente los casos abiertos?</li>
+                        <li>¿Desconoces qué agentes son más efectivos por falta de métricas claras para medir el
+                            desempeño del equipo?</li>
+                        <li>¿Nadie sabe si los clientes están satisfechos con el servicio por falta de retroalimentación
+                            y análisis de satisfacción del cliente?</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <img class="card-img-top" src="./../img/infra.jpg" data-holder-rendered="true" style="width: 100%; display: block;">
+                    <img class="card-img-top" src="./../img/infra.jpg" data-holder-rendered="true"
+                        style="width: 100%; display: block;">
                     <h3 class="text-center my-3">
                         Infraestructura de la empresa
                     </h3>
                     <ul>
-                        <li>¿Reaccionas tarde a los cambios del mercado por falta de herramientas para anticipar tendencias y cambios en el entorno empresarial?</li>
-                        <li>¿Tu estrategia está basada en suposiciones y no en datos reales? ¿Las decisiones estratégicas se toman en base a intuición o información incompleta?</li>
-                        <li>¿Los procesos manuales en la gestión financiera y contable provocan anomalías en transacciones, conciliaciones y dilatan los tiempos de los cierres contables?</li>
-                        <li>¿Tienes documentos legales por todas partes y no encuentras lo que necesitas por una gestión ineficiente de contratos y documentos?</li>
-                        <li>¿Vuestros informes de calidad llevan largo tiempo en elaborarse por la generación manual y demorada de reportes?</li>
+                        <li>¿Reaccionas tarde a los cambios del mercado por falta de herramientas para anticipar
+                            tendencias y cambios en el entorno empresarial?</li>
+                        <li>¿Tu estrategia está basada en suposiciones y no en datos reales? ¿Las decisiones
+                            estratégicas se toman en base a intuición o información incompleta?</li>
+                        <li>¿Los procesos manuales en la gestión financiera y contable provocan anomalías en
+                            transacciones, conciliaciones y dilatan los tiempos de los cierres contables?</li>
+                        <li>¿Tienes documentos legales por todas partes y no encuentras lo que necesitas por una gestión
+                            ineficiente de contratos y documentos?</li>
+                        <li>¿Vuestros informes de calidad llevan largo tiempo en elaborarse por la generación manual y
+                            demorada de reportes?</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="bg-white pb-5">
         <div class="container" id="icon-grid">
             <div class="row featurette align-items-center text-center">
@@ -364,7 +403,9 @@
     </section-->
 
     <!-- imagen de fondo 100% de ancho y 300px de alto -->
-    <div style="width: 100%; height: 350px; background: url('./../img/offices.jpg') no-repeat center center; object-fit: cover; background-size: cover;"></div>
+    <div
+        style="width: 100%; height: 350px; background: url('./../img/offices.jpg') no-repeat center center; object-fit: cover; background-size: cover;">
+    </div>
 
     <div class="bg-white py-5 text-center">
         <div class="container">
@@ -383,7 +424,7 @@
                         NO SOMOS:<br>
                     </p>
                     <ul class="lead">
-                        <li>Los típicos que aparecen cuando la moda explota.</li>                        
+                        <li>Los típicos que aparecen cuando la moda explota.</li>
                         <li>"Expertos" de discursos vacíos.</li>
                         <li>De los que venden humo o tecnología que no necesitas.</li>
                         <li>Reinventores de ruedas.</li>
@@ -395,7 +436,8 @@
                         SÍ SOMOS:
                     </p>
                     <ul class="lead">
-                        <li>Tu gabinete de apoyo para la innovación, te damos lo que necesitas, sin importar la tecnología. </li>
+                        <li>Tu gabinete de apoyo para la innovación, te damos lo que necesitas, sin importar la
+                            tecnología. </li>
                         <li>Personalización total: Olvídate de soluciones genéricas.</li>
                         <li>Cercanía brutal: Estamos contigo como socios, no como vendedores.</li>
                         <li>Innovación real: Lo que hacemos funciona. Punto.</li>
@@ -416,17 +458,19 @@
                 </div>
                 <div class="feature col">
                     <h3 class="fs-2 text-body-emphasis">Innovadores, no nuevos</h3>
-                    <p>No nos subimos a la ola de ChatGPT.<br>Más de 10 años trabajando con tecnologías<br>VR, Blockchain, IA y ML.</p>
+                    <p>No nos subimos a la ola de ChatGPT.<br>Más de 10 años trabajando con tecnologías<br>VR,
+                        Blockchain, IA y ML.</p>
                     <!--a href="#" class="icon-link">
                         Call to action
                         <svg class="bi">
                             <use xlink:href="#chevron-right"></use>
                         </svg>
                     </!--a-->
-                </div>                
+                </div>
                 <div class="feature col">
                     <h3 class="fs-2 text-body-emphasis">¡Lo que nos eches!</h3>
-                    <p>Enfoque multisectorial. Implementaciones en sectores como banca, retail, health, manufactura y más.</p>
+                    <p>Enfoque multisectorial. Implementaciones en sectores como banca, retail, health, manufactura y
+                        más.</p>
                     <!--a href="#" class="icon-link">
                         Call to action
                         <svg class="bi">
@@ -450,16 +494,23 @@
 
     <div class="bg-gray pb-3 d-none">
         <div class="container">
-            <h2 class="primary-color pb-2 border-bottom">Guía de integración de la inteligencia artificial en la empresa</h2>
+            <h2 class="primary-color pb-2 border-bottom">Guía de integración de la inteligencia artificial en la empresa
+            </h2>
 
             <div class="row featurette my-5 align-items-center">
                 <div class="col-md-5 text-center">
                     <!--img src="./../img/header-naval.png" alt="" class="img-fluid imgBorderRadius mb-3 img-technology"-->
                 </div>
                 <div class="col-md-6 offset-md-1">
-                    <h3 class="featurette-heading fw-normal my-3">Consigue nuestra guía de integración de la IA en tu empresa</h3>
-                    <p class="lead mt-3">                        
-                        Descubre cómo aprovechar el poder de la inteligencia artificial para transformar tu negocio con nuestra guía completa de integración de IA en la empresa. En esta guía, exploramos paso a paso el proceso de adopción de IA, desde la identificación de oportunidades estratégicas hasta la implementación y optimización de soluciones en diversas áreas de negocio. Diseñada para líderes empresariales y responsables de tecnología, esta guía ofrece recomendaciones para facilitar la implementación de IA en procesos clave, mejorando la eficiencia y la toma de decisiones.
+                    <h3 class="featurette-heading fw-normal my-3">Consigue nuestra guía de integración de la IA en tu
+                        empresa</h3>
+                    <p class="lead mt-3">
+                        Descubre cómo aprovechar el poder de la inteligencia artificial para transformar tu negocio con
+                        nuestra guía completa de integración de IA en la empresa. En esta guía, exploramos paso a paso
+                        el proceso de adopción de IA, desde la identificación de oportunidades estratégicas hasta la
+                        implementación y optimización de soluciones en diversas áreas de negocio. Diseñada para líderes
+                        empresariales y responsables de tecnología, esta guía ofrece recomendaciones para facilitar la
+                        implementación de IA en procesos clave, mejorando la eficiencia y la toma de decisiones.
                         <br><br>
                         ¡Descárgala ahora y da el primer paso hacia una transformación digital inteligente!
                     </p>
@@ -475,14 +526,16 @@
         </div>
     </div>
 
-    <div style="width: 100%; height: 350px; background: url('./../img/bridge2.jpg') no-repeat center center; object-fit: cover; background-size: cover;"></div>
+    <div
+        style="width: 100%; height: 350px; background: url('./../img/bridge2.jpg') no-repeat center center; object-fit: cover; background-size: cover;">
+    </div>
 
     <div class="bg-white">
         <div class="container">
             <div class="row featurette py-5 align-items-center text-center">
                 <div class="col-md-12">
                     <h3 class="featurette-heading fw-normal my-3">
-                        ¿Quieres que la tecnología sea tu mejor aliada?<br/>
+                        ¿Quieres que la tecnología sea tu mejor aliada?<br />
                         Contáctanos ahora y descubre cómo:
                     </h3>
                     <a class="btn button-animation button-animation-gray mt-3 mb-5 px-4 py-3" href="./contacto">
@@ -510,26 +563,63 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=C/+Hortaleza+106+28004+Madrid&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embed-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                                <div class="mb-3"
+                                    style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;">
+                                    <div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe
+                                            style="height:100%;width:100%;border:0;" frameborder="0"
+                                            src="https://www.google.com/maps/embed/v1/place?q=C/+Hortaleza+106+28004+Madrid&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                    </div>
+                                    <style>
+                                        #embed-map-display img.text-marker {
+                                            max-width: none !important;
+                                            background: none !important;
+                                        }
+
+                                        img {
+                                            max-width: none
+                                        }
+                                    </style>
+                                </div>
                                 Hortaleza 106, 6 Derecha<br>
                                 28004 Madrid
                             </div>
                             <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
-                                Joaquín Costa 8, 2 Derecha<br>
-                                50001 Zaragoza<br>
-                            </div>                            
+                                <div class="mb-3"
+                                    style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;">
+                                    <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5963.05476796041!2d-0.8788423234472945!3d41.64434608001651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914fb3bd07271%3A0x8c90be2e8ead31e5!2sC.%20de%20la%20Reina%20Fabiola%2C%2037%2C%2050008%20Zaragoza!5e0!3m2!1ses!2ses!4v1770195173423!5m2!1ses!2ses"
+                                            width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <style>
+                                        #embedded-map-display img.text-marker {
+                                            max-width: none !important;
+                                            background: none !important;
+                                        }
+
+                                        img {
+                                            max-width: none
+                                        }
+                                    </style>
+                                </div>
+                                C/ Reina Fabiola, 37 Of. 131<br>
+                                50008 Zaragoza<br>
+                            </div>
                         </div>
 
                         <h4 class="mt-5 mb-2">Síguenos</h4>
                         <ul class="list-unstyled d-flex">
                             <li>
-                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer"
+                                    class="btn" target="_blank"
+                                    style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-linkedin"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn"
+                                    target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-instagram"></i>
                                 </a>
                             </li>
@@ -539,31 +629,38 @@
                         <h4 class="mb-4">Navegación</h4>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="./que-hacemos" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="Qué hacemos">Qué hacemos</a> 
+                                <a href="./que-hacemos"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Qué hacemos">Qué hacemos</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./casos-de-exito" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./casos-de-exito"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Casos de éxito">Casos de éxito</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./sobre-nosotros" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./sobre-nosotros"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="About us">Sobre nosotros</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./contacto" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./contacto"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Contacto">Contacto</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./politica-de-privacidad" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./politica-de-privacidad"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Privacy-policy">Politica de privacidad</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./aviso-legal" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./aviso-legal"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Legal notice">Aviso legal</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./../?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./../?noredir=true"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="English">English</a>
                             </li>
                         </ul>
@@ -571,8 +668,8 @@
                 </div>
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
                     <p>
-                        © 2025 CodeGenia. Todos los derechos reservados.<br>
-                        CodeGenia es una compañía <a class="text-white" rel="noopener noreferrer" target="_blank" href="https://dareplanet.com">DarePlanet</a>.
+                        © 2026 CodeGenia. Todos los derechos reservados.<br>
+                        CodeGenia es una compañía Marai.
                     </p>
                 </div>
 
@@ -602,4 +699,5 @@
     </script>
 
 </body>
+
 </html>
