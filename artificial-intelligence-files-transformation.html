@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
+    <meta name="description"
+        content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
     <meta name="keywords"
         content="Artificial intelligence, artificial intelligence projects, blockchain solutions, blockchain, extended reality, augmented reality, XR, VR, AR, MR">
     <meta name="author" content="CodeGenia">
@@ -44,26 +45,26 @@
 
     <script defer>
         function redirigirSegunIdioma() {
-          if (localStorage.getItem('sinRedireccion') === 'true') {
-            return;
-          }    
-          var idiomaNavegador = navigator.language || navigator.userLanguage;    
-          if (idiomaNavegador.toLowerCase() === "es-es") {
-            window.location.href = "/es";
-          }
+            if (localStorage.getItem('sinRedireccion') === 'true') {
+                return;
+            }
+            var idiomaNavegador = navigator.language || navigator.userLanguage;
+            if (idiomaNavegador.toLowerCase() === "es-es") {
+                window.location.href = "/es";
+            }
         }
-    
+
         function desactivarRedireccion() {
-          localStorage.setItem('sinRedireccion', 'true');
+            localStorage.setItem('sinRedireccion', 'true');
         }
-    
+
         function verificarParametroNoRedireccion() {
-          var urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
-            desactivarRedireccion();
-          }
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+                desactivarRedireccion();
+            }
         }
-    
+
         //verificarParametroNoRedireccion();
         //redirigirSegunIdioma();
     </script>
@@ -93,30 +94,35 @@
             <a class="navbar-brand" href="./">
                 <img alt="Logo de CodeGenia" class="img-fluid" src="./img/logo-codegenia.jpg">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./what-we-do"
-                            aria-label="What we do">What we do</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./what-we-do" aria-label="What we do">What we do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./success-cases"
-                            aria-label="Success cases">Success cases</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./success-cases" aria-label="Success cases">Success cases</a>
                     </li>
                     <!--li class="nav-item">
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Proyectos">Industries</a>
                     </!--li-->
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./about-us" aria-label="Sobre nosotros">About us</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./about-us" aria-label="Sobre nosotros">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./contact" aria-label="Contacto">Contact</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./contact" aria-label="Contacto">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./es?noredir=true" aria-label="Español">Español</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./es?noredir=true" aria-label="Español">Español</a>
                     </li>
                 </ul>
             </div>
@@ -132,44 +138,67 @@
     <div class="container pt-5 pb-4 mt-5 text-white">
         <div class="row align-items-center">
             <div class="col-md-8">
-                <h1 class="display-5 fw-bold mt-5 mb-5">Success Case: Transformation and standardization of files with AI</h1>
+                <h1 class="display-5 fw-bold mt-5 mb-5">Success Case: Transformation and standardization of files with
+                    AI</h1>
                 <br><br>
             </div>
-        </div>        
+        </div>
     </div>
 
     <div class="bg-white">
         <div class="container">
             <div class="row align-items-center featurette py-4 mt-3">
-                <div class="col-md-12">                            
+                <div class="col-md-12">
                     <h3 class="featurette-heading fw-normal lh-1 my-3">Challenge</h3>
                     <p class="lead mb-5">
-                        Our client, a company specializing in engineering services, received files from their customers in various formats and with heterogeneous data. This made the quotation process slow and required significant manual effort to consolidate the information. This process not only caused delays but also increased operational costs and the risk of errors in quotations.
+                        Our client, a company specializing in engineering services, received files from their customers
+                        in various formats and with heterogeneous data. This made the quotation process slow and
+                        required significant manual effort to consolidate the information. This process not only caused
+                        delays but also increased operational costs and the risk of errors in quotations.
                     </p>
-                    
+
                     <h3 class="featurette-heading fw-normal lh-1 my-3">Solution</h3>
                     <p class="lead mb-5">
-                        We implemented an advanced Artificial Intelligence (AI) and Robotic Process Automation (RPA) solution that now enables our client to manage orders autonomously, without human intervention in each key stage:
+                        We implemented an advanced Artificial Intelligence (AI) and Robotic Process Automation (RPA)
+                        solution that now enables our client to manage orders autonomously, without human intervention
+                        in each key stage:
                     </p>
                     <ol class="lead mb-5">
-                        <li>Automatic email reception and classification: The AI system identifies, classifies, and automatically extracts key information from the customer's email, recognizing the type of product and its specific requirements.</li>
-                        <li>Automated communication with suppliers: Through RPA, requests are automatically sent to suppliers, checking stock availability and real-time price updates. Our system integrates directly with supplier platforms, ensuring up-to-date information and avoiding any delays in the supply chain.</li>
-                        <li>Real-time price and stock updates: The AI solution constantly monitors the availability and cost of each product, enabling rapid adjustments to offers based on the latest market conditions. This ensures the client receives an accurate and up-to-date proposal tailored to each supplier's reality.</li>
-                        <li>Automatic preparation of proposals and documentation: We generate a draft response that includes a detailed and personalized offer for the customer, complete with the appropriate technical documentation and any relevant additional files. All of this is presented in a response email ready to be sent with a single click.</li>
+                        <li>Automatic email reception and classification: The AI system identifies, classifies, and
+                            automatically extracts key information from the customer's email, recognizing the type of
+                            product and its specific requirements.</li>
+                        <li>Automated communication with suppliers: Through RPA, requests are automatically sent to
+                            suppliers, checking stock availability and real-time price updates. Our system integrates
+                            directly with supplier platforms, ensuring up-to-date information and avoiding any delays in
+                            the supply chain.</li>
+                        <li>Real-time price and stock updates: The AI solution constantly monitors the availability and
+                            cost of each product, enabling rapid adjustments to offers based on the latest market
+                            conditions. This ensures the client receives an accurate and up-to-date proposal tailored to
+                            each supplier's reality.</li>
+                        <li>Automatic preparation of proposals and documentation: We generate a draft response that
+                            includes a detailed and personalized offer for the customer, complete with the appropriate
+                            technical documentation and any relevant additional files. All of this is presented in a
+                            response email ready to be sent with a single click.</li>
                     </ol>
                     <h3 class="featurette-heading fw-normal lh-1 my-3">Result</h3>
                     <p class="lead mb-5">
-                        The standardization of customer files through artificial intelligence has led to a significant transformation in the quotation process, resulting in time, effort, and cost savings. This solution has become a key competitive advantage for our client, improving both internal efficiency and their customers' experience.
+                        The standardization of customer files through artificial intelligence has led to a significant
+                        transformation in the quotation process, resulting in time, effort, and cost savings. This
+                        solution has become a key competitive advantage for our client, improving both internal
+                        efficiency and their customers' experience.
 
                     </p>
                     <h3 class="featurette-heading fw-normal lh-1 my-3">Why trust CodeGenia?</h3>
                     <p class="lead">
-                        Our expertise in AI and RPA solutions allows us to create business processes tailored to the needs of each client. The automation of product orders demonstrates our ability to combine artificial intelligence with the automation of complex processes, ensuring not only efficiency but also an improvement in service quality.
+                        Our expertise in AI and RPA solutions allows us to create business processes tailored to the
+                        needs of each client. The automation of product orders demonstrates our ability to combine
+                        artificial intelligence with the automation of complex processes, ensuring not only efficiency
+                        but also an improvement in service quality.
                     </p>
-                    <br/><br/>
+                    <br /><br />
                     <h3 class="featurette-heading fw-normal my-3">
                         Transform your business, contact us now to take your ordering process to the next level:
-                    </h3>                  
+                    </h3>
                 </div>
             </div>
         </div>
@@ -184,8 +213,7 @@
                             <div class="col-md-12">
                                 <label for="name" class="form-label">Name and surname:</label>
                                 <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Enter your name and surname" aria-label="Name and surname"
-                                    required>
+                                    placeholder="Enter your name and surname" aria-label="Name and surname" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -193,8 +221,7 @@
                             <div class="col-md-12">
                                 <label for="email" class="form-label">Email:</label>
                                 <input type="text" class="form-control" id="email" name="email"
-                                    placeholder="Enter your email" aria-label="Email"
-                                    required>
+                                    placeholder="Enter your email" aria-label="Email" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid email.
                                 </div>
@@ -219,7 +246,8 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn button-animation button-animation-gray mt-3 px-4 py-3" type="submit" aria-label="Send">
+                                <button class="btn button-animation button-animation-gray mt-3 px-4 py-3" type="submit"
+                                    aria-label="Send">
                                     SEND
                                     <span></span>
                                     <span></span>
@@ -247,26 +275,61 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=C/+Hortaleza+106+28004+Madrid&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embed-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                                <div class="mb-3"
+                                    style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;">
+                                    <div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe
+                                            style="height:100%;width:100%;border:0;" frameborder="0"
+                                            src="https://www.google.com/maps/embed/v1/place?q=C/+Hortaleza+106+28004+Madrid&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                    </div>
+                                    <style>
+                                        #embed-map-display img.text-marker {
+                                            max-width: none !important;
+                                            background: none !important;
+                                        }
+
+                                        img {
+                                            max-width: none
+                                        }
+                                    </style>
+                                </div>
                                 Hortaleza 106, 6 Derecha<br>
                                 28004 Madrid (Spain)
                             </div>
                             <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                                <div class="mb-3"
+                                    style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;">
+                                    <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+                                        <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                                            src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                    </div>
+                                    <style>
+                                        #embedded-map-display img.text-marker {
+                                            max-width: none !important;
+                                            background: none !important;
+                                        }
+
+                                        img {
+                                            max-width: none
+                                        }
+                                    </style>
+                                </div>
                                 Joaquín Costa 8, 2 Derecha<br>
                                 50001 Zaragoza (Spain)<br>
-                            </div>                            
+                            </div>
                         </div>
 
                         <h4 class="mt-5 mb-2">Follow us</h4>
                         <ul class="list-unstyled d-flex">
                             <li>
-                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer"
+                                    class="btn" target="_blank"
+                                    style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-linkedin"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn"
+                                    target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-instagram"></i>
                                 </a>
                             </li>
@@ -276,31 +339,38 @@
                         <h4 class="mb-4">Navigation</h4>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="./what-we-do" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="What we do">What we do</a> 
+                                <a href="./what-we-do"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="What we do">What we do</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./success-cases" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./success-cases"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Success cases">Success cases</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./about-us" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./about-us"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="About us">About us</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./contact" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./contact"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Contact">Contact</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./privacy-policy" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./privacy-policy"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Privacy-policy">Privacy policy</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./legal-notice" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./legal-notice"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Legal notice">Legal notice</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="/es?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="/es?noredir=true"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Español">Español</a>
                             </li>
                         </ul>
@@ -308,8 +378,9 @@
                 </div>
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
                     <p>
-                        © 2025 CodeGenia. All rights reserved.<br>
-                        CodeGenia is a <a class="text-white" rel="noopener noreferrer" target="_blank" href="https://dareplanet.com">DarePlanet</a> company.
+                        © 2026 CodeGenia. All rights reserved.<br>
+                        CodeGenia is a <a class="text-white" rel="noopener noreferrer" target="_blank"
+                            href="https://dareplanet.com">DarePlanet</a> company.
                     </p>
                 </div>
 
@@ -339,4 +410,5 @@
     </script>
 
 </body>
+
 </html>

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
+    <meta name="description"
+        content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
     <meta name="keywords"
         content="Artificial intelligence, artificial intelligence projects, blockchain solutions, blockchain, extended reality, augmented reality, XR, VR, AR, MR">
     <meta name="author" content="CodeGenia">
@@ -44,26 +45,26 @@
 
     <script defer>
         function redirigirSegunIdioma() {
-          if (localStorage.getItem('sinRedireccion') === 'true') {
-            return;
-          }    
-          var idiomaNavegador = navigator.language || navigator.userLanguage;    
-          if (idiomaNavegador.toLowerCase() === "es-es") {
-            window.location.href = "/es";
-          }
+            if (localStorage.getItem('sinRedireccion') === 'true') {
+                return;
+            }
+            var idiomaNavegador = navigator.language || navigator.userLanguage;
+            if (idiomaNavegador.toLowerCase() === "es-es") {
+                window.location.href = "/es";
+            }
         }
-    
+
         function desactivarRedireccion() {
-          localStorage.setItem('sinRedireccion', 'true');
+            localStorage.setItem('sinRedireccion', 'true');
         }
-    
+
         function verificarParametroNoRedireccion() {
-          var urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
-            desactivarRedireccion();
-          }
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+                desactivarRedireccion();
+            }
         }
-    
+
         //verificarParametroNoRedireccion();
         //redirigirSegunIdioma();
     </script>
@@ -93,30 +94,35 @@
             <a class="navbar-brand" href="./">
                 <img alt="Logo de CodeGenia" class="img-fluid" src="img/logo-codegenia.jpg">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"      aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./services"
-                            aria-label="Services">Services</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./services" aria-label="Services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./use-cases"
-                            aria-label="Servicios">Use cases</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./use-cases" aria-label="Servicios">Use cases</a>
                     </li>
                     <!--li class="nav-item">
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Industries">Industries</a>
                     </!--li-->
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./about-us" aria-label="About us">About us</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./about-us" aria-label="About us">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./contact" aria-label="Contact">Contact</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./contact" aria-label="Contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./es?noredir=true" aria-label="Español">Español</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./es?noredir=true" aria-label="Español">Español</a>
                     </li>
                 </ul>
             </div>
@@ -170,7 +176,8 @@
                     <div class="carousel-item active" data-bs-interval="4000">
                         <div class="row">
                             <div class="col-md-3 justify-content-center align-middle d-flex">
-                                <img src="logos/tensorflow_logo.svg" class="img-fluid img-carousel" alt="Tensorflow Logo">
+                                <img src="logos/tensorflow_logo.svg" class="img-fluid img-carousel"
+                                    alt="Tensorflow Logo">
                             </div>
                             <div class="col-md-3 justify-content-center align-middle d-flex">
                                 <img src="logos/pytorch_logo.svg" class="img-fluid img-carousel" alt="Pytorch Logo">
@@ -223,7 +230,8 @@
             </div>
             <div class="row align-items-center">
                 <div class="col-md-5">
-                    <img src="img/contact.png" alt="Contact form illustration for CodeGenia" class="img-fluid imgBorderRadius mb-3" style="max-width: 90%;">
+                    <img src="img/contact.png" alt="Contact form illustration for CodeGenia"
+                        class="img-fluid imgBorderRadius mb-3" style="max-width: 90%;">
                 </div>
                 <div class="col-md-7">
                     <div class="pt-2 pb-5">
@@ -234,8 +242,7 @@
                             <div class="col-md-12">
                                 <label for="name" class="form-label">Name and surname:</label>
                                 <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Enter your name and surname" aria-label="Name and surname"
-                                    required>
+                                    placeholder="Enter your name and surname" aria-label="Name and surname" required>
                                 <div class="valid-feedback">
                                     Looks good!
                                 </div>
@@ -243,8 +250,7 @@
                             <div class="col-md-12">
                                 <label for="email" class="form-label">Email:</label>
                                 <input type="text" class="form-control" id="email" name="email"
-                                    placeholder="Enter your email" aria-label="Email"
-                                    required>
+                                    placeholder="Enter your email" aria-label="Email" required>
                                 <div class="invalid-feedback">
                                     Please provide a valid email.
                                 </div>
@@ -269,9 +275,10 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn button-animation-gray mt-3 px-4 py-3 mb-5" type="submit" aria-label="Send" style="background: #EFEFEF;">Send</button>
+                                <button class="btn button-animation-gray mt-3 px-4 py-3 mb-5" type="submit"
+                                    aria-label="Send" style="background: #EFEFEF;">Send</button>
                             </div>
-                        </form>                        
+                        </form>
                     </div>
                 </div>
             </div>
@@ -300,12 +307,14 @@
                         <h4 class="mb-2">Follow us</h4>
                         <ul class="list-unstyled d-flex">
                             <li>
-                                <a href="https://www.linkedin.com/company/codegenia" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.linkedin.com/company/codegenia" class="btn" target="_blank"
+                                    style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-linkedin"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/codegenia" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.instagram.com/codegenia" class="btn" target="_blank"
+                                    style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-instagram"></i>
                                 </a>
                             </li>
@@ -315,38 +324,45 @@
                         <h4 class="mb-4">Navigation</h4>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="#technologies" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="#technologies"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Technologies">Technologies</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="#projects" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="#projects"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Projects">Projects</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="#aboutus" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="#aboutus"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="About us">About us</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="contact" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="contact"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Contact">Contact</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="/politica-de-privacidad" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="/politica-de-privacidad"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Privacy-policy">Privacy policy</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="/aviso-legal" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="/aviso-legal"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Legal notice">Legal notice</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="/es?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="/es?noredir=true"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Español">Español</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
-                    <p>© 2025 CodeGenia. All rights reserved.<br></p>                    
+                    <p>© 2026 CodeGenia. All rights reserved.<br></p>
                 </div>
 
             </footer>
@@ -375,4 +391,5 @@
     </script>
 
 </body>
+
 </html>
