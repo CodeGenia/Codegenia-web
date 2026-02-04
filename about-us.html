@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
+    <meta name="description"
+        content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
     <meta name="keywords"
         content="Artificial intelligence, artificial intelligence projects, blockchain solutions, blockchain, extended reality, augmented reality, XR, VR, AR, MR">
     <meta name="author" content="CodeGenia">
@@ -44,26 +45,26 @@
 
     <script defer>
         function redirigirSegunIdioma() {
-          if (localStorage.getItem('sinRedireccion') === 'true') {
-            return;
-          }    
-          var idiomaNavegador = navigator.language || navigator.userLanguage;    
-          if (idiomaNavegador.toLowerCase() === "es-es") {
-            window.location.href = "/es";
-          }
+            if (localStorage.getItem('sinRedireccion') === 'true') {
+                return;
+            }
+            var idiomaNavegador = navigator.language || navigator.userLanguage;
+            if (idiomaNavegador.toLowerCase() === "es-es") {
+                window.location.href = "/es";
+            }
         }
-    
+
         function desactivarRedireccion() {
-          localStorage.setItem('sinRedireccion', 'true');
+            localStorage.setItem('sinRedireccion', 'true');
         }
-    
+
         function verificarParametroNoRedireccion() {
-          var urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
-            desactivarRedireccion();
-          }
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+                desactivarRedireccion();
+            }
         }
-    
+
         //verificarParametroNoRedireccion();
         //redirigirSegunIdioma();
     </script>
@@ -93,30 +94,35 @@
             <a class="navbar-brand" href="./">
                 <img alt="Logo de CodeGenia" class="img-fluid" src="img/logo-codegenia.jpg">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./what-we-do"
-                            aria-label="What we do">What we do</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./what-we-do" aria-label="What we do">What we do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./success-cases"
-                            aria-label="Success cases">Success cases</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./success-cases" aria-label="Success cases">Success cases</a>
                     </li>
                     <!--li class="nav-item">
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Proyectos">Industries</a>
                     </!--li-->
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./about-us" aria-label="About us">About us</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./about-us" aria-label="About us">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./contact" aria-label="Contact">Contact</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./contact" aria-label="Contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./es?noredir=true" aria-label="Español">Español</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./es?noredir=true" aria-label="Español">Español</a>
                     </li>
                 </ul>
             </div>
@@ -135,7 +141,8 @@
             <div class="col-md-8">
                 <h1 class="display-5 fw-bold mb-4">What is CodeGenia?</h1>
                 <p class="fs-4 lead">
-                    CodeGenia distinguishes organizations whose genome embodies unique values and principles that guide their strategy towards brilliance and constant innovation.<br><br>
+                    CodeGenia distinguishes organizations whose genome embodies unique values and principles that guide
+                    their strategy towards brilliance and constant innovation.<br><br>
                     Experience, Innovation, and a personal touch to help you achieve your goals.<br><br>
                 </p>
             </div>
@@ -161,7 +168,8 @@
         </div>
     </div>
 
-    <img class="img-fluid mt-3" alt="Imagen de fondo de cambio de sección en formar de triangulo" src="./img/fondo-derecha-arriba-triangulo-w.png" />
+    <img class="img-fluid mt-3" alt="Imagen de fondo de cambio de sección en formar de triangulo"
+        src="./img/fondo-derecha-arriba-triangulo-w.png" />
 
     <div class="bg-white">
         <div class="container">
@@ -212,8 +220,12 @@
 
                             <p class="lead">
                                 We understand your challenges, create your solutions, and build your success.<br><br>
-                                At CodeGenia, we combine our expertise with a close and supportive approach to our clients. We establish relationships based on trust and results to deliver unique solutions.<br><br>
-                                We believe that innovation is not just a tool; it is a way of life. We specialize in designing and implementing intelligent automation solutions that drive your business growth, optimize your resources, and free people to focus on what truly matters.
+                                At CodeGenia, we combine our expertise with a close and supportive approach to our
+                                clients. We establish relationships based on trust and results to deliver unique
+                                solutions.<br><br>
+                                We believe that innovation is not just a tool; it is a way of life. We specialize in
+                                designing and implementing intelligent automation solutions that drive your business
+                                growth, optimize your resources, and free people to focus on what truly matters.
                             </p>
 
                             <!--ul class="lead">
@@ -231,15 +243,17 @@
                                 <li>Detección de zonas aplicables de sus procesos.</li>
                             </!--ul-->
                             <!--a href="#" target="_blank" class="btn btn-primary mt-3" rel="noopener noreferrer">Más información</!--a-->
-                        </div>                
-                    </div>                
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
     </div>
 
-    <div style="width: 100%; height: 350px; background: url('./img/oficina-codegenia.png') no-repeat center center; object-fit: cover; background-size: cover;"></div>
+    <div
+        style="width: 100%; height: 350px; background: url('./img/oficina-codegenia.png') no-repeat center center; object-fit: cover; background-size: cover;">
+    </div>
 
     <div class="pt-5 pb-5 bg-white">
         <div class="container" id="icon-grid">
@@ -256,7 +270,8 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Solid Experience</h3>
-                        <p>Our experience in the tech sector backs us up, with a proven track record of successful projects and satisfied clients.</p>
+                        <p>Our experience in the tech sector backs us up, with a proven track record of successful
+                            projects and satisfied clients.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -269,7 +284,9 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Always Up-to-date</h3>
-                        <p>We love to try new things, and sometimes, we even create them. We are committed to staying at the technological forefront, adopting and developing the latest innovations to offer top-tier solutions.</p>
+                        <p>We love to try new things, and sometimes, we even create them. We are committed to staying at
+                            the technological forefront, adopting and developing the latest innovations to offer
+                            top-tier solutions.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -280,7 +297,8 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Client-Oriented</h3>
-                        <p>For us, the primary goal is the success of our clients. We strive to understand their needs and exceed their expectations with personalized and effective solutions.</p>
+                        <p>For us, the primary goal is the success of our clients. We strive to understand their needs
+                            and exceed their expectations with personalized and effective solutions.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -294,7 +312,8 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Innovative Spirit</h3>
-                        <p>Innovation is a culture we embrace and promote. We take pride in being pioneers in the development of emerging technologies and the implementation of disruptive ideas.</p>
+                        <p>Innovation is a culture we embrace and promote. We take pride in being pioneers in the
+                            development of emerging technologies and the implementation of disruptive ideas.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -305,7 +324,8 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Multidisciplinary Team</h3>
-                        <p>We have a team of multidisciplinary experts who combine knowledge in design, marketing, and technology to create comprehensive development solutions.</p>
+                        <p>We have a team of multidisciplinary experts who combine knowledge in design, marketing, and
+                            technology to create comprehensive development solutions.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -320,7 +340,8 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Quality and Efficiency</h3>
-                        <p>We are committed to excellence in every project, ensuring the highest quality in our products and services, always delivered on time and as promised.</p>
+                        <p>We are committed to excellence in every project, ensuring the highest quality in our products
+                            and services, always delivered on time and as promised.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -331,7 +352,8 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Adaptability and Flexibility</h3>
-                        <p>We quickly adapt to market changes and our clients' needs, offering flexible and scalable solutions that evolve with their business.</p>
+                        <p>We quickly adapt to market changes and our clients' needs, offering flexible and scalable
+                            solutions that evolve with their business.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -344,7 +366,8 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Security and Trust</h3>
-                        <p>We implement best practices in cybersecurity to protect our clients' data and digital assets, ensuring the trust and peace of mind they need.</p>
+                        <p>We implement best practices in cybersecurity to protect our clients' data and digital assets,
+                            ensuring the trust and peace of mind they need.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -355,7 +378,8 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Sustainability</h3>
-                        <p>We care about the environment and promote sustainable practices in the development of our technological solutions, always striving to minimize our ecological impact.</p>
+                        <p>We care about the environment and promote sustainable practices in the development of our
+                            technological solutions, always striving to minimize our ecological impact.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -366,7 +390,8 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Collaboration and Community</h3>
-                        <p>We foster a collaborative environment both within our company and with our clients and partners, creating a community of continuous innovation and growth.</p>
+                        <p>We foster a collaborative environment both within our company and with our clients and
+                            partners, creating a community of continuous innovation and growth.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -378,7 +403,9 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Awards and Recognitions</h3>
-                        <p>Our commitment to innovation and quality has earned us multiple recognitions, including being finalists at "The Scale Up World Summit" during the Digital Enterprise Show 2023, as well as participants in the Aptenisa Start program.</p>
+                        <p>Our commitment to innovation and quality has earned us multiple recognitions, including being
+                            finalists at "The Scale Up World Summit" during the Digital Enterprise Show 2023, as well as
+                            participants in the Aptenisa Start program.</p>
                     </div>
                 </div>
                 <div class="col d-flex align-items-start">
@@ -391,7 +418,8 @@
                     </svg>
                     <div>
                         <h3 class="fw-bold mb-1 fs-4 text-body-emphasis">Future Vision</h3>
-                        <p>We are always looking ahead, anticipating trends, and developing technologies that position our clients at the forefront of their industries.</p>
+                        <p>We are always looking ahead, anticipating trends, and developing technologies that position
+                            our clients at the forefront of their industries.</p>
                     </div>
                 </div>
             </div>
@@ -411,26 +439,40 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=C/+Hortaleza+106+28004+Madrid&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embed-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
-                                Hortaleza 106, 6 Derecha<br>
-                                28004 Madrid (Spain)
+                                <div class="mb-3"
+                                    style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;">
+                                    <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+                                        <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                                            src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                    </div>
+                                    <style>
+                                        #embedded-map-display img.text-marker {
+                                            max-width: none !important;
+                                            background: none !important;
+                                        }
+
+                                        img {
+                                            max-width: none
+                                        }
+                                    </style>
+                                </div>
+                                Reina Fabiola, 37 Of. 131<br>
+                                50008 Zaragoza (Spain)<br>
                             </div>
-                            <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
-                                Joaquín Costa 8, 2 Derecha<br>
-                                50001 Zaragoza (Spain)<br>
-                            </div>                            
                         </div>
 
                         <h4 class="mt-5 mb-2">Follow us</h4>
                         <ul class="list-unstyled d-flex">
                             <li>
-                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer"
+                                    class="btn" target="_blank"
+                                    style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-linkedin"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn"
+                                    target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-instagram"></i>
                                 </a>
                             </li>
@@ -440,31 +482,38 @@
                         <h4 class="mb-4">Navigation</h4>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="./services" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="Services">Services</a> 
+                                <a href="./services"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Services">Services</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./success-cases" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./success-cases"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Success cases">Success cases</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./about-us" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./about-us"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="About us">About us</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./contact" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./contact"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Contact">Contact</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./politica-de-privacidad" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./politica-de-privacidad"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Privacy-policy">Privacy policy</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./aviso-legal" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./aviso-legal"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Legal notice">Legal notice</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="/es?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="/es?noredir=true"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Español">Español</a>
                             </li>
                         </ul>
@@ -473,7 +522,8 @@
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
                     <p>
                         © 2025 CodeGenia. All rights reserved.<br>
-                        CodeGenia is a <a class="text-white" rel="noopener noreferrer" target="_blank" href="https://dareplanet.com">DarePlanet</a> company.
+                        CodeGenia is a <a class="text-white" rel="noopener noreferrer" target="_blank"
+                            href="https://dareplanet.com">DarePlanet</a> company.
                     </p>
                 </div>
 
@@ -503,4 +553,5 @@
     </script>
 
 </body>
+
 </html>

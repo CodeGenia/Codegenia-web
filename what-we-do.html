@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
+    <meta name="description"
+        content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
     <meta name="keywords"
         content="Artificial intelligence, artificial intelligence projects, blockchain solutions, blockchain, extended reality, augmented reality, XR, VR, AR, MR">
     <meta name="author" content="CodeGenia">
@@ -44,26 +45,26 @@
 
     <script defer>
         function redirigirSegunIdioma() {
-          if (localStorage.getItem('sinRedireccion') === 'true') {
-            return;
-          }    
-          var idiomaNavegador = navigator.language || navigator.userLanguage;    
-          if (idiomaNavegador.toLowerCase() === "es-es") {
-            window.location.href = "/es";
-          }
+            if (localStorage.getItem('sinRedireccion') === 'true') {
+                return;
+            }
+            var idiomaNavegador = navigator.language || navigator.userLanguage;
+            if (idiomaNavegador.toLowerCase() === "es-es") {
+                window.location.href = "/es";
+            }
         }
-    
+
         function desactivarRedireccion() {
-          localStorage.setItem('sinRedireccion', 'true');
+            localStorage.setItem('sinRedireccion', 'true');
         }
-    
+
         function verificarParametroNoRedireccion() {
-          var urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
-            desactivarRedireccion();
-          }
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+                desactivarRedireccion();
+            }
         }
-    
+
         //verificarParametroNoRedireccion();
         //redirigirSegunIdioma();
     </script>
@@ -93,30 +94,35 @@
             <a class="navbar-brand" href="./">
                 <img alt="Logo de CodeGenia" class="img-fluid" src="img/logo-codegenia.jpg">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"      aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./what-we-do"
-                            aria-label="What we do">What we do</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./what-we-do" aria-label="What we do">What we do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./success-cases"
-                            aria-label="Success cases">Success cases</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./success-cases" aria-label="Success cases">Success cases</a>
                     </li>
                     <!--li class="nav-item">
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Proyectos">Industries</a>
                     </!--li-->
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./about-us" aria-label="Sobre nosotros">About us</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./about-us" aria-label="Sobre nosotros">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./contact" aria-label="Contacto">Contact</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./contact" aria-label="Contacto">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./es?noredir=true" aria-label="Español">Español</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./es?noredir=true" aria-label="Español">Español</a>
                     </li>
                 </ul>
             </div>
@@ -133,9 +139,10 @@
                 <div class="col-md-8">
                     <h1 class="display-5 fw-bold mb-4">Transforming challenges into opportunities with our services</h1>
                     <p class="fs-4 lead mb-5">
-                        Discover CodeGenia: your specialist ally in <strong>Artificial Intelligence</strong>, <strong>Blockchain</strong>, and <strong>Extended Reality (XR) technologies.</strong><br><br>
+                        Discover CodeGenia: your specialist ally in <strong>Artificial Intelligence</strong>,
+                        <strong>Blockchain</strong>, and <strong>Extended Reality (XR) technologies.</strong><br><br>
                         We transform your business with solutions that truly make a difference.<br><br>
-                    </p>                    
+                    </p>
                 </div>
                 <!--div class="col-md-4 text-center">
                     <button type="button" class="btn button-animation mt-3 px-4 py-3" data-bs-toggle="modal" data-bs-target="#exampleModalXl" aria-label="Discover CodeGenia in video">
@@ -143,7 +150,8 @@
                     </button>
                 </!--div-->
             </div>
-            <div class="modal fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -164,19 +172,23 @@
             <h2 class="pb-2 border-bottom primary-color my-5 d-none">Innovative services at CodeGenia</h2>
             <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Tailored technology consulting</h3>
             <p class="lead pb-3">
-                At Codegenia, we don't do generic solutions or magic formulas. Our team dives deep into your business to truly understand what you need and design strategies that fit like a glove.
+                At Codegenia, we don't do generic solutions or magic formulas. Our team dives deep into your business to
+                truly understand what you need and design strategies that fit like a glove.
             </p>
             <div class="row">
                 <div class="col-md-6 pb-1">
                     <p class="lead"><strong>How do we do it?</strong></p>
                     <p class="lead">
-                        First, we sit down with you to evaluate your current processes. We identify those small (or big) bottlenecks, inefficiencies, and opportunities that might be holding back your growth.
+                        First, we sit down with you to evaluate your current processes. We identify those small (or big)
+                        bottlenecks, inefficiencies, and opportunities that might be holding back your growth.
                     </p>
                 </div>
                 <div class="col-md-6 pb-1">
                     <p class="lead"><strong>The result?</strong></p>
                     <p class="lead">
-                        A personalized plan that not only optimizes your business but also creates the perfect foundation to automate and scale your company effortlessly. Because we know that no two businesses are the same, and your solutions shouldn't be either.
+                        A personalized plan that not only optimizes your business but also creates the perfect
+                        foundation to automate and scale your company effortlessly. Because we know that no two
+                        businesses are the same, and your solutions shouldn't be either.
                     </p>
                 </div>
             </div>
@@ -188,26 +200,34 @@
 
     <div class="w-100 pt-2 pb-4 bg-white">
         <div class="container">
-            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Technology infrastructure design at your pace</h3>
+            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Technology infrastructure design at
+                your pace</h3>
             <p class="lead pb-3">
-                We understand that technology can feel like a puzzle, but we take care of putting it together for you. We design a plan that not only fits what you do today but also grows with you for what's to come.
+                We understand that technology can feel like a puzzle, but we take care of putting it together for you.
+                We design a plan that not only fits what you do today but also grows with you for what's to come.
             </p>
             <div class="row">
                 <div class="col-md-6 pb-1">
                     <p class="lead"><strong>What exactly do we do?</strong></p>
                     <ul class="lead">
-                        <li>We map your current processes (we dive into every last detail!) and redesign workflows, integrating AI where it truly makes a difference.</li>
-                        <li>We set clear and achievable goals because it's not about “implementing for the sake of it,” but doing it with purpose.</li>
-                        <li>We research and select the perfect tools for your business: analyzing features, costs, and compatibility with your current systems (because no one likes to reinvent the wheel).</li>
+                        <li>We map your current processes (we dive into every last detail!) and redesign workflows,
+                            integrating AI where it truly makes a difference.</li>
+                        <li>We set clear and achievable goals because it's not about “implementing for the sake of it,”
+                            but doing it with purpose.</li>
+                        <li>We research and select the perfect tools for your business: analyzing features, costs, and
+                            compatibility with your current systems (because no one likes to reinvent the wheel).</li>
                         <li>We design a technological architecture that works like a Swiss watch.</li>
-                        <li>We test, test, and test again: conducting proof-of-concept trials to ensure everything works as expected.</li>
-                        <li>We assist with the transition: creating a change management plan so everything flows smoothly without stress.</li>
+                        <li>We test, test, and test again: conducting proof-of-concept trials to ensure everything works
+                            as expected.</li>
+                        <li>We assist with the transition: creating a change management plan so everything flows
+                            smoothly without stress.</li>
                     </ul>
                 </div>
                 <div class="col-md-6 pb-1">
                     <p class="lead"><strong>The result?</strong></p>
                     <p class="lead">
-                        An infrastructure that optimizes your resources, reduces your costs, and frees you up to focus on what's truly strategic.
+                        An infrastructure that optimizes your resources, reduces your costs, and frees you up to focus
+                        on what's truly strategic.
                     </p>
                 </div>
             </div>
@@ -219,19 +239,25 @@
 
     <div class="w-100 pt-2 pb-4 bg-white">
         <div class="container">
-            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Effortless automation, just results</h3>
+            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Effortless automation, just results
+            </h3>
             <p class="lead pb-3">
-                We make it happen. We implement automation solutions that not only work but make your business run faster and with less effort.
+                We make it happen. We implement automation solutions that not only work but make your business run
+                faster and with less effort.
             </p>
             <div class="row">
                 <div class="col-md-6 pb-1">
                     <p class="lead"><strong>What do we do?</strong></p>
                     <ul class="lead">
-                        <li>We choose the tools that fit you best: from management software (BPM) to RPA and AI systems that will make you think, "Why didn't we do this before?"</li>
-                        <li>We configure and customize everything so you don't have to adapt to the technology; the technology adapts to you.</li>
+                        <li>We choose the tools that fit you best: from management software (BPM) to RPA and AI systems
+                            that will make you think, "Why didn't we do this before?"</li>
+                        <li>We configure and customize everything so you don't have to adapt to the technology; the
+                            technology adapts to you.</li>
                         <li>We migrate the data you need and put it to work for you.</li>
-                        <li>We test the solution in a specific department or process, tweaking every detail until it's perfect.</li>
-                        <li>We closely monitor everything: performance, adoption, results. If something isn't 100%, we fine-tune it.</li>
+                        <li>We test the solution in a specific department or process, tweaking every detail until it's
+                            perfect.</li>
+                        <li>We closely monitor everything: performance, adoption, results. If something isn't 100%, we
+                            fine-tune it.</li>
                     </ul>
                 </div>
                 <div class="col-md-6 pb-1">
@@ -249,31 +275,38 @@
 
     <div class="w-100 pt-2 pb-4 bg-white">
         <div class="container">
-            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Technology that plays well with what you already have</h3>
+            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Technology that plays well with what
+                you already have</h3>
             <p class="lead pb-3">
-                So your current system and new tools don't clash like oil and water. We make sure they become the best of friends.
+                So your current system and new tools don't clash like oil and water. We make sure they become the best
+                of friends.
             </p>
             <div class="row">
                 <div class="col-md-4 pb-1">
                     <p class="lead"><strong>What do we do?</strong></p>
                     <ul class="lead">
-                        <li>We integrate our solutions with your existing systems, ensuring everything runs smoothly without unnecessary interruptions (yes, your operations keep running while we work).</li>
-                        <li>We improve communication between departments and systems so they stop “miscommunicating” and start flowing.</li>
-                        <li>Slow processes? Errors keeping you up at night? With our integration, everything becomes faster and more accurate.</li>
+                        <li>We integrate our solutions with your existing systems, ensuring everything runs smoothly
+                            without unnecessary interruptions (yes, your operations keep running while we work).</li>
+                        <li>We improve communication between departments and systems so they stop “miscommunicating” and
+                            start flowing.</li>
+                        <li>Slow processes? Errors keeping you up at night? With our integration, everything becomes
+                            faster and more accurate.</li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 pb-1">
                     <p class="lead"><strong>And what happens next?</strong></p>
                     <p class="lead">
-                        We test the integration like solving an escape room: everything must fit perfectly. We make sure everything is running at its peak before hitting the “all set” button.
+                        We test the integration like solving an escape room: everything must fit perfectly. We make sure
+                        everything is running at its peak before hitting the “all set” button.
                     </p>
                 </div>
 
                 <div class="col-md-4 pb-1">
                     <p class="lead"><strong>The result?</strong></p>
                     <p class="lead">
-                        A transition so smooth you won't even notice something changed… until you see how everything works faster, better, and without complications.
+                        A transition so smooth you won't even notice something changed… until you see how everything
+                        works faster, better, and without complications.
                     </p>
                 </div>
             </div>
@@ -285,29 +318,37 @@
 
     <div class="w-100 pt-2 pb-4 bg-white">
         <div class="container">
-            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Continuous optimization and support: because we don't disappear</h3>
+            <h3 class="featurette-heading fw-normal lh-1 my-3 py-3 primary-color">Continuous optimization and support:
+                because we don't disappear</h3>
             <p class="lead pb-3">
-                Did you think we would install everything and leave you to fend for yourself? Not in a million years. We're more of the "don't worry, we're still here" type.
+                Did you think we would install everything and leave you to fend for yourself? Not in a million years.
+                We're more of the "don't worry, we're still here" type.
             </p>
             <div class="row">
                 <div class="col-md-4 pb-1">
                     <p class="lead"><strong>What do we do after implementation?</strong></p>
                     <ul class="lead">
-                        <li>We ensure your solutions not only work but grow with you, like that companion who's always by your side when you need them most.</li>
-                        <li>We constantly adjust and optimize. If something isn't going as expected, we work our magic (spoiler: analysis and testing).</li>
-                        <li>We listen to user feedback. Yes, the kind of feedback that no one sometimes wants to hear, but it's pure gold.</li>
+                        <li>We ensure your solutions not only work but grow with you, like that companion who's always
+                            by your side when you need them most.</li>
+                        <li>We constantly adjust and optimize. If something isn't going as expected, we work our magic
+                            (spoiler: analysis and testing).</li>
+                        <li>We listen to user feedback. Yes, the kind of feedback that no one sometimes wants to hear,
+                            but it's pure gold.</li>
                     </ul>
                 </div>
                 <div class="col-md-4 pb-1">
                     <p class="lead"><strong>Why all the effort?</strong></p>
                     <p class="lead">
-                        Because we know businesses don't stand still. What works today may not be enough tomorrow, and we're here to make sure you're always one step ahead.
+                        Because we know businesses don't stand still. What works today may not be enough tomorrow, and
+                        we're here to make sure you're always one step ahead.
                     </p>
                 </div>
                 <div class="col-md-4 pb-1">
                     <p class="lead"><strong>The result?</strong></p>
                     <p class="lead">
-                        Solutions that evolve with you, a team that never leaves you hanging, and the peace of mind knowing your technology will always be up to par. Ready for this endless journey of improvements?
+                        Solutions that evolve with you, a team that never leaves you hanging, and the peace of mind
+                        knowing your technology will always be up to par. Ready for this endless journey of
+                        improvements?
                     </p>
                 </div>
             </div>
@@ -324,30 +365,34 @@
             <div class="row g-4 pt-5 row-cols-1 row-cols-lg-3 text-center">
                 <div class="feature col-md-4">
                     <h3 class="fs-2 text-body-emphasis">Tailored to you</h3>
-                    <p>If you let us, we'll dive deep into your processes to find ways to improve, streamline, and optimize everything.</p>
+                    <p>If you let us, we'll dive deep into your processes to find ways to improve, streamline, and
+                        optimize everything.</p>
                 </div>
                 <div class="feature col-md-4">
                     <h3 class="fs-2 text-body-emphasis">Always based on technology</h3>
-                    <p>We are always up-to-date, so you set the goal and we chart the course with the most suitable technological infrastructure for you and your needs.</p>
-                </div>                
+                    <p>We are always up-to-date, so you set the goal and we chart the course with the most suitable
+                        technological infrastructure for you and your needs.</p>
+                </div>
                 <div class="feature col-md-4">
                     <h3 class="fs-2 text-body-emphasis">If it can be automated, we will</h3>
-                    <p>Efficiency is our flag. We don't reinvent the wheel, and we believe in the constant optimization of processes.</p>
+                    <p>Efficiency is our flag. We don't reinvent the wheel, and we believe in the constant optimization
+                        of processes.</p>
                 </div>
                 <div class="feature col-md-4">
                     <h3 class="fs-2 text-body-emphasis">We make systems speak to each other</h3>
                     <p>We become translators for you, ensuring your systems understand each other.</p>
-                </div>                
+                </div>
                 <div class="feature col-md-4 order-md-5">
                     <h3 class="fs-2 text-body-emphasis">Ongoing optimization and support</h3>
-                    <p>We come in, optimize, but we don't leave. We're in this with you. You'll have our support for everything you need.</p>
+                    <p>We come in, optimize, but we don't leave. We're in this with you. You'll have our support for
+                        everything you need.</p>
                 </div>
                 <div class="feature col-md-4 order-md-4">
                     <img class="img-fluid" src="./img/servicios.jpg" />
                 </div>
             </div>
 
-            
+
         </div>
     </div>
 
@@ -360,14 +405,21 @@
                 <div class="col-md-12">
                     <div class="row featurette py-4 align-items-center">
                         <div class="col-md-4 order-md-2 text-center">
-                            <img src="img/Herramientas.jpg" alt="Blockchain solutions for secure data transactions by CodeGenia" class="img-fluid img-technology">
+                            <img src="img/Herramientas.jpg"
+                                alt="Blockchain solutions for secure data transactions by CodeGenia"
+                                class="img-fluid img-technology">
                         </div>
                         <div class="col-md-8 order-md-1">
-                            <h3 class="featurette-heading fw-normal lh-1 my-3">Integración de nuevas soluciones tecnólogicas con sistemas existentes</h3>
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Integración de nuevas soluciones
+                                tecnólogicas con sistemas existentes</h3>
                             <ul class="lead">
-                                <li>Desarrollamos la integración de nuestras soluciones tecnológicas con los sistemas existentes, asegurando una transición fluida y minimizando la interrupción de las operaciones.</li>
-                                <li>Mejora la comunicación entre departamentos y sistemas, optimizando el flujo de información.</li>
-                                <li>Aumenta la velocidad y precisión de los procesos, liberando recursos para tareas de mayor valor.</li>
+                                <li>Desarrollamos la integración de nuestras soluciones tecnológicas con los sistemas
+                                    existentes, asegurando una transición fluida y minimizando la interrupción de las
+                                    operaciones.</li>
+                                <li>Mejora la comunicación entre departamentos y sistemas, optimizando el flujo de
+                                    información.</li>
+                                <li>Aumenta la velocidad y precisión de los procesos, liberando recursos para tareas de
+                                    mayor valor.</li>
                                 <li>Pruebas de integración y funcionalidad.</li>
                             </ul>
                             <!--a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./blockchain">
@@ -377,7 +429,7 @@
                                 <span></span>
                                 <span></span>
                             </!--a-->
-                        </div>                        
+                        </div>
                     </div>
 
                     <div class="row featurette py-4 align-items-center">
@@ -388,9 +440,11 @@
                         <div class="col-md-8">
                             <h3 class="featurette-heading fw-normal lh-1 my-3">Optimización y soporte continuo</h3>
                             <ul class="lead">
-                                <li>Aseguramos que las soluciones evolucionen con tu negocio, nuestra relación no termina con la implementación.</li>
-                                <li>Te acompañamos en un proceso continuo de mejora y actualización para garantizar que tus soluciones evolucionen junto a tus objetivos.</li>
-                                <li>Ajustes y optimizaciones basados en los resultados de las pruebas.</li> 
+                                <li>Aseguramos que las soluciones evolucionen con tu negocio, nuestra relación no
+                                    termina con la implementación.</li>
+                                <li>Te acompañamos en un proceso continuo de mejora y actualización para garantizar que
+                                    tus soluciones evolucionen junto a tus objetivos.</li>
+                                <li>Ajustes y optimizaciones basados en los resultados de las pruebas.</li>
                                 <li>Recopilación feedback usuarios.</li>
                             </ul>
                             <!--a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./virtual-reality">
@@ -445,7 +499,8 @@
                     <div class="carousel-item active" data-bs-interval="4000">
                         <div class="row">
                             <div class="col-md-3 justify-content-center align-middle d-flex">
-                                <img src="logos/tensorflow_logo.svg" class="img-fluid img-carousel" alt="Tensorflow Logo">
+                                <img src="logos/tensorflow_logo.svg" class="img-fluid img-carousel"
+                                    alt="Tensorflow Logo">
                             </div>
                             <div class="col-md-3 justify-content-center align-middle d-flex">
                                 <img src="logos/pytorch_logo.svg" class="img-fluid img-carousel" alt="Pytorch Logo">
@@ -502,26 +557,40 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=C/+Hortaleza+106+28004+Madrid&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embed-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
-                                Hortaleza 106, 6 Derecha<br>
-                                28004 Madrid (Spain)
+                                <div class="mb-3"
+                                    style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;">
+                                    <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+                                        <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                                            src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                    </div>
+                                    <style>
+                                        #embedded-map-display img.text-marker {
+                                            max-width: none !important;
+                                            background: none !important;
+                                        }
+
+                                        img {
+                                            max-width: none
+                                        }
+                                    </style>
+                                </div>
+                                Reina Fabiola, 37 Of. 131<br>
+                                50008 Zaragoza (Spain)<br>
                             </div>
-                            <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
-                                Joaquín Costa 8, 2 Derecha<br>
-                                50001 Zaragoza (Spain)<br>
-                            </div>                            
                         </div>
 
                         <h4 class="mt-5 mb-2">Follow us</h4>
                         <ul class="list-unstyled d-flex">
                             <li>
-                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer"
+                                    class="btn" target="_blank"
+                                    style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-linkedin"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn"
+                                    target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-instagram"></i>
                                 </a>
                             </li>
@@ -531,31 +600,38 @@
                         <h4 class="mb-4">Navigation</h4>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="./services" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="Services">Services</a> 
+                                <a href="./services"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Services">Services</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./success-cases" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./success-cases"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Success cases">Success cases</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./about-us" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./about-us"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="About us">About us</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./contact" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./contact"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Contact">Contact</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./politica-de-privacidad" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./politica-de-privacidad"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Privacy-policy">Privacy policy</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./aviso-legal" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./aviso-legal"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Legal notice">Legal notice</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="/es?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="/es?noredir=true"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Español">Español</a>
                             </li>
                         </ul>
@@ -564,7 +640,8 @@
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
                     <p>
                         © 2025 CodeGenia. All rights reserved.<br>
-                        CodeGenia is a <a class="text-white" rel="noopener noreferrer" target="_blank" href="https://dareplanet.com">DarePlanet</a> company.
+                        CodeGenia is a <a class="text-white" rel="noopener noreferrer" target="_blank"
+                            href="https://dareplanet.com">DarePlanet</a> company.
                     </p>
                 </div>
 
@@ -594,4 +671,5 @@
     </script>
 
 </body>
+
 </html>

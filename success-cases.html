@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
+    <meta name="description"
+        content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
     <meta name="keywords"
         content="Artificial intelligence, artificial intelligence projects, blockchain solutions, blockchain, extended reality, augmented reality, XR, VR, AR, MR">
     <meta name="author" content="CodeGenia">
@@ -44,26 +45,26 @@
 
     <script defer>
         function redirigirSegunIdioma() {
-          if (localStorage.getItem('sinRedireccion') === 'true') {
-            return;
-          }    
-          var idiomaNavegador = navigator.language || navigator.userLanguage;    
-          if (idiomaNavegador.toLowerCase() === "es-es") {
-            window.location.href = "/es";
-          }
+            if (localStorage.getItem('sinRedireccion') === 'true') {
+                return;
+            }
+            var idiomaNavegador = navigator.language || navigator.userLanguage;
+            if (idiomaNavegador.toLowerCase() === "es-es") {
+                window.location.href = "/es";
+            }
         }
-    
+
         function desactivarRedireccion() {
-          localStorage.setItem('sinRedireccion', 'true');
+            localStorage.setItem('sinRedireccion', 'true');
         }
-    
+
         function verificarParametroNoRedireccion() {
-          var urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
-            desactivarRedireccion();
-          }
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+                desactivarRedireccion();
+            }
         }
-    
+
         //verificarParametroNoRedireccion();
         //redirigirSegunIdioma();
     </script>
@@ -93,30 +94,35 @@
             <a class="navbar-brand" href="./">
                 <img alt="Logo de CodeGenia" class="img-fluid" src="img/logo-codegenia.jpg">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"      aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./what-we-do"
-                            aria-label="What we do">What we do</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./what-we-do" aria-label="What we do">What we do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./success-cases"
-                            aria-label="Success cases">Success cases</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./success-cases" aria-label="Success cases">Success cases</a>
                     </li>
                     <!--li class="nav-item">
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Industries">Industries</a>
                     </!--li-->
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./about-us" aria-label="About us">About us</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./about-us" aria-label="About us">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./contact" aria-label="Contact">Contact</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./contact" aria-label="Contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./es?noredir=true" aria-label="Español">Español</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./es?noredir=true" aria-label="Español">Español</a>
                     </li>
                 </ul>
             </div>
@@ -159,29 +165,38 @@
                     <ul class="lead mb-5">
                         <li>An average increase of 30% in operational efficiency.</li>
                         <li>A 90% reduction in human errors within their processes.</li>
-                        <li>A 70% decrease in time spent on administrative tasks: Thanks to automation, the time dedicated to manual management has been significantly reduced.</li>
+                        <li>A 70% decrease in time spent on administrative tasks: Thanks to automation, the time
+                            dedicated to manual management has been significantly reduced.</li>
                     </ul>
 
                     <div class="row align-items-center featurette py-4 my-3">
                         <div class="col-md-5 text-center">
-                            <img src="./img/header-naval.png" alt="Logotipo de Inteligencia Artificial de CodeGenia" class="img-fluid img-technology">
+                            <img src="./img/header-naval.png" alt="Logotipo de Inteligencia Artificial de CodeGenia"
+                                class="img-fluid img-technology">
                         </div>
                         <div class="col-md-7">
-                            <h3 class="featurette-heading fw-normal lh-1 my-3">Intelligent automation of the order process</h3>
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Intelligent automation of the order
+                                process</h3>
                             <p class="lead">
-                                For one of our clients in the naval sector, we transformed their product order management process by achieving full automation, optimizing time, accuracy, and efficiency across the entire order cycle.
+                                For one of our clients in the naval sector, we transformed their product order
+                                management process by achieving full automation, optimizing time, accuracy, and
+                                efficiency across the entire order cycle.
                             </p>
                             <p class="lead">
-                                The client sought a way to improve the management of their orders received via email, a task that required time and manual effort to coordinate with suppliers, update prices, and check stock availability. Additionally, they needed to streamline the creation of customized proposals for each client, including the relevant technical documentation.
+                                The client sought a way to improve the management of their orders received via email, a
+                                task that required time and manual effort to coordinate with suppliers, update prices,
+                                and check stock availability. Additionally, they needed to streamline the creation of
+                                customized proposals for each client, including the relevant technical documentation.
                             </p>
-                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./intelligent-automation-orders">
+                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3"
+                                href="./intelligent-automation-orders">
                                 More information
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </a>
-                        </div>                        
+                        </div>
                     </div>
 
                 </div>
@@ -206,17 +221,27 @@
 
                     <div class="row featurette py-4 align-items-center mb-3">
                         <div class="col-md-5 order-md-2 text-center">
-                            <img src="./img/header-files.jpg" alt="Blockchain solutions for secure data transactions by CodeGenia" class="img-fluid">
+                            <img src="./img/header-files.jpg"
+                                alt="Blockchain solutions for secure data transactions by CodeGenia" class="img-fluid">
                         </div>
                         <div class="col-md-7 order-md-1">
-                            <h3 class="featurette-heading fw-normal lh-1 my-3">Artificial Intelligence files transformation</h3>
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Artificial Intelligence files
+                                transformation</h3>
                             <p class="lead">
-                                Our client, an engineering services company, received files from their clients in various formats and with heterogeneous data, making the quote creation process slow and requiring significant manual effort to consolidate the information. This process not only caused delays but also increased operational costs and the risk of errors in quotations.
+                                Our client, an engineering services company, received files from their clients in
+                                various formats and with heterogeneous data, making the quote creation process slow and
+                                requiring significant manual effort to consolidate the information. This process not
+                                only caused delays but also increased operational costs and the risk of errors in
+                                quotations.
                             </p>
                             <p class="lead">
-                                We implemented an advanced solution combining Artificial Intelligence and Robotic Process Automation (RPA), which now enables our client to manage orders autonomously, requiring only minimal human validation and reducing the time and effort required for the quote creation process.
+                                We implemented an advanced solution combining Artificial Intelligence and Robotic
+                                Process Automation (RPA), which now enables our client to manage orders autonomously,
+                                requiring only minimal human validation and reducing the time and effort required for
+                                the quote creation process.
                             </p>
-                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="./artificial-intelligence-files-transformation">
+                            <a class="btn button-animation button-animation-gray mt-3 px-4 py-3"
+                                href="./artificial-intelligence-files-transformation">
                                 More information
                                 <span></span>
                                 <span></span>
@@ -224,7 +249,7 @@
                                 <span></span>
                             </a>
                         </div>
-                        
+
                     </div>
 
                     <!--div class="row featurette py-4 align-items-center mb-3">
@@ -253,7 +278,8 @@
         </div>
     </div>
 
-    <img class="img-fluid" alt="Imagen de fondo para cambio de sección con formas de triangulo" src="img/fondo-derecha-abajo-triangulo.jpg" />
+    <img class="img-fluid" alt="Imagen de fondo para cambio de sección con formas de triangulo"
+        src="img/fondo-derecha-abajo-triangulo.jpg" />
 
     <div id="projects" class="bg-gray anchorSpace"></div>
 
@@ -263,17 +289,23 @@
 
             <div class="row featurette my-5 align-items-center">
                 <div class="col-md-5 text-center">
-                    <img src="img/nica.jpg" alt="AI software solution by CodeGenia for business data analysis" class="img-fluid imgBorderRadius mb-3 img-technology">
+                    <img src="img/nica.jpg" alt="AI software solution by CodeGenia for business data analysis"
+                        class="img-fluid imgBorderRadius mb-3 img-technology">
                 </div>
                 <div class="col-md-6 offset-md-1">
                     <h3 class="featurette-heading fw-normal lh-1 my-3">NICA - The next step in 3D</h3>
                     <p class="lead mt-3">
-                        The next step in 3D, get better image quality results & details according to your project level through Artificial Intelligence. Nica elevates your capture system getting hyper-realistic details of reflections, lighting & textures on objetcs, characters and landscapes.
+                        The next step in 3D, get better image quality results & details according to your project level
+                        through Artificial Intelligence. Nica elevates your capture system getting hyper-realistic
+                        details of reflections, lighting & textures on objetcs, characters and landscapes.
                     </p>
-                    <p class="lead mt-3">                        
-                        Using the characteristics of a virtual camera, Nica captures and predicts a moving image. It obtains the elements from a photogrammetry scanner and processes them through its unique Artificial Intelligence algorithm, creating the real image with results never seen before.
+                    <p class="lead mt-3">
+                        Using the characteristics of a virtual camera, Nica captures and predicts a moving image. It
+                        obtains the elements from a photogrammetry scanner and processes them through its unique
+                        Artificial Intelligence algorithm, creating the real image with results never seen before.
                     </p>
-                    <a class="btn button-animation button-animation-gray mt-3 px-4 py-3" href="https://nicarevolution.com" target="_blank" rel="noopener noreferrer">
+                    <a class="btn button-animation button-animation-gray mt-3 px-4 py-3"
+                        href="https://nicarevolution.com" target="_blank" rel="noopener noreferrer">
                         More information
                         <span></span>
                         <span></span>
@@ -285,30 +317,51 @@
 
             <div class="row featurette my-5 align-items-center">
                 <div class="col-md-5 offset-md-1 order-md-2 text-center">
-                    <img src="img/virtual-reality.jpg" alt="Virtual reality platform by CodeGenia" class="img-fluid imgBorderRadius mb-3 img-technology">
+                    <img src="img/virtual-reality.jpg" alt="Virtual reality platform by CodeGenia"
+                        class="img-fluid imgBorderRadius mb-3 img-technology">
                 </div>
                 <div class="col-md-6 order-md-1">
                     <h3 class="featurette-heading fw-normal lh-1 my-3">VR/AR/360 Platform</h3>
                     <p class="lead mt-3">
-                        Discover the next generation of digital interaction with our Virtual Reality and Augmented Reality platform. Designed to transform how you experience the 3D world, our solution allows you to visualize three-dimensional objects with unprecedented detail, explore immersive environments, and navigate through 360° images with remarkable fluidity. Whether you want to showcase products, simulate environments, or create interactive experiences, our platform combines the best of VR and AR to offer you a space where the physical and digital converge.
+                        Discover the next generation of digital interaction with our Virtual Reality and Augmented
+                        Reality platform. Designed to transform how you experience the 3D world, our solution allows you
+                        to visualize three-dimensional objects with unprecedented detail, explore immersive
+                        environments, and navigate through 360° images with remarkable fluidity. Whether you want to
+                        showcase products, simulate environments, or create interactive experiences, our platform
+                        combines the best of VR and AR to offer you a space where the physical and digital converge.
                     </p>
                     <p class="lead">
-                        Ideal for sectors such as architecture, education, entertainment, and commerce, our platform allows users to interact intuitively, providing immersive experiences that enhance engagement and retention. Moreover, its cross-platform integration ensures easy access from any device. Bring your ideas to life and allow your audience to explore, discover, and connect with your content in an entirely new and exciting way.
-                    </p>       
+                        Ideal for sectors such as architecture, education, entertainment, and commerce, our platform
+                        allows users to interact intuitively, providing immersive experiences that enhance engagement
+                        and retention. Moreover, its cross-platform integration ensures easy access from any device.
+                        Bring your ideas to life and allow your audience to explore, discover, and connect with your
+                        content in an entirely new and exciting way.
+                    </p>
                 </div>
             </div>
 
             <div class="row featurette my-5 align-items-center">
                 <div class="col-md-5 text-center">
-                    <img src="img/logo-infinita.jpg" alt="Infinita tokenization platform logo" class="img-fluid imgBorderRadius mb-3 img-technology">
+                    <img src="img/logo-infinita.jpg" alt="Infinita tokenization platform logo"
+                        class="img-fluid imgBorderRadius mb-3 img-technology">
                 </div>
                 <div class="col-md-6 offset-md-1">
                     <h3 class="featurette-heading fw-normal lh-1 my-3">Infinita - Tokenization Platform</h3>
-                    <p class="lead mt-3">                        
-                        Step into the future of digitalization with our blockchain platform that allows you to create tokens and NFTs quickly, securely, and effortlessly. Designed for businesses, creators, and developers, our platform puts the ability to generate unique digital assets at your fingertips with just a few clicks. Whether you're looking to launch your own token, tokenize assets, or create digital collectibles, our blockchain solution offers the robust and scalable infrastructure you need.
+                    <p class="lead mt-3">
+                        Step into the future of digitalization with our blockchain platform that allows you to create
+                        tokens and NFTs quickly, securely, and effortlessly. Designed for businesses, creators, and
+                        developers, our platform puts the ability to generate unique digital assets at your fingertips
+                        with just a few clicks. Whether you're looking to launch your own token, tokenize assets, or
+                        create digital collectibles, our blockchain solution offers the robust and scalable
+                        infrastructure you need.
                     </p>
                     <p class="lead mt-3">
-                        With cutting-edge technology, we ensure fast, secure, and transparent transactions. Additionally, our platform is designed with usability in mind, making it easy for anyone, regardless of their level of experience, to use. Ideal for commerce, digital art, video games, and more, it opens doors to new business opportunities and monetization. Join the blockchain revolution and take your project to the next level with the creation of unique and certified digital assets.
+                        With cutting-edge technology, we ensure fast, secure, and transparent transactions.
+                        Additionally, our platform is designed with usability in mind, making it easy for anyone,
+                        regardless of their level of experience, to use. Ideal for commerce, digital art, video games,
+                        and more, it opens doors to new business opportunities and monetization. Join the blockchain
+                        revolution and take your project to the next level with the creation of unique and certified
+                        digital assets.
                     </p>
                 </div>
             </div>
@@ -328,26 +381,40 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=C/+Hortaleza+106+28004+Madrid&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embed-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
-                                Hortaleza 106, 6 Derecha<br>
-                                28004 Madrid (Spain)
+                                <div class="mb-3"
+                                    style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;">
+                                    <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+                                        <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                                            src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                    </div>
+                                    <style>
+                                        #embedded-map-display img.text-marker {
+                                            max-width: none !important;
+                                            background: none !important;
+                                        }
+
+                                        img {
+                                            max-width: none
+                                        }
+                                    </style>
+                                </div>
+                                Reina Fabiola, 37 Of. 131<br>
+                                50008 Zaragoza (Spain)<br>
                             </div>
-                            <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
-                                Joaquín Costa 8, 2 Derecha<br>
-                                50001 Zaragoza (Spain)<br>
-                            </div>                            
                         </div>
 
                         <h4 class="mt-5 mb-2">Follow us</h4>
                         <ul class="list-unstyled d-flex">
                             <li>
-                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer"
+                                    class="btn" target="_blank"
+                                    style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-linkedin"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn"
+                                    target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
                                     <i class="text-white bi bi-instagram"></i>
                                 </a>
                             </li>
@@ -357,31 +424,38 @@
                         <h4 class="mb-4">Navigation</h4>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a href="./what-we-do" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="What we do">What we do</a> 
+                                <a href="./what-we-do"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="What we do">What we do</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./success-cases" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./success-cases"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Success cases">Success cases</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./about-us" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./about-us"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="About us">About us</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./contact" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./contact"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Contact">Contact</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./privacy-policy" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./privacy-policy"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Privacy-policy">Privacy policy</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="./legal-notice" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="./legal-notice"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Legal notice">Legal notice</a>
                             </li>
                             <li class="nav-item mb-2">
-                                <a href="/es?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                <a href="/es?noredir=true"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
                                     aria-label="Español">Español</a>
                             </li>
                         </ul>
@@ -390,7 +464,8 @@
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
                     <p>
                         © 2025 CodeGenia. All rights reserved.<br>
-                        CodeGenia is a <a class="text-white" rel="noopener noreferrer" target="_blank" href="https://dareplanet.com">DarePlanet</a> company.
+                        CodeGenia is a <a class="text-white" rel="noopener noreferrer" target="_blank"
+                            href="https://dareplanet.com">DarePlanet</a> company.
                     </p>
                 </div>
 
@@ -420,4 +495,5 @@
     </script>
 
 </body>
+
 </html>

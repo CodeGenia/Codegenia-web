@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
+    <meta name="description"
+        content="CodeGenia is at the forefront of innovation, providing cutting-edge solutions in artificial intelligence, blockchain, and extended reality to empower businesses and transform industries.">
     <meta name="keywords"
         content="Artificial intelligence, artificial intelligence projects, blockchain solutions, blockchain, extended reality, augmented reality, XR, VR, AR, MR">
     <meta name="author" content="CodeGenia">
@@ -44,26 +45,26 @@
 
     <script defer>
         function redirigirSegunIdioma() {
-          if (localStorage.getItem('sinRedireccion') === 'true') {
-            return;
-          }    
-          var idiomaNavegador = navigator.language || navigator.userLanguage;    
-          if (idiomaNavegador.toLowerCase() === "es-es") {
-            window.location.href = "/es";
-          }
+            if (localStorage.getItem('sinRedireccion') === 'true') {
+                return;
+            }
+            var idiomaNavegador = navigator.language || navigator.userLanguage;
+            if (idiomaNavegador.toLowerCase() === "es-es") {
+                window.location.href = "/es";
+            }
         }
-    
+
         function desactivarRedireccion() {
-          localStorage.setItem('sinRedireccion', 'true');
+            localStorage.setItem('sinRedireccion', 'true');
         }
-    
+
         function verificarParametroNoRedireccion() {
-          var urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
-            desactivarRedireccion();
-          }
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+                desactivarRedireccion();
+            }
         }
-    
+
         //verificarParametroNoRedireccion();
         //redirigirSegunIdioma();
     </script>
@@ -93,30 +94,35 @@
             <a class="navbar-brand" href="./">
                 <img alt="Logo de CodeGenia" class="img-fluid" src="./../img/logo-codegenia.jpg">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./que-hacemos"
-                            aria-label="Qué hacemos">Qué hacemos</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./que-hacemos" aria-label="Qué hacemos">Qué hacemos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" href="./casos-de-exito"
-                            aria-label="Casos de éxito">Casos de éxito</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./casos-de-exito" aria-label="Casos de éxito">Casos de éxito</a>
                     </li>
                     <!--li class="nav-item">
                         <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Proyectos">Industries</a>
                     </!--li-->
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./sobre-nosotros" aria-label="Sobre nosotros">Sobre nosotros</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./sobre-nosotros" aria-label="Sobre nosotros">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./contacto" aria-label="Contacto">Contacto</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./contacto" aria-label="Contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./../?noredir=true" aria-label="English">English</a>
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./../?noredir=true" aria-label="English">English</a>
                     </li>
                 </ul>
             </div>
@@ -132,10 +138,11 @@
     <div class="container pt-5 pb-4 mt-5 text-white">
         <div class="row align-items-center">
             <div class="col-md-8">
-                <h1 class="display-5 fw-bold mt-5 mb-5">Caso de éxito: Transformación y estandarización de ficheros con IA</h1>
+                <h1 class="display-5 fw-bold mt-5 mb-5">Caso de éxito: Transformación y estandarización de ficheros con
+                    IA</h1>
                 <br><br>
             </div>
-        </div>        
+        </div>
     </div>
 
     <div class="bg-white">
@@ -145,195 +152,250 @@
                     <div class="row align-items-center featurette py-4 mt-3">
                         <div class="col-md-12">
                             <h3 class="featurette-heading fw-normal lh-1 my-3">Desafío</h3>
-                            <p class="lead mb-5">Nuestro cliente, una empresa dedicada a servicios de ingeniería, recibía archivos de sus clientes en diferentes formatos y con datos heterogéneos, lo que hacía que el proceso de creación de presupuestos fuera lento y requería un alto esfuerzo manual para consolidar la información. Este proceso no solo generaba demoras, sino que incrementaba los costos operativos y el riesgo de errores en las cotizaciones.</p>
+                            <p class="lead mb-5">Nuestro cliente, una empresa dedicada a servicios de ingeniería,
+                                recibía archivos de sus clientes en diferentes formatos y con datos heterogéneos, lo que
+                                hacía que el proceso de creación de presupuestos fuera lento y requería un alto esfuerzo
+                                manual para consolidar la información. Este proceso no solo generaba demoras, sino que
+                                incrementaba los costos operativos y el riesgo de errores en las cotizaciones.</p>
 
                             <h3 class="featurette-heading fw-normal lh-1 my-3">Solución</h3>
-                            <p class="lead">Implementamos una solución avanzada de Inteligencia Artificial y Automatización Robótica de Procesos (RPA), que ahora permite a nuestro cliente gestionar pedidos de manera autónoma y sin intervención humana en cada etapa clave:</p>
+                            <p class="lead">Implementamos una solución avanzada de Inteligencia Artificial y
+                                Automatización Robótica de Procesos (RPA), que ahora permite a nuestro cliente gestionar
+                                pedidos de manera autónoma y sin intervención humana en cada etapa clave:</p>
                             <ol class="lead mb-5">
-                                <li>Recepción y clasificación automática de emails: El sistema de IA identifica, clasifica y extrae automáticamente la información clave del email del cliente, reconociendo el tipo de producto y sus requisitos específicos.</li>
-                                <li>Comunicación automatizada con proveedores: A través de RPA, se envían automáticamente solicitudes a los proveedores, verificando stock y actualizaciones de precios en tiempo real. Nuestro sistema se integra directamente con las plataformas de los proveedores, lo que permite tener información siempre actualizada y evitar cualquier demora en la cadena de suministro.</li>
-                                <li>Actualización de precios y stock en tiempo real: La solución de IA supervisa constantemente la disponibilidad y el coste de cada producto, permitiendo ajustar rápidamente las ofertas según las últimas condiciones del mercado. Esto garantiza que el cliente recibe una propuesta precisa y ajustada a la realidad de cada proveedor.</li>
-                                <li>Preparación automática de propuestas y documentación: Generamos un borrador de respuesta que incluye una oferta detallada y personalizada para el cliente, con la documentación técnica adecuada y cualquier archivo adicional relevante. Todo ello se presenta en un email de respuesta listo para ser enviado con un solo clic.</li>
+                                <li>Recepción y clasificación automática de emails: El sistema de IA identifica,
+                                    clasifica y extrae automáticamente la información clave del email del cliente,
+                                    reconociendo el tipo de producto y sus requisitos específicos.</li>
+                                <li>Comunicación automatizada con proveedores: A través de RPA, se envían
+                                    automáticamente solicitudes a los proveedores, verificando stock y actualizaciones
+                                    de precios en tiempo real. Nuestro sistema se integra directamente con las
+                                    plataformas de los proveedores, lo que permite tener información siempre actualizada
+                                    y evitar cualquier demora en la cadena de suministro.</li>
+                                <li>Actualización de precios y stock en tiempo real: La solución de IA supervisa
+                                    constantemente la disponibilidad y el coste de cada producto, permitiendo ajustar
+                                    rápidamente las ofertas según las últimas condiciones del mercado. Esto garantiza
+                                    que el cliente recibe una propuesta precisa y ajustada a la realidad de cada
+                                    proveedor.</li>
+                                <li>Preparación automática de propuestas y documentación: Generamos un borrador de
+                                    respuesta que incluye una oferta detallada y personalizada para el cliente, con la
+                                    documentación técnica adecuada y cualquier archivo adicional relevante. Todo ello se
+                                    presenta en un email de respuesta listo para ser enviado con un solo clic.</li>
                             </ol>
 
                             <h3 class="featurette-heading fw-normal lh-1 my-3">Resultado</h3>
-                            <p class="lead mb-5">La estandarización de los ficheros de clientes mediante inteligencia artificial ha resultado en una transformación significativa para el proceso de creación de presupuestos, aportando ahorros de tiempo, esfuerzo y costos. Esta solución se ha convertido en una ventaja competitiva clave para nuestro cliente, mejorando tanto la eficiencia interna como la experiencia de sus propios clientes.</p>
+                            <p class="lead mb-5">La estandarización de los ficheros de clientes mediante inteligencia
+                                artificial ha resultado en una transformación significativa para el proceso de creación
+                                de presupuestos, aportando ahorros de tiempo, esfuerzo y costos. Esta solución se ha
+                                convertido en una ventaja competitiva clave para nuestro cliente, mejorando tanto la
+                                eficiencia interna como la experiencia de sus propios clientes.</p>
 
                             <h3 class="featurette-heading fw-normal lh-1 my-3">¿Por qué confiar en CodeGenia?</h3>
                             <p class="lead">
-                                Nuestra experiencia en soluciones de IA y RPA nos permite crear procesos de negocio adaptados a las necesidades de cada cliente. La automatización de pedidos de productos demuestra nuestra capacidad para combinar inteligencia artificial con la automatización de procesos complejos, asegurando no solo eficiencia, sino también una mejora en la calidad del servicio.<br/><br/>
-                                
+                                Nuestra experiencia en soluciones de IA y RPA nos permite crear procesos de negocio
+                                adaptados a las necesidades de cada cliente. La automatización de pedidos de productos
+                                demuestra nuestra capacidad para combinar inteligencia artificial con la automatización
+                                de procesos complejos, asegurando no solo eficiencia, sino también una mejora en la
+                                calidad del servicio.<br /><br />
+
                             </p>
                             <h3 class="featurette-heading fw-normal my-3">
-                                Transforme su negocio, contáctenos ahora para llevar su proceso de pedidos al siguiente nivel:
+                                Transforme su negocio, contáctenos ahora para llevar su proceso de pedidos al siguiente
+                                nivel:
                             </h3>
-                        </p>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-white">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="pt-2 pb-5">
-                        <form name="Ficheros" class="row g-3 needs-validation" netlify>
-                            <div class="col-md-12">
-                                <label for="name" class="form-label">Nombre y apellidos:</label>
-                                <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Introduzca su nombre y apellidos" aria-label="Name and surname" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label for="email" class="form-label">Email:</label>
-                                <input type="text" class="form-control" id="email" name="email"
-                                    placeholder="Introduzca su email" aria-label="Email" required>
-                                <div class="invalid-feedback">
-                                    Por favor, introduzca un email valido.
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label for="message">Mensaje:</label>
-                                <textarea class="form-control" id="message" rows="3" name="message"
-                                    placeholder="Introduzca su mensaje" aria-label="Message" required></textarea>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label" for="invalidCheck">
-                                        He leído y acepto la <a href="./politica-de-privacidad" target="_blank"
-                                            rel="noopener noreferrer" itemprop="url"
-                                            class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                            aria-label="I accept the privacy policy">Política de privacidad</a>
-                                    </label>
-                                    <div class="invalid-feedback">
-                                        Aceptar la politica de privacidad es requerido.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="my-5">
-                                <button class="btn button-animation button-animation-gray px-4 py-3" type="submit">
-                                    ENVIAR
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </button>
-                            </div>
-                        </form>                       
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="primary-bg text-white">
-        <div class="container">
-            <footer>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5">
-                    <!--div class="col-md-4 mb-3">
+        <div class="bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="pt-2 pb-5">
+                            <form name="Ficheros" class="row g-3 needs-validation" netlify>
+                                <div class="col-md-12">
+                                    <label for="name" class="form-label">Nombre y apellidos:</label>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Introduzca su nombre y apellidos" aria-label="Name and surname"
+                                        required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="text" class="form-control" id="email" name="email"
+                                        placeholder="Introduzca su email" aria-label="Email" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, introduzca un email valido.
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="message">Mensaje:</label>
+                                    <textarea class="form-control" id="message" rows="3" name="message"
+                                        placeholder="Introduzca su mensaje" aria-label="Message" required></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            He leído y acepto la <a href="./politica-de-privacidad" target="_blank"
+                                                rel="noopener noreferrer" itemprop="url"
+                                                class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                                aria-label="I accept the privacy policy">Política de privacidad</a>
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Aceptar la politica de privacidad es requerido.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-5">
+                                    <button class="btn button-animation button-animation-gray px-4 py-3" type="submit">
+                                        ENVIAR
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="primary-bg text-white">
+            <div class="container">
+                <footer>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5">
+                        <!--div class="col-md-4 mb-3">
                         <img class="bg-white p-3" alt="Somos Pyme Innovadora por el ministerio de ciencia e innovación"
                             style="max-width: 50%;" src="img/innovadora.jpg">
                     </div-->
-                    <div class="col-md-8">
-                        <h4 class="mb-4">Dónde estamos</h4>
+                        <div class="col-md-8">
+                            <h4 class="mb-4">Dónde estamos</h4>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=C/+Hortaleza+106+28004+Madrid&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embed-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
-                                Hortaleza 106, 6 Derecha<br>
-                                28004 Madrid
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3"
+                                        style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;">
+                                        <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5963.05476796041!2d-0.8788423234472945!3d41.64434608001651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914fb3bd07271%3A0x8c90be2e8ead31e5!2sC.%20de%20la%20Reina%20Fabiola%2C%2037%2C%2050008%20Zaragoza!5e0!3m2!1ses!2ses!4v1770195173423!5m2!1ses!2ses"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <style>
+                                            #embedded-map-display img.text-marker {
+                                                max-width: none !important;
+                                                background: none !important;
+                                            }
+
+                                            img {
+                                                max-width: none
+                                            }
+                                        </style>
+                                    </div>
+                                    C/ Reina Fabiola, 37 Of. 131<br>
+                                    50008 Zaragoza<br>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="mb-3" style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=calle+costa+8+zaragoza&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
-                                Joaquín Costa 8, 2 Derecha<br>
-                                50001 Zaragoza<br>
-                            </div>                            
+
+                            <h4 class="mt-5 mb-2">Síguenos</h4>
+                            <ul class="list-unstyled d-flex">
+                                <li>
+                                    <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer"
+                                        class="btn" target="_blank"
+                                        style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                        <i class="text-white bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn"
+                                        target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                        <i class="text-white bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-
-                        <h4 class="mt-5 mb-2">Síguenos</h4>
-                        <ul class="list-unstyled d-flex">
-                            <li>
-                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
-                                    <i class="text-white bi bi-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn" target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
-                                    <i class="text-white bi bi-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="col-md-4 mb-3 text-end">
+                            <h4 class="mb-4">Navegación</h4>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="./que-hacemos"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="Qué hacemos">Qué hacemos</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./casos-de-exito"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="Casos de éxito">Casos de éxito</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./sobre-nosotros"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="About us">Sobre nosotros</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./contacto"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="Contacto">Contacto</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./politica-de-privacidad"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="Privacy-policy">Politica de privacidad</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./aviso-legal"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="Legal notice">Aviso legal</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./../?noredir=true"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="English">English</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-3 text-end">
-                        <h4 class="mb-4">Navegación</h4>
-                        <ul class="nav flex-column">
-                            <li class="nav-item mb-2">
-                                <a href="./que-hacemos" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="Qué hacemos">Qué hacemos</a> 
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a href="./casos-de-exito" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="Casos de éxito">Casos de éxito</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a href="./sobre-nosotros" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="About us">Sobre nosotros</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a href="./contacto" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="Contacto">Contacto</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a href="./politica-de-privacidad" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="Privacy-policy">Politica de privacidad</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a href="./aviso-legal" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="Legal notice">Aviso legal</a>
-                            </li>
-                            <li class="nav-item mb-2">
-                                <a href="./../?noredir=true" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    aria-label="English">English</a>
-                            </li>
-                        </ul>
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
+                        <p>
+                            © 2025 CodeGenia. Todos los derechos reservados.<br>
+                            CodeGenia es una compañía <a class="text-white" rel="noopener noreferrer" target="_blank"
+                                href="https://dareplanet.com">DarePlanet</a>.
+                        </p>
                     </div>
-                </div>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
-                    <p>
-                        © 2025 CodeGenia. Todos los derechos reservados.<br>
-                        CodeGenia es una compañía <a class="text-white" rel="noopener noreferrer" target="_blank" href="https://dareplanet.com">DarePlanet</a>.
-                    </p>
-                </div>
 
-            </footer>
+                </footer>
+            </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
-        defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+            defer></script>
 
-    <script>
-        /*document.addEventListener("DOMContentLoaded", function() {
-            var navbarCollapse = document.querySelector(".navbar-collapse");
-            var navLinks = document.querySelectorAll(".nav-link");
-    
-            navLinks.forEach(function(link) {
-                link.addEventListener("click", function() {
-                    var isExpanded = navbarCollapse.classList.contains("show");
-                    if (isExpanded) {
-                        var bsCollapse = new bootstrap.Collapse(navbarCollapse);
-                        bsCollapse.hide();
-                    }
+        <script>
+            /*document.addEventListener("DOMContentLoaded", function() {
+                var navbarCollapse = document.querySelector(".navbar-collapse");
+                var navLinks = document.querySelectorAll(".nav-link");
+        
+                navLinks.forEach(function(link) {
+                    link.addEventListener("click", function() {
+                        var isExpanded = navbarCollapse.classList.contains("show");
+                        if (isExpanded) {
+                            var bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                            bsCollapse.hide();
+                        }
+                    });
                 });
-            });
-        });*/
-    </script>
+            });*/
+        </script>
 
 </body>
+
 </html>
