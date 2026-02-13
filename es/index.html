@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -49,8 +49,8 @@
                 return;
             }
             var idiomaNavegador = navigator.language || navigator.userLanguage;
-            if (idiomaNavegador.toLowerCase() === "es-es") {
-                window.location.href = "/es";
+            if (!idiomaNavegador.toLowerCase().startsWith("es")) {
+                window.location.href = "../";
             }
         }
 
@@ -65,8 +65,8 @@
             }
         }
 
-        //verificarParametroNoRedireccion();
-        //redirigirSegunIdioma();
+        verificarParametroNoRedireccion();
+        redirigirSegunIdioma();
     </script>
 
     <script type="application/ld+json">
