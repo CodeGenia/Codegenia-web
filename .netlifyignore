@@ -1,0 +1,13 @@
+# Docker files (not needed in Netlify)
+Dockerfile
+docker-compose.yml
+nginx.conf
+
+# Documentation and development files
+README.md
+SEO-AUDIT-REPORT.md
+companies-blog.md
+que-es-la-codegenia.md
+
+# Git folder
+.git/
