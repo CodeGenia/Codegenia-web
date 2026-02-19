@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Data integration and governance success story: unified business vision, reduced manual workload, and improved information reliability for multi-company environments.">
+    <meta name="keywords"
+        content="data integration, data governance, ERP integration, business intelligence, data consolidation, Navision, Dynamics, multi-company data, data architecture">
+    <meta name="author" content="CodeGenia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Data Integration & Governance Success | CodeGenia - Multi-Company Environment">
+    <meta property="og:description"
+        content="Data integration success: unified business vision, reduced manual workload, improved information reliability in multi-company environments.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codegenia.com/data-integration-governance">
+    <meta property="og:image" content="./img/logo-codegenia.jpg">
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:site_name" content="CodeGenia">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Data Integration & Governance Success | CodeGenia">
+    <meta name="twitter:description" content="Real results from data integration and governance implementation">
+    <meta name="twitter:image" content="./img/logo-codegenia.jpg">
+    <meta http-equiv="Content-Language" content="en" />
+    <!--meta name="theme-color" content="#XXXXXX"-->
+    <title>Data Integration & Governance | CodeGenia - Multi-Company Data Platform</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <!--meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"-->
+
+    <link rel="alternate" hreflang="en" href="https://codegenia.com/data-integration-governance" />
+    <link rel="alternate" hreflang="es" href="https://codegenia.com/es/integracion-y-gobierno-del-dato" />
+
+    <script defer>
+        function redirigirSegunIdioma() {
+            if (localStorage.getItem('sinRedireccion') === 'true') {
+                return;
+            }
+            var idiomaNavegador = navigator.language || navigator.userLanguage;
+            if (idiomaNavegador.toLowerCase() === "es-es") {
+                window.location.href = "/es";
+            }
+        }
+
+        function desactivarRedireccion() {
+            localStorage.setItem('sinRedireccion', 'true');
+        }
+
+        function verificarParametroNoRedireccion() {
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+                desactivarRedireccion();
+            }
+        }
+
+        //verificarParametroNoRedireccion();
+        //redirigirSegunIdioma();
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "CodeGenia",
+          "url": "https://www.codegenia.com",
+          "logo": "https://www.codegenia.com/img/logo-codegenia.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+34-976-700-707",
+            "contactType": "Sales",
+            "areaServed": "EN",
+            "availableLanguage": ["Spanish", "English"]
+          }
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./">
+                <img alt="Logo de CodeGenia" class="img-fluid" src="./img/logo-codegenia.jpg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./what-we-do" aria-label="What we do">What we do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./success-cases" aria-label="Success cases">Success cases</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="./industries" aria-label="Industries">Industries</a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./about-us" aria-label="About us">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./contact" aria-label="Contacto">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./es?noredir=true" aria-label="Español">Español</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="background: url('./img/integracion-y-gobierno-del-dato.jpeg') no-repeat center center fixed; 
+        width: 100vw; height: 100vh; object-fit: cover; background-size: cover; position: fixed; left: 0;
+        right: 0; top: 0; bottom: 0; z-index: -1;"></div>
+
+    <div class="customOverlay"></div>
+
+    <div class="container pt-5 pb-4 mt-5 text-white">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="display-5 fw-bold mt-5 mb-5">Success Case: Data Integration and Governance in Multi-Company Environment</h1>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="container">
+            <div class="row align-items-center featurette py-4 mt-3">
+                <div class="col-md-12">
+                    <h3 class="featurette-heading fw-normal lh-1 my-3">Problem Identification</h3>
+                    <p class="lead">For a corporate group with multiple business lines and various information sources, we addressed the need to structure and standardize their data ecosystem to improve decision-making at a global level.</p>
+                    <p class="lead">The company worked with consolidated ERPs such as Navision and Dynamics, integrating information from different operational areas. However, the diversity of systems and structures made budgetary consolidation and cross-business analysis difficult.</p>
+                    <p class="lead">Additionally, certain analytical processes, such as calculating raw material and finished product turnover, relied on external tools with multiple manual steps, generating operational complexity and limitations in temporal traceability.</p>
+                    
+                    <p class="lead">Identified inefficiencies:</p>
+                    <ul class="lead mb-5">
+                        <li>Heterogeneity in data structures across business lines.</li>
+                        <li>Difficulty consolidating information from different systems.</li>
+                        <li>Manual analytical processes dependent on external tools.</li>
+                        <li>Lack of a common base for global and strategic reporting.</li>
+                    </ul>
+
+                    <h3 class="featurette-heading fw-normal lh-1 my-3">Solution</h3>
+                    <p class="lead">At CodeGenia, we analyzed the existing technological ecosystem and designed an integration architecture adapted to communications with their ERPs.</p>
+                    <p class="lead">We developed an interconnected platform capable of:</p>
+                    <ol class="lead mb-5">
+                        <li>Integrating and synchronizing data from different systems.</li>
+                        <li>Standardizing data structures and information families.</li>
+                        <li>Creating a common database oriented towards reporting and analysis.</li>
+                        <li>Automating key analytical processes, eliminating manual tasks.</li>
+                        <li>Improving temporal traceability in strategic calculations such as product turnover.</li>
+                    </ol>
+                    <p class="lead mb-5">The solution was implemented without altering already consolidated systems, ensuring operational continuity and minimizing risks.</p>
+
+                    <h3 class="featurette-heading fw-normal lh-1 my-3">Results</h3>
+                    <p class="lead">Thanks to this transformation:</p>
+                    <ul class="lead mb-5">
+                        <li>The client now has a unified and coherent business vision.</li>
+                        <li>Manual workload in data processing was significantly reduced.</li>
+                        <li>Information reliability and consistency were improved.</li>
+                        <li>A solid foundation was established for future phases of financial consolidation and Business Intelligence.</li>
+                        <li>The organization gained the ability to scale and evolve its analytical model without increasing technological complexity.</li>
+                    </ul>
+
+                    <h3 class="featurette-heading fw-normal lh-1 my-3">Why Trust CodeGenia?</h3>
+                    <p class="lead">
+                        Our expertise in systems integration, data architecture, and process automation allows us to adapt to complex technological environments, connecting consolidated ERPs with intelligent information exploitation platforms.
+                    </p>
+                    <p class="lead">
+                        We don't replace systems: we enhance them. We don't add complexity: we organize it.
+                    </p>
+                    <p class="lead mb-5">
+                        Transform your data model and turn information into a true competitive advantage.
+                    </p>
+                    <h3 class="featurette-heading fw-normal my-3">
+                        Transform your business, contact us now to take your data integration to the next level:
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="pt-2 pb-5">
+                        <form name="DataIntegration" class="row g-3 needs-validation" netlify>
+                            <div class="col-md-12">
+                                <label for="name" class="form-label">Name and surname:</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Enter your name and surname" aria-label="Name and surname" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="text" class="form-control" id="email" name="email"
+                                    placeholder="Enter your email" aria-label="Email" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email.
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message">Message:</label>
+                                <textarea class="form-control" id="message" rows="3" name="message"
+                                    placeholder="Write your message here" aria-label="Message" required></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        I have read and accept the <a href="/privacy-policy" target="_blank"
+                                            rel="noopener noreferrer" itemprop="url"
+                                            class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                            aria-label="I accept the privacy policy">Privacy policy</a>
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Accepting the privacy policy is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn button-animation button-animation-gray mt-3 px-4 py-3" type="submit"
+                                    aria-label="Send">
+                                    SEND
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="primary-bg text-white">
+        <div class="container">
+            <footer>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5">
+                    <!--div class="col-md-4 mb-3">
+                        <img class="bg-white p-3" alt="Somos Pyme Innovadora por el ministerio de ciencia e innovación"
+                            style="max-width: 50%;" src="img/innovadora.jpg">
+                    </div-->
+                    <div class="col-md-8">
+                        <h4 class="mb-4">Where we are</h4>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3"
+                                    style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;">
+                                    <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5963.05476796041!2d-0.8788423234472945!3d41.64434608001651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914fb3bd07271%3A0x8c90be2e8ead31e5!2sC.%20de%20la%20Reina%20Fabiola%2C%2037%2C%2050008%20Zaragoza!5e0!3m2!1ses!2ses!4v1770195173423!5m2!1ses!2ses"
+                                            width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <style>
+                                        #embedded-map-display img.text-marker {
+                                            max-width: none !important;
+                                            background: none !important;
+                                        }
+
+                                        img {
+                                            max-width: none
+                                        }
+                                    </style>
+                                </div>
+                                Reina Fabiola, 37 Of. 131<br>
+                                50008 Zaragoza<br>
+                                <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    href="tel:+34976700707">(+34) 976 700 707</a><br>
+                            </div>
+                        </div>
+
+                        <h4 class="mt-5 mb-2">Follow us</h4>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer"
+                                    class="btn" target="_blank"
+                                    style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                    <i class="text-white bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn"
+                                    target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                    <i class="text-white bi bi-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-3 text-end">
+                        <h4 class="mb-4">Navigation</h4>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="./what-we-do"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="What we do">What we do</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./success-cases"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Success cases">Success cases</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./about-us"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="About us">About us</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./contact"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Contact">Contact</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./privacy-policy"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Privacy-policy">Privacy policy</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="./legal-notice"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Legal notice">Legal notice</a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a href="/es?noredir=true"
+                                    class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                    aria-label="Español">Español</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
+                    <p>
+                        © 2026 CodeGenia. All rights reserved.<br>
+                        CodeGenia is a <a
+                            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="https://marai.es" target="_blank">Marai</a> company.
+                    </p>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+
+    <script>
+        /*document.addEventListener("DOMContentLoaded", function() {
+            var navbarCollapse = document.querySelector(".navbar-collapse");
+            var navLinks = document.querySelectorAll(".nav-link");
+    
+            navLinks.forEach(function(link) {
+                link.addEventListener("click", function() {
+                    var isExpanded = navbarCollapse.classList.contains("show");
+                    if (isExpanded) {
+                        var bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        });*/
+    </script>
+
+</body>
+
+</html>
