@@ -99,6 +99,11 @@
             <lastmod>2026-02-19T18:00:00+00:00</lastmod>
             <priority>0.70</priority>
       </url>
+      <url>
+            <loc>https://codegenia.com/sap-platform-document-management</loc>
+            <lastmod>2026-02-20T18:00:00+00:00</lastmod>
+            <priority>0.70</priority>
+      </url>
       <!-- Main Pages (Spanish) -->
       <url>
             <loc>https://codegenia.com/es/</loc>
@@ -162,6 +167,11 @@
       <url>
             <loc>https://codegenia.com/es/integracion-y-gobierno-del-dato</loc>
             <lastmod>2026-02-19T18:00:00+00:00</lastmod>
+            <priority>0.51</priority>
+      </url>
+      <url>
+            <loc>https://codegenia.com/es/plataforma-sap-gestion-documental</loc>
+            <lastmod>2026-02-20T18:00:00+00:00</lastmod>
             <priority>0.51</priority>
       </url>
       <!-- Industry Landing Pages (English) -->

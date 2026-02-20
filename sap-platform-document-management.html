@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SAP integration success story: Multilanguage platform for technical document management. How CodeGenia optimized documentation in an international industrial environment.">
+    <meta name="keywords"
+        content="SAP integration, document management, multilanguage platform, technical documentation, industrial software">
+    <meta name="author" content="CodeGenia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Success Story: SAP Multilanguage Platform | CodeGenia - Document Management">
+    <meta property="og:description"
+        content="SAP integration and multilanguage technical document management. Real results in international industrial environment.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codegenia.com/sap-platform-document-management">
+    <meta property="og:image" content="./img/logo-codegenia.jpg">
+    <meta property="og:locale" content="en_EN">
+    <meta property="og:site_name" content="CodeGenia">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Success Story: SAP Multilanguage Platform | CodeGenia">
+    <meta name="twitter:description" content="Real results from SAP integration and technical document management">
+    <meta name="twitter:image" content="./img/logo-codegenia.jpg">
+    <meta http-equiv="Content-Language" content="en" />
+    <!--meta name="theme-color" content="#XXXXXX"-->
+    <title>SAP Multilanguage Platform | CodeGenia - Technical Document Management</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <!--meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"-->
+
+    <link rel="alternate" hreflang="en" href="https://codegenia.com/sap-platform-document-management" />
+    <link rel="alternate" hreflang="es" href="https://codegenia.com/es/plataforma-sap-gestion-documental" />
+
+    <script defer>
+        function redirigirSegunIdioma() {
+            if (localStorage.getItem('sinRedireccion') === 'true') {
+                return;
+            }
+            var idiomaNavegador = navigator.language || navigator.userLanguage;
+            if (idiomaNavegador.toLowerCase() === "es-es") {
+                window.location.href = "/es";
+            }
+        }
+
+        function desactivarRedireccion() {
+            localStorage.setItem('sinRedireccion', 'true');
+        }
+
+        function verificarParametroNoRedireccion() {
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('noredir') && urlParams.get('noredir') === 'true') {
+                desactivarRedireccion();
+            }
+        }
+
+        //verificarParametroNoRedireccion();
+        //redirigirSegunIdioma();
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "CodeGenia",
+          "url": "https://www.codegenia.com",
+          "logo": "https://www.codegenia.com/img/logo-codegenia.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+34-976-700-707",
+            "contactType": "Sales",
+            "areaServed": "EN",
+            "availableLanguage": ["Spanish", "English"]
+          }
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./">
+                <img alt="Logo de CodeGenia" class="img-fluid" src="img/logo-codegenia.jpg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./what-we-do" aria-label="What we do">What we do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            aria-current="page" href="./success-cases" aria-label="Success cases">Success cases</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./technology" aria-label="Technology">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./industries" aria-label="Industries">Industries</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./about-us" aria-label="About us">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./contact" aria-label="Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                            href="./es?noredir=true" aria-label="Español">Español</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="background: url('./img/header-industry.jpg') no-repeat center center fixed; 
+        width: 100vw; height: 100vh; object-fit: cover; background-size: cover; position: fixed; left: 0;
+        right: 0; top: 0; bottom: 0; z-index: -1;"></div>
+
+    <div class="customOverlay"></div>
+
+    <div class="container pt-5 pb-4 mt-5 text-white">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="display-5 fw-bold mt-5 mb-5">Success story: Multilanguage platform integrated with SAP for technical document management
+                </h1>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center featurette py-4 mt-3">
+                        <div class="col-md-12">
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Problem Identification</h3>
+                            <p class="lead">In an industrial environment with international presence, the client needed to optimize the management of their technical documentation, used by different operational teams and departments across various markets.</p>
+                            <p class="lead">The information was distributed across multiple formats and repositories, making it difficult to quickly locate updated documents, control versions, and maintain consistency between delegations.</p>
+                            <p class="lead">Additionally, the need to work in multiple languages added an extra layer of complexity, especially in a context where technical precision is key and documentation must be aligned with processes managed in SAP.</p>
+                            <p class="lead">Detected inefficiencies:</p>
+                            <ul class="lead mb-5">
+                                <li>Dispersed technical documentation that was difficult to locate.</li>
+                                <li>Risk of using outdated versions.</li>
+                                <li>Lack of direct integration with the SAP management system.</li>
+                                <li>Need for multilanguage support for different markets.</li>
+                            </ul>
+
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Solution</h3>
+                            <p class="lead">At Codegenia, we designed and implemented a multilanguage digital platform focused on structured technical documentation management.</p>
+                            <p class="lead">The developed solution enables:</p>
+                            <ul class="lead mb-5">
+                                <li>Centralize all technical documentation in a single environment.</li>
+                                <li>Manage content in multiple languages in a structured way.</li>
+                                <li>Integrate the platform directly with SAP to ensure consistency between technical data and management processes.</li>
+                                <li>Establish version control and complete document traceability.</li>
+                                <li>Facilitate quick and secure access to information by different teams.</li>
+                            </ul>
+                            <p class="lead">The architecture was designed to adapt to the existing technological ecosystem, ensuring operational continuity and future scalability.</p>
+
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Results</h3>
+                            <p class="lead">Thanks to this implementation:</p>
+                            <ul class="lead mb-5">
+                                <li>The organization now has a unified and structured document environment.</li>
+                                <li>Search and consultation times for technical information were reduced.</li>
+                                <li>The risk associated with using outdated versions was eliminated.</li>
+                                <li>Coordination between departments and international delegations improved.</li>
+                                <li>The foundations were laid for future digital evolutions in the industrial environment.</li>
+                            </ul>
+
+
+                            <h3 class="featurette-heading fw-normal lh-1 my-3">Why trust Codegenia?</h3>
+                            <p class="lead">
+                                Our experience in platform integration, custom solution development, and connection with management systems like SAP allows us to transform complex technical environments into organized, efficient digital ecosystems prepared for growth.<br /><br />
+                                
+                                We connect processes, technology, and people so that information works in favor of the business.<br /><br />
+
+                            </p>
+                            <h3 class="featurette-heading fw-normal my-3">
+                                Transform your document management, contact us now to take your organization to the next level:
+                            </h3>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white mb-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="pt-2 pb-5">
+                            <form name="SAP-Document-Management" class="row g-3 needs-validation" netlify>
+                                <div class="col-md-12">
+                                    <label for="name" class="form-label">Name and surname:</label>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Enter your name and surname" aria-label="Name and surname"
+                                        required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="text" class="form-control" id="email" name="email"
+                                        placeholder="Enter your email" aria-label="Email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email.
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="message">Message:</label>
+                                    <textarea class="form-control" id="message" rows="3" name="message"
+                                        placeholder="Enter your message" aria-label="Message" required></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            I have read and accept the <a href="./privacy-policy" target="_blank"
+                                                rel="noopener noreferrer" itemprop="url"
+                                                class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                                aria-label="I accept the privacy policy">Privacy policy</a>
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Accepting the privacy policy is required.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-5">
+                                    <button class="btn button-animation button-animation-gray px-4 py-3" type="submit">
+                                        SEND
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="primary-bg text-white">
+            <div class="container">
+                <footer>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5">
+                        <!--div class="col-md-4 mb-3">
+                        <img class="bg-white p-3" alt="Somos Pyme Innovadora por el ministerio de ciencia e innovación"
+                            style="max-width: 50%;" src="img/innovadora.jpg">
+                    </div-->
+                        <div class="col-md-8">
+                            <h4 class="mb-4">Where we are</h4>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3"
+                                        style="overflow:hidden;resize:none;max-width:100%;width:400px;height:300px;">
+                                        <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5963.05476796041!2d-0.8788423234472945!3d41.64434608001651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914fb3bd07271%3A0x8c90be2e8ead31e5!2sC.%20de%20la%20Reina%20Fabiola%2C%2037%2C%2050008%20Zaragoza!5e0!3m2!1ses!2ses!4v1770195173423!5m2!1ses!2ses"
+                                                width="100%" height="100%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                        <style>
+                                            #embedded-map-display img.text-marker {
+                                                max-width: none !important;
+                                                background: none !important;
+                                            }
+
+                                            img {
+                                                max-width: none
+                                            }
+                                        </style>
+                                    </div>
+                                    Reina Fabiola, 37 Of. 131<br>
+                                    50008 Zaragoza<br>
+                                    <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        href="tel:+34976700707">(+34) 976 700 707</a><br>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-5 mb-2">Follow us</h4>
+                            <ul class="list-unstyled d-flex">
+                                <li>
+                                    <a href="https://www.linkedin.com/company/codegenia" rel="noopener noreferrer"
+                                        class="btn" target="_blank"
+                                        style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                        <i class="text-white bi bi-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/codegenia" rel="noopener noreferrer" class="btn"
+                                        target="_blank" style="font-size:50px; padding-left:0; padding-right: 15px;">
+                                        <i class="text-white bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-3 text-end">
+                            <h4 class="mb-4">Navigation</h4>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2">
+                                    <a href="./what-we-do"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="What we do">What we do</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./success-cases"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="Success cases">Success cases</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./about-us"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="About us">About us</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./contact"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="Contact">Contact</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./privacy-policy"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="Privacy-policy">Privacy policy</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="./legal-notice"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="Legal notice">Legal notice</a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a href="/es?noredir=true"
+                                        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                        aria-label="Español">Español</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top">
+                        <p>
+                            © 2026 CodeGenia. All rights reserved.<br>
+                            CodeGenia is a <a
+                                class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="https://marai.es" target="_blank">Marai</a> company.
+                        </p>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+            defer></script>
+
+        <script>
+            /*document.addEventListener("DOMContentLoaded", function() {
+                var navbarCollapse = document.querySelector(".navbar-collapse");
+                var navLinks = document.querySelectorAll(".nav-link");
+        
+                navLinks.forEach(function(link) {
+                    link.addEventListener("click", function() {
+                        var isExpanded = navbarCollapse.classList.contains("show");
+                        if (isExpanded) {
+                            var bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                            bsCollapse.hide();
+                        }
+                    });
+                });
+            });*/
+        </script>
+
+</body>
+
+</html>
