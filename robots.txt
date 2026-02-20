@@ -1,5 +1,45 @@
+# General crawlers
 User-agent: *
 Allow: /
 
+# AI Agents and LLM Crawlers - Explicitly allowed
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic (Claude)
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Google AI (Bard/Gemini)
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (used by many AI models)
+User-agent: CCBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# AI Agent Information
+# For AI agents: see /ai.txt for structured company information
+
 Sitemap: https://codegenia.com/sitemap.xml
+AI-Info: https://codegenia.com/ai.txt
 
