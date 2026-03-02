@@ -51,9 +51,18 @@
 
     <link rel="alternate" hreflang="en" href="https://codegenia.com" />
     <link rel="alternate" hreflang="es" href="https://codegenia.com/es" />
+    <link rel="alternate" hreflang="x-default" href="https://codegenia.com" />
 
     <script defer>
+        function isBot() {
+            var ua = navigator.userAgent.toLowerCase();
+            return /bot|googlebot|bingbot|yandex|baidu|duckduckbot|slurp|crawler|spider/.test(ua);
+        }
+
         function redirigirSegunIdioma() {
+            if (isBot()) {
+                return;
+            }
             if (localStorage.getItem('sinRedireccion') === 'true') {
                 return;
             }
